@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<!-- Google Search Console: replace with real verification meta tag once property is created, e.g. <meta name="google-site-verification" content="..."> -->
+
+<title>FINSEC 360™ | Financial Cyber Risk &amp; Resilience Assessment | RETIS Systems</title>
+<meta name="description" content="RETIS FINSEC 360™ is a structured cyber risk assessment across ten domains, built for Kenyan banks, SACCOs, fintechs and PSPs. Request a FINSEC 360™ briefing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.retistech.com/finsec-360/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RETIS Systems">
+<meta property="og:title" content="FINSEC 360™ | Financial Cyber Risk &amp; Resilience Assessment">
+<meta property="og:description" content="A structured cyber risk assessment across governance, transaction security, third-party risk and more — built for Kenyan financial institutions.">
+<meta property="og:url" content="https://www.retistech.com/finsec-360/">
+<meta property="og:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+<meta name="twitter:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Financial Cyber Risk & Resilience Assessment",
+  "name": "RETIS FINSEC 360™",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "RETIS Systems",
+    "url": "https://www.retistech.com/",
+    "telephone": ["+254704293812", "+254101211398"],
+    "email": "info@retistech.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    }
+  },
+  "areaServed": ["Kenya", "East Africa"],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Banks, SACCOs, Fintechs, Payment Service Providers, Financial Institutions"
+  },
+  "description": "A structured cyber risk and resilience assessment across ten domains — governance, identity and access, transaction security, application security, data security, third-party risk, incident response, business continuity, vulnerability management and security monitoring — built for financial institutions operating in Kenya."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.retistech.com/"},
+    {"@type":"ListItem","position":2,"name":"Cybersecurity","item":"https://www.retistech.com/cybersecurity-solutions/"},
+    {"@type":"ListItem","position":3,"name":"FINSEC 360™","item":"https://www.retistech.com/finsec-360/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What are the ten FINSEC 360™ assessment areas?","acceptedAnswer":{"@type":"Answer","text":"Governance, identity and access management, transaction security, application security, data security, third-party risk, incident response, business continuity, vulnerability management, and security monitoring."}},
+    {"@type":"Question","name":"Who is FINSEC 360™ built for?","acceptedAnswer":{"@type":"Answer","text":"Banks, SACCOs, fintechs, payment service providers, and other financial institutions operating in Kenya and East Africa."}},
+    {"@type":"Question","name":"Is FINSEC 360™ a statutory audit or certification?","acceptedAnswer":{"@type":"Answer","text":"No. FINSEC 360™ is a risk and resilience assessment. It is advisory in nature and is distinct from a statutory audit, regulatory approval, or certification process."}},
+    {"@type":"Question","name":"How long does a FINSEC 360™ engagement take?","acceptedAnswer":{"@type":"Answer","text":"Timelines depend on institution size and scope, and are agreed during the scoping call. Most engagements run several weeks from kickoff to final report."}},
+    {"@type":"Question","name":"What happens after the assessment?","acceptedAnswer":{"@type":"Answer","text":"You receive a scored, prioritised findings report and remediation roadmap. Many institutions then move into CyberGuard, RETIS's recurring advisory engagement, to manage risk on an ongoing basis."}},
+    {"@type":"Question","name":"Does any security testing require our authorisation?","acceptedAnswer":{"@type":"Answer","text":"Yes. All testing activity is conducted only with explicit client authorisation and clearly defined rules of engagement, agreed in advance."}}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --retis-obsidian:#0A0D16; --retis-navy:#142452; --retis-navy-light:#22336E;
+    --retis-gold:#E3A83B; --retis-purple:#5B2E8C; --retis-cloud:#F6F7FA;
+    --retis-ink:#1A1F2E; --retis-slate:#5C6B85; --retis-border:#E3E7EF; --risk-mod:#C98A2E;
+    --font-display:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+    --font-body:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+    --font-mono:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+    --radius-s:4px; --radius-m:8px; --max:1280px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.001ms!important; transition-duration:.001ms!important;} }
+  body{margin:0; font-family:var(--font-body); color:var(--retis-ink); background:var(--retis-cloud); line-height:1.6; -webkit-font-smoothing:antialiased; padding-bottom:64px;}
+  @media (min-width:1024px){ body{padding-bottom:0;} }
+  h1,h2,h3,h4{font-family:var(--font-display); margin:0; font-weight:600; letter-spacing:-0.01em;}
+  p{margin:0;} a{color:inherit; text-decoration:none;} img{max-width:100%; display:block;}
+  ul{margin:0; padding:0; list-style:none;} button{font-family:inherit; cursor:pointer;}
+  label{font-size:0.85rem; font-weight:600; color:var(--retis-navy); display:block; margin-bottom:6px;}
+  input,select,textarea{
+    width:100%; padding:12px 14px; border:1px solid var(--retis-border); border-radius:var(--radius-s);
+    font-family:inherit; font-size:0.95rem; background:#fff; color:var(--retis-ink);
+  }
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--retis-gold); outline-offset:1px; border-color:var(--retis-gold);}
+
+  .skip-link{position:absolute; left:-999px; top:0; background:var(--retis-gold); color:var(--retis-obsidian); padding:12px 20px; z-index:1000; font-weight:600; border-radius:0 0 var(--radius-s) 0;}
+  .skip-link:focus{left:0;}
+  a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible{outline:2px solid var(--retis-gold); outline-offset:2px; border-radius:2px;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  @media (max-width:640px){ .wrap{padding:0 16px;} }
+  section{padding:88px 0;} @media (max-width:640px){ section{padding:48px 0;} }
+
+  .eyebrow{font-family:var(--font-mono); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--retis-gold); display:block; margin-bottom:12px;}
+  .eyebrow.purple{color:var(--retis-purple);}
+
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:14px 28px; border-radius:var(--radius-s); font-weight:600; font-size:0.95rem; text-transform:uppercase; letter-spacing:0.04em; border:2px solid transparent; transition:background 150ms, color 150ms, border-color 150ms; white-space:nowrap;}
+  .btn-primary{background:var(--retis-gold); color:var(--retis-obsidian);} .btn-primary:hover{background:#F0BA55;}
+  .btn-secondary{background:transparent; border-color:currentColor; color:var(--retis-navy);} .btn-secondary:hover{background:rgba(20,36,82,.06);}
+  .on-dark .btn-secondary{color:#fff;} .on-dark .btn-secondary:hover{background:rgba(255,255,255,.08);}
+  .btn-block{width:100%;}
+
+  header.site-header{position:sticky; top:0; z-index:100; background:rgba(246,247,250,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--retis-border);}
+  .header-row{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+  .logo-link img{height:52px; width:auto;}
+  nav.primary-nav{display:none;} @media (min-width:1024px){ nav.primary-nav{display:flex; align-items:center; gap:4px;} }
+  .nav-trigger{background:none; border:none; padding:12px 14px; font-size:.95rem; font-weight:500; color:var(--retis-navy); border-radius:var(--radius-s);}
+  .nav-trigger:hover{background:rgba(20,36,82,.06);}
+  .header-cta{display:none;} @media (min-width:1024px){ .header-cta{display:flex; align-items:center; gap:12px;} }
+  .header-cta .btn{padding:11px 20px; font-size:.82rem;}
+  .mobile-toggle{display:flex; background:none; border:1px solid var(--retis-border); border-radius:var(--radius-s); padding:10px 12px;}
+  @media (min-width:1024px){ .mobile-toggle{display:none;} }
+  .mobile-toggle span, .mobile-toggle span::before, .mobile-toggle span::after{display:block; width:20px; height:2px; background:var(--retis-navy); position:relative;}
+  .mobile-toggle span::before{content:""; position:absolute; top:-6px;} .mobile-toggle span::after{content:""; position:absolute; top:6px;}
+
+  .breadcrumb{padding:16px 0; font-size:.85rem; color:var(--retis-slate); border-bottom:1px solid var(--retis-border); background:#fff;}
+  .breadcrumb a{color:var(--retis-slate);} .breadcrumb a:hover{color:var(--retis-navy);}
+  .breadcrumb .sep{color:var(--retis-gold); margin:0 8px;}
+
+  .hero{background:radial-gradient(ellipse at 75% 15%, var(--retis-navy) 0%, var(--retis-obsidian) 60%); color:#fff; padding:72px 0 88px;}
+  .hero-grid{display:grid; grid-template-columns:1fr; gap:40px; align-items:start;}
+  @media (min-width:1024px){ .hero-grid{grid-template-columns:1.3fr .9fr;} }
+  .hero h1{font-size:2.1rem; line-height:1.15; margin-bottom:18px;} @media (min-width:1024px){ .hero h1{font-size:3rem;} }
+  .hero .lede{font-size:1.02rem; color:#C7CEE0; max-width:56ch; margin-bottom:28px;}
+  .hero-ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px;}
+  .segment-chips{display:flex; flex-wrap:wrap; gap:10px;}
+  .segment-chip{font-family:var(--font-mono); font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; padding:6px 12px; border:1px solid rgba(255,255,255,.2); border-radius:20px; color:#C7CEE0;}
+
+  .hero-card{background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14); border-radius:var(--radius-m); padding:28px;}
+  .hero-card h3{font-size:1rem; color:#fff; margin-bottom:16px;}
+  .hero-card ul li{display:flex; gap:10px; align-items:flex-start; font-size:.9rem; color:#C7CEE0; margin-bottom:10px;}
+  .hero-card ul li::before{content:"✓"; color:var(--retis-gold); font-weight:700; flex-shrink:0;}
+
+  .section-head{max-width:680px; margin-bottom:44px;}
+  .section-head h2{font-size:1.8rem;} @media (min-width:1024px){ .section-head h2{font-size:2.3rem;} }
+  .section-head p{color:var(--retis-slate); margin-top:14px; font-size:1.02rem;}
+
+  .domain-grid{display:grid; grid-template-columns:1fr; gap:2px; background:var(--retis-border); border:1px solid var(--retis-border); border-radius:var(--radius-m); overflow:hidden;}
+  @media (min-width:640px){ .domain-grid{grid-template-columns:1fr 1fr;} }
+  @media (min-width:1024px){ .domain-grid{grid-template-columns:repeat(5,1fr);} }
+  .domain{background:#fff; padding:24px 18px;}
+  .domain .num{font-family:var(--font-mono); color:var(--retis-gold); font-size:.85rem; display:block; margin-bottom:10px;}
+  .domain .label{font-weight:600; font-size:.92rem; color:var(--retis-navy); margin-bottom:6px;}
+  .domain .desc{font-size:.82rem; color:var(--retis-slate); line-height:1.5;}
+
+  .deliverables{background:#fff;}
+  .deliv-grid{display:grid; grid-template-columns:1fr; gap:24px;} @media (min-width:768px){ .deliv-grid{grid-template-columns:repeat(3,1fr);} }
+  .deliv-card{border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:26px;}
+  .deliv-card .mark{width:36px; height:36px; border-radius:50%; border:2px solid var(--retis-gold); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); color:var(--retis-navy); font-weight:600; margin-bottom:14px;}
+  .deliv-card h3{font-size:1.02rem; color:var(--retis-navy); margin-bottom:8px;}
+  .deliv-card p{font-size:.9rem; color:var(--retis-slate);}
+
+  .process{background:var(--retis-cloud);}
+  .process-list{counter-reset:step; display:flex; flex-direction:column; gap:0;}
+  .process-item{display:grid; grid-template-columns:56px 1fr; gap:20px; padding:24px 0; border-bottom:1px solid var(--retis-border);}
+  .process-item:last-child{border-bottom:none;}
+  .process-num{font-family:var(--font-mono); font-size:1.3rem; color:var(--retis-gold); font-weight:600;}
+  .process-item h3{font-size:1.05rem; color:var(--retis-navy); margin-bottom:6px;}
+  .process-item p{font-size:.92rem; color:var(--retis-slate); max-width:60ch;}
+
+  .faq{background:#fff;}
+  .faq-item{border-bottom:1px solid var(--retis-border);}
+  .faq-q{width:100%; text-align:left; background:none; border:none; padding:20px 0; display:flex; justify-content:space-between; align-items:center; font-weight:600; font-size:1rem; color:var(--retis-navy);}
+  .faq-q .plus{font-family:var(--font-mono); font-size:1.2rem; color:var(--retis-gold); transition:transform 150ms;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height 200ms ease-out;}
+  .faq-item.open .faq-a{max-height:300px;}
+  .faq-a p{padding:0 0 20px; color:var(--retis-slate); font-size:.94rem; max-width:70ch;}
+
+  .trust{background:var(--retis-navy); color:#fff;}
+  .trust-grid{display:grid; grid-template-columns:1fr; gap:28px;} @media (min-width:768px){ .trust-grid{grid-template-columns:repeat(3,1fr);} }
+  .trust-item h3{font-size:1rem; margin-bottom:10px; color:var(--retis-gold);}
+  .trust-item p{font-size:.9rem; color:#C7CEE0;}
+
+  .lead-section{background:var(--retis-obsidian); color:#fff;}
+  .lead-grid{display:grid; grid-template-columns:1fr; gap:40px;} @media (min-width:1024px){ .lead-grid{grid-template-columns:.9fr 1.1fr;} }
+  .lead-copy h2{font-size:1.7rem; margin-bottom:16px;} @media (min-width:1024px){ .lead-copy h2{font-size:2.1rem;} }
+  .lead-copy p{color:#C7CEE0; margin-bottom:22px; max-width:48ch;}
+  .lead-copy .contact-alt{display:flex; flex-direction:column; gap:10px; font-size:.9rem; color:#AEB6CB;}
+  .lead-copy .contact-alt a{color:var(--retis-gold);}
+
+  .lead-form{background:#fff; border-radius:var(--radius-m); padding:32px; color:var(--retis-ink);}
+  .form-grid{display:grid; grid-template-columns:1fr; gap:18px;} @media (min-width:640px){ .form-grid{grid-template-columns:1fr 1fr;} }
+  .form-grid .full{grid-column:1 / -1;}
+  .consent-row{display:flex; align-items:flex-start; gap:10px; font-size:.82rem; color:var(--retis-slate);}
+  .consent-row input{width:auto; margin-top:3px;}
+  .form-note{font-size:.78rem; color:var(--retis-slate); margin-top:16px;}
+
+  footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
+  .footer-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; font-size:.8rem; color:#7C86A0;}
+  .footer-bottom a{color:#7C86A0;} .footer-bottom a:hover{color:var(--retis-gold);}
+  .footer-legal{display:flex; gap:18px; flex-wrap:wrap;}
+  .footer-min{display:flex; align-items:center; gap:14px; margin-bottom:32px;}
+  .footer-min img{height:38px; filter:brightness(0) invert(1); opacity:.9;}
+
+  .mobile-cta-bar{position:fixed; bottom:0; left:0; right:0; z-index:150; background:#fff; border-top:1px solid var(--retis-border); display:grid; grid-template-columns:1fr 1fr 1.4fr; box-shadow:0 -8px 24px rgba(10,13,22,.08); transition:transform 200ms ease-out;}
+  @media (min-width:1024px){ .mobile-cta-bar{display:none;} }
+  .mobile-cta-bar.hide{transform:translateY(100%);}
+  .mobile-cta-bar a{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; padding:10px 4px; font-size:.68rem; font-weight:600; text-transform:uppercase; color:var(--retis-navy); border-right:1px solid var(--retis-border);}
+  .mobile-cta-bar a:last-child{border-right:none; background:var(--retis-gold); color:var(--retis-obsidian);}
+  .visually-hidden{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RETIS Systems",
+  "alternateName": "RETIS SYSTEMS",
+  "url": "https://www.retistech.com/",
+  "logo": "https://www.retistech.com/assets/retis-logo.jpg",
+  "description": "RETIS Systems provides cybersecurity risk assessment, security testing, security-by-design software development, digital marketing and cybersecurity training for organisations across Kenya and East Africa.",
+  "telephone": ["+254704293812", "+254101211398"],
+  "email": "info@retistech.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "sameAs": [],
+  "founder": {
+    "@type": "Person",
+    "name": "Morris Mureti",
+    "jobTitle": "Founder & CEO",
+    "url": "https://www.retistech.com/about/leadership/"
+  }
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="/" class="logo-link" aria-label="RETIS Systems home">
+      <img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo">
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-trigger" href="/cybersecurity-solutions/">Cybersecurity</a>
+      <a class="nav-trigger" href="/secure-software-development/">Security by Design</a>
+      <a class="nav-trigger" href="/cybersecurity-training-kenya/">Training</a>
+      <a class="nav-trigger" href="/digital-marketing-kenya/">Digital Growth</a>
+      <a class="nav-trigger" href="/industries/">Industries</a>
+      <a class="nav-trigger" href="/insights/">Insights</a>
+    </nav>
+    <div class="header-cta">
+      <a href="/contact/" class="nav-trigger" style="font-size:.85rem;">Contact</a>
+      <a href="#briefing" class="btn btn-primary">Request a Briefing</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer" style="position:fixed; inset:0; background:#fff; z-index:200; padding:20px; overflow-y:auto; transform:translateX(100%); transition:transform 220ms ease-out;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+    <span style="font-family:var(--font-mono); font-weight:600; color:var(--retis-navy);">Menu</span>
+    <button id="drawerClose" aria-label="Close menu" style="background:none; border:none; font-size:1.6rem; color:var(--retis-navy);">&times;</button>
+  </div>
+  <nav style="display:flex; flex-direction:column;">
+    <a href="/cybersecurity-solutions/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Cybersecurity</a>
+    <a href="/finsec-360/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">FINSEC 360™</a>
+    <a href="/cyberguard/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">CyberGuard™</a>
+    <a href="/secure-software-development/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Security by Design</a>
+    <a href="/cybersecurity-training-kenya/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Training</a>
+    <a href="/insights/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Insights</a>
+  </nav>
+  <div style="margin-top:20px;"><a href="#briefing" class="btn btn-primary btn-block">Request a Briefing</a></div>
+</div>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="wrap">
+    <a href="/">Home</a><span class="sep">/</span>
+    <a href="/cybersecurity-solutions/">Cybersecurity</a><span class="sep">/</span>
+    <span style="color:var(--retis-navy); font-weight:600;">FINSEC 360™</span>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">For Banks · SACCOs · Fintechs · PSPs</span>
+        <h1>FINSEC 360™: the cyber risk assessment built for how Kenyan financial institutions actually operate.</h1>
+        <p class="lede">A structured, ten-domain assessment of your governance, transactions, third-party exposure and technical controls — scored, prioritised, and delivered by a team that understands financial-sector risk, not a generic enterprise checklist.</p>
+        <div class="hero-ctas on-dark">
+          <a href="#briefing" class="btn btn-primary">Request a FINSEC 360™ Briefing</a>
+          <a href="tel:+254704293812" class="btn btn-secondary">Call 0704 293 812</a>
+        </div>
+        <div class="segment-chips">
+          <span class="segment-chip">Banking</span>
+          <span class="segment-chip">SACCOs</span>
+          <span class="segment-chip">Fintech</span>
+          <span class="segment-chip">PSPs</span>
+          <span class="segment-chip">Insurance</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>FINSEC 360™ is not:</h3>
+        <ul>
+          <li>A statutory audit or certification</li>
+          <li>An unauthorised or surprise security test</li>
+          <li>A generic, non-sector-specific checklist</li>
+          <li>A one-off report with no follow-through</li>
+        </ul>
+        <h3 style="margin-top:22px;">FINSEC 360™ is:</h3>
+        <ul>
+          <li>A scoped, authorised risk and resilience assessment</li>
+          <li>Built around ten domains specific to financial risk</li>
+          <li>Delivered with a prioritised remediation roadmap</li>
+          <li>A natural first step toward CyberGuard™ ongoing advisory</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">Who FINSEC 360™ Is For</span>
+        <h2>Built for institutions where cyber risk is financial risk</h2>
+        <p>Whether you're a licensed bank managing regulatory expectations, a SACCO board asking hard questions, or a fintech preparing for investor or partner due diligence — FINSEC 360™ is scoped to your actual risk profile, not a one-size-fits-all enterprise template.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEN DOMAINS -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Assessment</span>
+        <h2>Ten domains, one prioritised score</h2>
+        <p>Every FINSEC 360™ engagement assesses the same ten areas, weighted to your institution's size and risk profile.</p>
+      </div>
+      <div class="domain-grid">
+        <div class="domain"><span class="num">01</span><div class="label">Governance</div><div class="desc">Who owns cyber risk at board and management level, and whether that ownership is documented or assumed.</div></div>
+        <div class="domain"><span class="num">02</span><div class="label">Identity &amp; Access</div><div class="desc">Authentication, privilege management, and access control across systems.</div></div>
+        <div class="domain"><span class="num">03</span><div class="label">Transaction Security</div><div class="desc">Controls protecting payment and transaction flows end to end.</div></div>
+        <div class="domain"><span class="num">04</span><div class="label">Application Security</div><div class="desc">Security posture of customer-facing and internal applications.</div></div>
+        <div class="domain"><span class="num">05</span><div class="label">Data Security</div><div class="desc">Protection of customer and institutional data, at rest and in transit.</div></div>
+        <div class="domain"><span class="num">06</span><div class="label">Third-Party Risk</div><div class="desc">Exposure introduced through every vendor, integration and partner with access to your systems.</div></div>
+        <div class="domain"><span class="num">07</span><div class="label">Incident Response</div><div class="desc">Readiness to detect, contain and respond to a security incident.</div></div>
+        <div class="domain"><span class="num">08</span><div class="label">Business Continuity</div><div class="desc">Resilience of operations and recovery planning under disruption.</div></div>
+        <div class="domain"><span class="num">09</span><div class="label">Vulnerability Management</div><div class="desc">Processes for identifying and remediating technical weaknesses.</div></div>
+        <div class="domain"><span class="num">10</span><div class="label">Security Monitoring</div><div class="desc">Whether you'd actually notice abnormal activity before it became an incident.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERABLES -->
+  <section class="deliverables">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">What You Receive</span>
+        <h2>A report your board can act on, not just read</h2>
+        <p>Every FINSEC 360™ engagement ends the same way: not a technical dump, but a set of deliverables built for the people who have to act on them.</p>
+      </div>
+      <div class="deliv-grid">
+        <div class="deliv-card"><span class="mark">1</span><h3>Scored Risk Profile</h3><p>A quantified view of risk across all ten domains, benchmarked against your institution's context.</p></div>
+        <div class="deliv-card"><span class="mark">2</span><h3>Prioritised Findings Report</h3><p>Clear findings ranked by severity and business impact — not a raw dump of technical output.</p></div>
+        <div class="deliv-card"><span class="mark">3</span><h3>Remediation Roadmap</h3><p>A practical, sequenced plan for closing the highest-priority gaps first.</p></div>
+        <div class="deliv-card"><span class="mark">4</span><h3>Executive Briefing</h3><p>A board- and executive-ready summary, presented in plain language.</p></div>
+        <div class="deliv-card"><span class="mark">5</span><h3>Risk Register Input</h3><p>Findings structured to feed directly into your existing risk register.</p></div>
+        <div class="deliv-card"><span class="mark">6</span><h3>CyberGuard™ Pathway</h3><p>A clear, optional next step into ongoing advisory once findings are addressed.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENT PROCESS -->
+  <section class="process">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Engagement Process</span>
+        <h2>How a FINSEC 360™ engagement runs</h2>
+        <p>Six defined stages, from a no-obligation briefing call through to a pathway into ongoing advisory — nothing starts without your explicit sign-off on scope.</p>
+      </div>
+      <div class="process-list">
+        <div class="process-item"><span class="process-num">01</span><div><h3>Briefing call</h3><p>A short, no-obligation conversation to understand your institution, systems and primary concerns.</p></div></div>
+        <div class="process-item"><span class="process-num">02</span><div><h3>Scoping &amp; authorisation</h3><p>Defined scope and rules of engagement, agreed and signed off before any assessment activity begins.</p></div></div>
+        <div class="process-item"><span class="process-num">03</span><div><h3>Assessment</h3><p>Structured evaluation across all ten domains, combining documentation review, technical checks and stakeholder interviews.</p></div></div>
+        <div class="process-item"><span class="process-num">04</span><div><h3>Scoring &amp; prioritisation</h3><p>Findings are scored and ranked by business impact, not just technical severity.</p></div></div>
+        <div class="process-item"><span class="process-num">05</span><div><h3>Reporting &amp; executive briefing</h3><p>Delivery of the full report plus a walkthrough session with your leadership team.</p></div></div>
+        <div class="process-item"><span class="process-num">06</span><div><h3>Remediation &amp; CyberGuard™</h3><p>Optional support implementing the roadmap, with a path into ongoing CyberGuard™ advisory.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">Frequently Asked</span>
+        <h2>Questions financial-sector buyers ask us most</h2>
+      </div>
+      <div id="faqList">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What are the ten FINSEC 360™ assessment areas?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Governance, identity and access management, transaction security, application security, data security, third-party risk, incident response, business continuity, vulnerability management, and security monitoring.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is FINSEC 360™ a statutory audit or certification?<span class="plus">+</span></button>
+          <div class="faq-a"><p>No. FINSEC 360™ is a risk and resilience assessment. It is advisory in nature and is clearly distinct from a statutory audit, regulatory approval, or certification process.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does an engagement take?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Timelines depend on institution size and scope, agreed during the scoping call. Most engagements run several weeks from kickoff to final report.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Does any testing happen without our authorisation?<span class="plus">+</span></button>
+          <div class="faq-a"><p>No. All testing activity is conducted only with explicit client authorisation and clearly defined rules of engagement, agreed in advance.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What happens after the assessment?<span class="plus">+</span></button>
+          <div class="faq-a"><p>You receive a scored, prioritised findings report and remediation roadmap. Many institutions then move into CyberGuard™, RETIS's recurring advisory engagement, to manage risk on an ongoing basis.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust">
+    <div class="wrap">
+      <div class="section-head" style="max-width:680px;">
+        <span class="eyebrow">Why Institutions Work With RETIS</span>
+        <h2 style="color:#fff;">Precision, authorisation, and follow-through</h2>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-item"><h3>Clearly scoped language</h3><p>RETIS distinguishes risk assessment, gap assessment, penetration testing and statutory audit — we never claim more than what's actually delivered.</p></div>
+        <div class="trust-item"><h3>Authorised, controlled testing</h3><p>All technical testing is conducted under explicit client authorisation and documented rules of engagement.</p></div>
+        <div class="trust-item"><h3>Built for follow-through</h3><p>FINSEC 360™ ends with a roadmap and a pathway into CyberGuard™ — not a report that gets filed and forgotten.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="lead-section" id="briefing">
+    <div class="wrap lead-grid">
+      <div class="lead-copy">
+        <span class="eyebrow">Request a Briefing</span>
+        <h2>Talk to RETIS about FINSEC 360™</h2>
+        <p>Tell us about your institution and we'll come back with a scoped briefing — no obligation, and no generic sales deck.</p>
+        <div class="contact-alt">
+          <span>Prefer to talk first? <a href="tel:+254704293812">0704 293 812</a> or <a href="tel:+254101211398">0101 211 398</a></span>
+          <span><a href="mailto:info@retistech.com">info@retistech.com</a></span>
+          <span><a href="https://wa.me/254704293812" target="_blank" rel="noopener">Message us on WhatsApp</a></span>
+        </div>
+      </div>
+
+      <form class="lead-form" aria-label="Request a FINSEC 360 briefing">
+        <div class="form-grid">
+          <div><label for="fname">Full name</label><input id="fname" name="fname" type="text" required autocomplete="name"></div>
+          <div><label for="frole">Role / title</label><input id="frole" name="frole" type="text" required autocomplete="organization-title"></div>
+          <div><label for="forg">Organisation</label><input id="forg" name="forg" type="text" required autocomplete="organization"></div>
+          <div>
+            <label for="findustry">Industry</label>
+            <select id="findustry" name="findustry" required>
+              <option value="">Select...</option>
+              <option>Banking</option><option>SACCO</option><option>Fintech</option>
+              <option>Payment Service Provider</option><option>Insurance</option><option>Other financial institution</option>
+            </select>
+          </div>
+          <div><label for="femail">Business email</label><input id="femail" name="femail" type="email" required autocomplete="email"></div>
+          <div><label for="fphone">Phone</label><input id="fphone" name="fphone" type="tel" required autocomplete="tel"></div>
+          <div>
+            <label for="fsize">Company size</label>
+            <select id="fsize" name="fsize">
+              <option value="">Select...</option>
+              <option>Under 50 employees</option><option>50–250 employees</option>
+              <option>250–1000 employees</option><option>1000+ employees</option>
+            </select>
+          </div>
+          <div>
+            <label for="fcontact">Preferred contact method</label>
+            <select id="fcontact" name="fcontact">
+              <option>Email</option><option>Phone call</option><option>WhatsApp</option>
+            </select>
+          </div>
+          <div class="full"><label for="fconcern">Primary cybersecurity concern</label><textarea id="fconcern" name="fconcern" rows="3" placeholder="e.g. preparing for investor due diligence, board asked for a risk review, recent incident, third-party risk..."></textarea></div>
+          <div class="full consent-row">
+            <input type="checkbox" id="fconsent" name="fconsent" required>
+            <label for="fconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request and storing my information in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>
+          </div>
+          <div class="full"><button type="submit" class="btn btn-primary btn-block">Request a FINSEC 360™ Briefing</button></div>
+        </div>
+        <p class="form-note">Submitting this form does not create an engagement. A member of the RETIS team will follow up to scope your briefing.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-min">
+      <img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo">
+      <span style="font-size:.85rem; color:#8A93AC;">Securing Progress, Advancing Together.</span>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RETIS Systems. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-service/">Terms of Service</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/secure-hosting/">Secure Hosting</a>
+        <a href="/">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar" id="mobileCtaBar">
+  <a href="tel:+254704293812">📞 Call</a>
+  <a href="https://wa.me/254704293812" target="_blank" rel="noopener">💬 WhatsApp</a>
+  <a href="#briefing">Request Briefing</a>
+</div>
+
+<script>
+(function(){
+  var mobileToggle = document.getElementById('mobileToggle');
+  var drawer = document.getElementById('mobileDrawer');
+  var drawerClose = document.getElementById('drawerClose');
+  function openDrawer(){ drawer.style.transform='translateX(0)'; mobileToggle.setAttribute('aria-expanded','true'); drawerClose.focus(); document.body.style.overflow='hidden'; }
+  function closeDrawer(){ drawer.style.transform='translateX(100%)'; mobileToggle.setAttribute('aria-expanded','false'); mobileToggle.focus(); document.body.style.overflow=''; }
+  mobileToggle.addEventListener('click', openDrawer);
+  drawerClose.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeDrawer(); });
+
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+      if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+
+  var lastY = window.scrollY;
+  var bar = document.getElementById('mobileCtaBar');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    if(y > lastY && y > 200){ bar.classList.add('hide'); } else { bar.classList.remove('hide'); }
+    lastY = y;
+  }, {passive:true});
+
+  document.querySelector('.lead-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Demo form — no backend connected yet. In production this posts to the RETIS lead-capture endpoint.');
+  });
+})();
+</script>
+
+<script>
+/* RETIS analytics scaffold — replace G-XXXXXXXXXX with the real GA4 Measurement ID before deploy.
+   Google Search Console: add the verification meta tag (see comment in <head>) once the property is created.
+   Named events below match the conversion architecture (Phase 2C, section 2.2 / 2.6). */
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+
+function retisTrack(eventName, params){
+  params = params || {};
+  gtag('event', eventName, params);
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+  // Primary/secondary CTA clicks
+  document.querySelectorAll('.btn-primary').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'primary', cta_label: el.textContent.trim()}); });
+  });
+  document.querySelectorAll('.btn-secondary').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'secondary', cta_label: el.textContent.trim()}); });
+  });
+  // Phone / WhatsApp clicks
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('phone_click', {}); });
+  });
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('whatsapp_click', {}); });
+  });
+  // Lead form submissions (short/standard/enterprise variants share .lead-form)
+  document.querySelectorAll('.lead-form, #leadForm').forEach(function(el){
+    el.addEventListener('submit', function(){ retisTrack('lead_form_submitted', {form_id: el.id || 'lead_form'}); });
+  });
+  var notify = document.querySelector('.notify-form');
+  if(notify){ notify.addEventListener('submit', function(){ retisTrack('research_notify_signup', {}); }); }
+});
+</script>
+</body>
+</html>

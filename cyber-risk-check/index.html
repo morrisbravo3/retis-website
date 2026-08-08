@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<!-- Google Search Console: replace with real verification meta tag once property is created, e.g. <meta name="google-site-verification" content="..."> -->
+
+<title>Free Cyber Risk Check | Preliminary Risk Score | RETIS Systems</title>
+<meta name="description" content="Answer 10 short questions and get a preliminary RETIS Cyber Risk Score in under five minutes. Not a professional audit — a starting point toward a proper security gap assessment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.retistech.com/cyber-risk-check/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RETIS Systems">
+<meta property="og:title" content="Free Cyber Risk Check | RETIS Systems">
+<meta property="og:description" content="A preliminary, educational cyber risk score for your organisation — in under five minutes.">
+<meta property="og:url" content="https://www.retistech.com/cyber-risk-check/">
+<meta property="og:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+<meta name="twitter:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Is the Free Cyber Risk Check a professional security audit?","acceptedAnswer":{"@type":"Answer","text":"No. It is a preliminary, automated indicator based on self-reported answers, intended to give you a starting point. It is not a professional security assessment, audit, or certification, and should not be relied on as one."}},
+    {"@type":"Question","name":"How is my Cyber Risk Score calculated?","acceptedAnswer":{"@type":"Answer","text":"Your answers to questions about policy, access controls, incident readiness and prior incidents are combined into a weighted preliminary score out of 100, grouped into a risk indicator band."}},
+    {"@type":"Question","name":"What happens to the information I submit?","acceptedAnswer":{"@type":"Answer","text":"Your answers and contact details are used by RETIS Systems to follow up about your result and, if you choose, to scope a professional Security Gap Assessment. See the RETIS Privacy Policy for details."}},
+    {"@type":"Question","name":"What should I do after getting my score?","acceptedAnswer":{"@type":"Answer","text":"Whatever your result, the recommended next step is a professional Security Gap Assessment or, for financial institutions, a FINSEC 360 briefing, which examines your organisation in far more depth than a self-reported questionnaire can."}}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --retis-obsidian:#0A0D16; --retis-navy:#142452; --retis-navy-light:#22336E;
+    --retis-gold:#E3A83B; --retis-purple:#5B2E8C; --retis-cloud:#F6F7FA;
+    --retis-ink:#1A1F2E; --retis-slate:#5C6B85; --retis-border:#E3E7EF;
+    --risk-high:#B4423A; --risk-mod:#C98A2E; --risk-low:#3E7A54;
+    --font-display:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+    --font-body:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+    --font-mono:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+    --radius-s:4px; --radius-m:8px; --max:1280px;
+  }
+  *{box-sizing:border-box;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:.001ms!important; transition-duration:.001ms!important;} }
+  body{margin:0; font-family:var(--font-body); color:var(--retis-ink); background:var(--retis-cloud); line-height:1.6; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:var(--font-display); margin:0; font-weight:600; letter-spacing:-0.01em;}
+  p{margin:0;} a{color:inherit;} img{max-width:100%; display:block;}
+  ul{margin:0; padding:0; list-style:none;}
+  button{font-family:inherit; cursor:pointer;}
+  fieldset{border:none; margin:0; padding:0;}
+
+  .skip-link{position:absolute; left:-999px; top:0; background:var(--retis-gold); color:var(--retis-obsidian); padding:12px 20px; z-index:1000; font-weight:600;}
+  .skip-link:focus{left:0;}
+  a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible{outline:2px solid var(--retis-gold); outline-offset:2px; border-radius:2px;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  @media (max-width:640px){ .wrap{padding:0 16px;} }
+  .wrap-narrow{max-width:760px; margin:0 auto; padding:0 24px;}
+  @media (max-width:640px){ .wrap-narrow{padding:0 16px;} }
+
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:14px 28px; border-radius:var(--radius-s); font-weight:600; font-size:.95rem; text-transform:uppercase; letter-spacing:.04em; border:2px solid transparent; transition:background 150ms, color 150ms, border-color 150ms, opacity 150ms;}
+  .btn-primary{background:var(--retis-gold); color:var(--retis-obsidian);} .btn-primary:hover{background:#F0BA55;}
+  .btn-primary:disabled{opacity:.4; cursor:not-allowed;}
+  .btn-secondary{background:transparent; border-color:var(--retis-navy); color:var(--retis-navy);} .btn-secondary:hover{background:rgba(20,36,82,.06);}
+  .btn-block{width:100%;}
+
+  /* Minimal header for the tool flow */
+  .tool-header{background:#fff; border-bottom:1px solid var(--retis-border); padding:16px 0;}
+  .tool-header .row{display:flex; align-items:center; justify-content:space-between;}
+  .tool-header img{height:42px;}
+  .tool-header .exit{font-size:.85rem; color:var(--retis-slate);}
+  .tool-header .exit:hover{color:var(--retis-navy);}
+
+  /* Progress */
+  .progress-track{height:6px; background:var(--retis-border); border-radius:4px; overflow:hidden; margin-bottom:8px;}
+  .progress-fill{height:100%; background:var(--retis-gold); width:0%; transition:width 250ms ease-out;}
+  .progress-label{font-family:var(--font-mono); font-size:.75rem; color:var(--retis-slate); text-transform:uppercase; letter-spacing:.06em;}
+
+  .tool-shell{padding:56px 0 80px;}
+  @media (max-width:640px){ .tool-shell{padding:32px 0 56px;} }
+
+  .card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:40px; box-shadow:0 12px 40px rgba(10,13,22,.06);}
+  @media (max-width:640px){ .card{padding:24px;} }
+
+  /* Intro */
+  .intro-card h1{font-size:1.9rem; margin-bottom:16px;} @media (min-width:768px){ .intro-card h1{font-size:2.3rem;} }
+  .intro-card .lede{color:var(--retis-slate); font-size:1.02rem; max-width:60ch; margin-bottom:24px;}
+  .intro-meta{display:flex; flex-wrap:wrap; gap:20px; margin-bottom:28px;}
+  .intro-meta .item{font-family:var(--font-mono); font-size:.8rem; color:var(--retis-navy); display:flex; align-items:center; gap:8px;}
+  .intro-meta .item::before{content:"—"; color:var(--retis-gold);}
+  .disclaimer-box{background:var(--retis-cloud); border-left:3px solid var(--retis-gold); padding:16px 20px; font-size:.85rem; color:var(--retis-slate); margin-bottom:28px; border-radius:0 var(--radius-s) var(--radius-s) 0;}
+
+  /* Question screens */
+  .question-eyebrow{font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:.06em; display:block; margin-bottom:10px;}
+  .question-title{font-size:1.35rem; margin-bottom:24px; color:var(--retis-navy);}
+  @media (min-width:768px){ .question-title{font-size:1.6rem;} }
+
+  .options{display:flex; flex-direction:column; gap:10px; margin-bottom:32px;}
+  .option{display:block; position:relative;}
+  .option input{position:absolute; opacity:0; width:1px; height:1px;}
+  .option label{
+    display:flex; align-items:center; gap:14px; padding:16px 18px; border:1.5px solid var(--retis-border);
+    border-radius:var(--radius-s); cursor:pointer; font-size:.98rem; color:var(--retis-ink); transition:border-color 150ms, background 150ms;
+  }
+  .option label::before{content:""; width:18px; height:18px; border-radius:50%; border:2px solid var(--retis-slate); flex-shrink:0; transition:border-color 150ms, background 150ms;}
+  .option input:checked + label{border-color:var(--retis-gold); background:rgba(227,168,59,.07);}
+  .option input:checked + label::before{border-color:var(--retis-gold); background:var(--retis-gold); box-shadow:inset 0 0 0 4px #fff;}
+  .option input:focus-visible + label{outline:2px solid var(--retis-gold); outline-offset:2px;}
+  .option label:hover{border-color:var(--retis-navy);}
+
+  .nav-row{display:flex; justify-content:space-between; align-items:center; gap:16px;}
+  .nav-row .spacer{flex-grow:1;}
+
+  textarea, select, input[type=text], input[type=email], input[type=tel]{
+    width:100%; padding:13px 14px; border:1.5px solid var(--retis-border); border-radius:var(--radius-s); font-family:inherit; font-size:.95rem; background:#fff; color:var(--retis-ink);
+  }
+  textarea:focus, select:focus, input:focus{outline:2px solid var(--retis-gold); outline-offset:1px; border-color:var(--retis-gold);}
+  label.field-label{font-size:.85rem; font-weight:600; color:var(--retis-navy); display:block; margin-bottom:6px;}
+
+  /* Result */
+  .result-grid{display:grid; grid-template-columns:1fr; gap:36px; align-items:center;}
+  @media (min-width:768px){ .result-grid{grid-template-columns:.9fr 1.1fr;} }
+  .ring-wrap{position:relative; max-width:260px; margin:0 auto;}
+  .ring-wrap svg{width:100%; height:auto;}
+  .ring-center{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; font-family:var(--font-mono);}
+  .ring-center .score{font-size:2.4rem; font-weight:600; color:var(--retis-navy); line-height:1;}
+  .ring-center .band{font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; margin-top:6px; font-weight:600;}
+  .result-copy h2{font-size:1.5rem; color:var(--retis-navy); margin-bottom:12px;}
+  .result-copy p{color:var(--retis-slate); font-size:.96rem; margin-bottom:8px;}
+  .result-disclaimer{font-size:.78rem; color:var(--retis-slate); background:var(--retis-cloud); border-left:3px solid var(--risk-mod); padding:12px 16px; margin-top:16px; border-radius:0 var(--radius-s) var(--radius-s) 0;}
+
+  .lead-form-block{margin-top:36px; padding-top:32px; border-top:1px solid var(--retis-border);}
+  .form-grid{display:grid; grid-template-columns:1fr; gap:16px;} @media (min-width:640px){ .form-grid{grid-template-columns:1fr 1fr;} }
+  .form-grid .full{grid-column:1/-1;}
+  .consent-row{display:flex; align-items:flex-start; gap:10px; font-size:.82rem; color:var(--retis-slate);}
+  .consent-row input{width:auto; margin-top:3px;}
+
+  /* Thank you */
+  .thanks-card{text-align:center; padding:56px 40px;}
+  .thanks-card .badge{display:inline-block; width:56px; height:56px; border-radius:50%; background:var(--retis-gold); color:var(--retis-obsidian); font-size:1.5rem; line-height:56px; margin-bottom:20px;}
+  .thanks-card h2{font-size:1.6rem; margin-bottom:12px; color:var(--retis-navy);}
+  .thanks-card p{color:var(--retis-slate); max-width:56ch; margin:0 auto 28px;}
+  .next-step-card{background:var(--retis-cloud); border-radius:var(--radius-m); padding:22px; text-align:left; margin-top:24px;}
+  .next-step-card .eyebrow{font-family:var(--font-mono); font-size:.75rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:.06em; display:block; margin-bottom:6px;}
+
+  [data-screen]{display:none;}
+  [data-screen].active{display:block;}
+
+  /* Supporting SEO content below the tool */
+  .support-section{padding:80px 0;} @media (max-width:640px){ .support-section{padding:48px 0;} }
+  .support-grid{display:grid; grid-template-columns:1fr; gap:24px;} @media (min-width:768px){ .support-grid{grid-template-columns:repeat(3,1fr);} }
+  .support-card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:24px;}
+  .support-card h3{font-size:1rem; color:var(--retis-navy); margin-bottom:8px;}
+  .support-card p{font-size:.9rem; color:var(--retis-slate);}
+  .eyebrow{font-family:var(--font-mono); font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--retis-gold); display:block; margin-bottom:12px;}
+  .eyebrow.purple{color:var(--retis-purple);}
+  .section-head{max-width:680px; margin-bottom:36px;}
+  .section-head h2{font-size:1.6rem;} @media (min-width:1024px){ .section-head h2{font-size:2rem;} }
+  .section-head p{color:var(--retis-slate); margin-top:12px; font-size:1rem;}
+
+  .faq{background:#fff;}
+  .faq-item{border-bottom:1px solid var(--retis-border);}
+  .faq-q{width:100%; text-align:left; background:none; border:none; padding:18px 0; display:flex; justify-content:space-between; align-items:center; font-weight:600; font-size:.98rem; color:var(--retis-navy);}
+  .faq-q .plus{font-family:var(--font-mono); color:var(--retis-gold); transition:transform 150ms;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height 200ms ease-out;}
+  .faq-item.open .faq-a{max-height:240px;}
+  .faq-a p{padding:0 0 18px; color:var(--retis-slate); font-size:.92rem; max-width:70ch;}
+
+  footer{background:var(--retis-obsidian); color:#C7CEE0; padding:56px 0 32px;}
+  .footer-min{display:flex; align-items:center; gap:14px; margin-bottom:28px;}
+  .footer-min img{height:36px; filter:brightness(0) invert(1); opacity:.9;}
+  .footer-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; font-size:.8rem; color:#7C86A0;}
+  .footer-bottom a{color:#7C86A0;} .footer-bottom a:hover{color:var(--retis-gold);}
+  .footer-legal{display:flex; gap:18px; flex-wrap:wrap;}
+  .visually-hidden{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RETIS Systems",
+  "alternateName": "RETIS SYSTEMS",
+  "url": "https://www.retistech.com/",
+  "logo": "https://www.retistech.com/assets/retis-logo.jpg",
+  "description": "RETIS Systems provides cybersecurity risk assessment, security testing, security-by-design software development, digital marketing and cybersecurity training for organisations across Kenya and East Africa.",
+  "telephone": ["+254704293812", "+254101211398"],
+  "email": "info@retistech.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "sameAs": [],
+  "founder": {
+    "@type": "Person",
+    "name": "Morris Mureti",
+    "jobTitle": "Founder & CEO",
+    "url": "https://www.retistech.com/about/leadership/"
+  }
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="tool-header">
+  <div class="wrap row">
+    <a href="/" aria-label="RETIS Systems home"><img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo"></a>
+    <a href="/" class="exit">Exit to retistech.com</a>
+  </div>
+</header>
+
+<main id="main" class="tool-shell">
+  <div class="wrap-narrow">
+
+    <!-- SCREEN: INTRO -->
+    <section data-screen="intro" class="active">
+      <div class="card intro-card">
+        <span class="eyebrow">Free Cyber Risk Check</span>
+        <h1>What's your organisation's preliminary cyber risk score?</h1>
+        <p class="lede">Answer 10 short questions about your organisation and get an instant, preliminary RETIS Cyber Risk Score — a starting point for the conversation, not a substitute for a professional assessment.</p>
+        <div class="intro-meta">
+          <span class="item">About 4–5 minutes</span>
+          <span class="item">10 questions</span>
+          <span class="item">Instant preliminary score</span>
+        </div>
+        <div class="disclaimer-box">
+          This tool provides a preliminary, automated, educational indicator based on your self-reported answers. <strong>It is not a professional security audit or certification</strong> and should not be relied on as one. For a full assessment, RETIS recommends a professional Security Gap Assessment.
+        </div>
+        <button class="btn btn-primary" id="startBtn">Start the Free Cyber Risk Check</button>
+      </div>
+    </section>
+
+    <!-- SCREEN: QUIZ -->
+    <section data-screen="quiz">
+      <div style="margin-bottom:20px;">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <span class="progress-label" id="progressLabel" aria-live="polite">Question 1 of 10</span>
+      </div>
+      <div class="card">
+        <form id="quizForm">
+          <div id="questionMount"></div>
+          <div class="nav-row">
+            <button type="button" class="btn btn-secondary" id="backBtn">Back</button>
+            <span class="spacer"></span>
+            <button type="button" class="btn btn-primary" id="nextBtn" disabled>Next</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SCREEN: RESULT -->
+    <section data-screen="result">
+      <div class="card">
+        <div class="result-grid">
+          <div class="ring-wrap">
+            <svg viewBox="0 0 200 200" role="img" aria-labelledby="resultRingTitle">
+              <title id="resultRingTitle">Your preliminary Cyber Risk Score</title>
+              <circle cx="100" cy="100" r="86" fill="none" stroke="var(--retis-border)" stroke-width="12"/>
+              <circle id="scoreArc" cx="100" cy="100" r="86" fill="none" stroke="var(--risk-mod)" stroke-width="12" stroke-linecap="round" stroke-dasharray="540.35" stroke-dashoffset="540.35" transform="rotate(-90 100 100)" style="transition:stroke-dashoffset 700ms ease-out, stroke 300ms;"/>
+            </svg>
+            <div class="ring-center">
+              <span class="score" id="scoreNum">0/100</span>
+              <span class="band" id="scoreBand">—</span>
+            </div>
+          </div>
+          <div class="result-copy">
+            <span class="eyebrow purple">Your Preliminary Result</span>
+            <h2 id="resultHeadline">Here's where your organisation stands</h2>
+            <p id="resultParagraph">Based on your answers, we've calculated a preliminary risk indicator.</p>
+            <p id="resultParagraph2"></p>
+            <div class="result-disclaimer">This is a preliminary, automated indicator based on self-reported answers. It is not a professional security assessment and should not be relied on as one.</div>
+          </div>
+        </div>
+
+        <div class="lead-form-block" id="leadFormBlock">
+          <h2 style="font-size:1.3rem; color:var(--retis-navy); margin-bottom:8px;">Request a Professional Security Gap Assessment</h2>
+          <p style="color:var(--retis-slate); font-size:.92rem; margin-bottom:24px;">Get a proper, professional assessment based on this preliminary result — we'll follow up to scope it with you.</p>
+          <form id="leadForm">
+            <div class="form-grid">
+              <div><label class="field-label" for="lname">Full name</label><input id="lname" type="text" required autocomplete="name"></div>
+              <div><label class="field-label" for="lorg">Organisation</label><input id="lorg" type="text" required autocomplete="organization"></div>
+              <div><label class="field-label" for="lemail">Business email</label><input id="lemail" type="email" required autocomplete="email"></div>
+              <div><label class="field-label" for="lphone">Phone</label><input id="lphone" type="tel" required autocomplete="tel"></div>
+              <div class="full consent-row">
+                <input type="checkbox" id="lconsent" required>
+                <label for="lconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this result and my organisation's cyber risk, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>
+              </div>
+              <div class="full"><button type="submit" class="btn btn-primary btn-block">Request a Professional Security Gap Assessment</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN: THANK YOU -->
+    <section data-screen="thanks">
+      <div class="card thanks-card">
+        <span class="badge">✓</span>
+        <h2>Thank you — your result and request have been received</h2>
+        <p>A member of the RETIS team will follow up within two business days to discuss your result and scope a professional assessment. In the meantime, here's the recommended next step for your organisation:</p>
+        <div class="next-step-card" id="nextStepCard">
+          <span class="eyebrow">Recommended Next Step</span>
+          <p id="nextStepText" style="color:var(--retis-ink); font-size:.98rem;"></p>
+          <div style="margin-top:14px;"><a href="#" id="nextStepLink" class="btn btn-primary">Learn more</a></div>
+        </div>
+        <div style="margin-top:24px;"><a href="/" class="btn btn-secondary">Back to RETIS Systems</a></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- SUPPORTING SEO CONTENT -->
+<section class="support-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow purple">How This Tool Works</span>
+      <h2>Why start with the Free Cyber Risk Check</h2>
+      <p>Most organisations don't know where to start with cybersecurity. This tool gives you a preliminary, educational read on your risk profile in minutes, so your next conversation — whether with RETIS or internally — starts from a clearer picture.</p>
+    </div>
+    <div class="support-grid">
+      <div class="support-card">
+        <h3>It's preliminary, on purpose</h3>
+        <p>Self-reported answers can't replace a technical assessment. The score is designed to start a conversation, not end one.</p>
+      </div>
+      <div class="support-card">
+        <h3>It's built for Kenyan organisations</h3>
+        <p>Questions reflect the risk patterns RETIS sees across Kenyan banks, SACCOs, fintechs and enterprises — not a generic global template.</p>
+      </div>
+      <div class="support-card">
+        <h3>It leads somewhere useful</h3>
+        <p>Every result points toward a concrete next step — a professional Security Gap Assessment, or FINSEC 360™ for financial institutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow purple">Frequently Asked</span>
+      <h2>Questions about the Free Cyber Risk Check</h2>
+    </div>
+    <div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is this a professional security audit?<span class="plus">+</span></button>
+        <div class="faq-a"><p>No. It is a preliminary, automated indicator based on self-reported answers, intended to give you a starting point. It is not a professional security assessment, audit, or certification, and should not be relied on as one.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How is my Cyber Risk Score calculated?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Your answers to questions about policy, access controls, incident readiness and prior incidents are combined into a weighted preliminary score out of 100, grouped into a risk indicator band.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What happens to the information I submit?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Your answers and contact details are used by RETIS Systems to follow up about your result and, if you choose, to scope a professional Security Gap Assessment. See the RETIS Privacy Policy for details.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What should I do after getting my score?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Whatever your result, the recommended next step is a professional Security Gap Assessment or, for financial institutions, a FINSEC 360™ briefing, which examines your organisation in far more depth than a self-reported questionnaire can.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-min">
+      <img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo">
+      <span style="font-size:.85rem; color:#8A93AC;">Securing Progress, Advancing Together.</span><div style="font-size:.8rem; color:#8A93AC; margin-top:6px;"><a href="tel:+254704293812" style="color:#8A93AC;">0704 293 812</a> · <a href="mailto:info@retistech.com" style="color:#8A93AC;">info@retistech.com</a> · Nairobi, Kenya</div><div style="font-size:.8rem; color:#8A93AC; margin-top:6px;"><a href="tel:+254704293812" style="color:#8A93AC;">0704 293 812</a> · <a href="mailto:info@retistech.com" style="color:#8A93AC;">info@retistech.com</a> · Nairobi, Kenya</div><div style="font-size:.8rem; color:#8A93AC; margin-top:6px;"><a href="tel:+254704293812" style="color:#8A93AC;">0704 293 812</a> · <a href="mailto:info@retistech.com" style="color:#8A93AC;">info@retistech.com</a> · Nairobi, Kenya</div><div style="font-size:.8rem; color:#8A93AC; margin-top:6px;"><a href="tel:+254704293812" style="color:#8A93AC;">0704 293 812</a> · <a href="mailto:info@retistech.com" style="color:#8A93AC;">info@retistech.com</a> · Nairobi, Kenya</div><div style="font-size:.8rem; color:#8A93AC; margin-top:6px;"><a href="tel:+254704293812" style="color:#8A93AC;">0704 293 812</a> · <a href="mailto:info@retistech.com" style="color:#8A93AC;">info@retistech.com</a> · Nairobi, Kenya</div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RETIS Systems. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/security-gap-assessment/">Security Gap Assessment</a>
+        <a href="/finsec-360/">FINSEC 360™</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/secure-hosting/">Secure Hosting</a>
+        <a href="/">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // ---- Question definitions ----
+  var questions = [
+    { id:"sector", eyebrow:"Question 1 of 10", title:"Which sector best describes your organisation?",
+      options:["Banking","SACCO","Fintech","Payment Service Provider","Insurance","Healthcare","Education","Public Sector","General Enterprise","SME"], score:false },
+    { id:"size", eyebrow:"Question 2 of 10", title:"Approximately how many employees does your organisation have?",
+      options:["Under 50","50–250","250–1000","1000+"], score:false },
+    { id:"policy", eyebrow:"Question 3 of 10", title:"Does your organisation have a documented cybersecurity policy?",
+      options:["Yes","No","Not sure"], score:true, weights:{"Yes":10,"No":0,"Not sure":3} },
+    { id:"lastAssessment", eyebrow:"Question 4 of 10", title:"When was your last formal cybersecurity risk or gap assessment?",
+      options:["Within 12 months","1–2 years ago","Over 2 years ago","Never"], score:true, weights:{"Within 12 months":15,"1–2 years ago":8,"Over 2 years ago":3,"Never":0} },
+    { id:"mfa", eyebrow:"Question 5 of 10", title:"Does your organisation use multi-factor authentication for critical systems?",
+      options:["Yes, everywhere","Partially","No","Not sure"], score:true, weights:{"Yes, everywhere":15,"Partially":7,"No":0,"Not sure":3} },
+    { id:"irPlan", eyebrow:"Question 6 of 10", title:"Do you have a documented incident response plan?",
+      options:["Yes","No","Not sure"], score:true, weights:{"Yes":12,"No":0,"Not sure":3} },
+    { id:"dataStorage", eyebrow:"Question 7 of 10", title:"How is your customer or transaction data primarily stored?",
+      options:["On-premise","Cloud","Hybrid","Not sure"], score:false },
+    { id:"thirdParty", eyebrow:"Question 8 of 10", title:"Do third parties (vendors, contractors, integrations) have access to your systems or data?",
+      options:["Yes","No","Not sure"], score:true, weights:{"Yes":5,"No":10,"Not sure":3} },
+    { id:"incident", eyebrow:"Question 9 of 10", title:"Has your organisation experienced a suspected security incident in the past 12 months?",
+      options:["Yes","No","Not sure"], score:true, weights:{"Yes":0,"No":15,"Not sure":5} },
+    { id:"concern", eyebrow:"Question 10 of 10", title:"What is your primary cybersecurity concern right now?",
+      options:["Data breach","Regulatory / compliance pressure","Third-party risk","Don't know where to start","Other"], score:false }
+  ];
+  var MAX_SCORE = 10+15+15+12+10+15; // 77
+
+  var answers = {};
+  var current = 0;
+
+  var screens = document.querySelectorAll('[data-screen]');
+  function showScreen(name){
+    screens.forEach(function(s){ s.classList.toggle('active', s.dataset.screen === name); });
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  document.getElementById('startBtn').addEventListener('click', function(){
+    current = 0; renderQuestion(); showScreen('quiz');
+  });
+
+  var mount = document.getElementById('questionMount');
+  var nextBtn = document.getElementById('nextBtn');
+  var backBtn = document.getElementById('backBtn');
+  var progressFill = document.getElementById('progressFill');
+  var progressLabel = document.getElementById('progressLabel');
+
+  function renderQuestion(){
+    var q = questions[current];
+    progressFill.style.width = Math.round(((current)/questions.length)*100) + '%';
+    progressLabel.textContent = 'Question ' + (current+1) + ' of ' + questions.length;
+    backBtn.style.visibility = current === 0 ? 'hidden' : 'visible';
+
+    var html = '<span class="question-eyebrow">' + q.eyebrow + '</span>';
+    html += '<h2 class="question-title">' + q.title + '</h2>';
+    html += '<fieldset class="options"><legend class="visually-hidden">' + q.title + '</legend>';
+    q.options.forEach(function(opt, i){
+      var checked = answers[q.id] === opt ? 'checked' : '';
+      var inputId = q.id + '_' + i;
+      html += '<div class="option"><input type="radio" name="'+q.id+'" id="'+inputId+'" value="'+opt+'" '+checked+'>'
+            + '<label for="'+inputId+'">'+opt+'</label></div>';
+    });
+    html += '</fieldset>';
+    mount.innerHTML = html;
+
+    nextBtn.disabled = !answers[q.id];
+    nextBtn.textContent = current === questions.length - 1 ? 'See my score' : 'Next';
+
+    mount.querySelectorAll('input[type=radio]').forEach(function(input){
+      input.addEventListener('change', function(){
+        answers[q.id] = input.value;
+        nextBtn.disabled = false;
+      });
+    });
+  }
+
+  backBtn.addEventListener('click', function(){
+    if(current > 0){ current--; renderQuestion(); }
+  });
+
+  nextBtn.addEventListener('click', function(){
+    if(!answers[questions[current].id]) return;
+    if(current < questions.length - 1){
+      current++; renderQuestion();
+    } else {
+      progressFill.style.width = '100%';
+      computeAndShowResult();
+    }
+  });
+
+  function computeAndShowResult(){
+    var raw = 0;
+    questions.forEach(function(q){
+      if(q.score){ raw += (q.weights[answers[q.id]] || 0); }
+    });
+    var score = Math.round((raw / MAX_SCORE) * 100);
+    var band, color, headline, para;
+    if(score <= 40){
+      band = 'Higher Risk Indicators'; color = 'var(--risk-high)';
+      headline = 'Your answers point to several higher-priority gaps.';
+      para = 'Areas like policy, access control and incident readiness appear to need attention. A professional Security Gap Assessment would give you a clear, prioritised picture.';
+    } else if(score <= 70){
+      band = 'Moderate Risk Indicators'; color = 'var(--risk-mod)';
+      headline = 'Your organisation shows a mixed risk picture.';
+      para = 'Some good practices are in place, alongside some real gaps. A professional assessment would help you prioritise what to fix first.';
+    } else {
+      band = 'Lower Risk Indicators'; color = 'var(--risk-low)';
+      headline = 'Your answers suggest a relatively stronger starting position.';
+      para = 'That said, self-reported answers can miss real technical exposure — a professional assessment is still the only way to know for certain.';
+    }
+
+    document.getElementById('scoreNum').textContent = score + '/100';
+    document.getElementById('scoreBand').textContent = band;
+    document.getElementById('scoreBand').style.color = color;
+    document.getElementById('resultHeadline').textContent = headline;
+    document.getElementById('resultParagraph').textContent = para;
+
+    var arc = document.getElementById('scoreArc');
+    var circumference = 540.35;
+    arc.style.stroke = color;
+    requestAnimationFrame(function(){
+      arc.style.strokeDashoffset = circumference * (1 - score/100);
+    });
+
+    showScreen('result');
+  }
+
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    // In production: POST answers + contact fields to the RETIS lead-capture endpoint.
+    var sector = answers.sector || 'General Enterprise';
+    var financial = ['Banking','SACCO','Fintech','Payment Service Provider','Insurance'].indexOf(sector) !== -1;
+    var nextText = document.getElementById('nextStepText');
+    var nextLink = document.getElementById('nextStepLink');
+    if(financial){
+      nextText.textContent = 'As a ' + sector + ', RETIS recommends a FINSEC 360™ briefing — a structured assessment across ten domains built specifically for financial institutions.';
+      nextLink.textContent = 'Explore FINSEC 360™';
+      nextLink.href = '/finsec-360/';
+    } else {
+      nextText.textContent = 'RETIS recommends a professional Security Gap Assessment to get a clear, prioritised view of where to act first.';
+      nextLink.textContent = 'Explore Security Gap Assessment';
+      nextLink.href = '/security-gap-assessment/';
+    }
+    showScreen('thanks');
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+      if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+})();
+</script>
+
+<script>
+/* RETIS analytics scaffold — replace G-XXXXXXXXXX with the real GA4 Measurement ID before deploy.
+   Google Search Console: add the verification meta tag (see comment in <head>) once the property is created.
+   Named events below match the conversion architecture (Phase 2C, section 2.2 / 2.6). */
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+
+function retisTrack(eventName, params){
+  params = params || {};
+  gtag('event', eventName, params);
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+  // Primary/secondary CTA clicks
+  document.querySelectorAll('.btn-primary').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'primary', cta_label: el.textContent.trim()}); });
+  });
+  document.querySelectorAll('.btn-secondary').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'secondary', cta_label: el.textContent.trim()}); });
+  });
+  // Phone / WhatsApp clicks
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('phone_click', {}); });
+  });
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('whatsapp_click', {}); });
+  });
+  // Lead form submissions (short/standard/enterprise variants share .lead-form)
+  document.querySelectorAll('.lead-form, #leadForm').forEach(function(el){
+    el.addEventListener('submit', function(){ retisTrack('lead_form_submitted', {form_id: el.id || 'lead_form'}); });
+  });
+  var notify = document.querySelector('.notify-form');
+  if(notify){ notify.addEventListener('submit', function(){ retisTrack('research_notify_signup', {}); }); }
+});
+</script>
+</body>
+</html>

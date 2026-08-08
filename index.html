@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<!-- Google Search Console: replace with real verification meta tag once property is created, e.g. <meta name="google-site-verification" content="..."> -->
+
+<title>RETIS Systems | Cybersecurity Risk Assessment &amp; Digital Trust in Kenya</title>
+<meta name="description" content="RETIS Systems helps Kenyan banks, SACCOs, fintechs and enterprises assess cyber risk, close security gaps, build securely and grow with confidence. Request a cyber risk assessment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.retistech.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RETIS Systems">
+<meta property="og:title" content="RETIS Systems | Cybersecurity Risk Assessment &amp; Digital Trust in Kenya">
+<meta property="og:description" content="Cyber risk assessment, security testing, compliance readiness, secure software development and cyber resilience advisory for organisations operating in Kenya and across Africa.">
+<meta property="og:url" content="https://www.retistech.com/">
+<meta property="og:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+<meta name="twitter:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "RETIS Systems",
+  "alternateName": "RETIS SYSTEMS",
+  "url": "https://www.retistech.com/",
+  "description": "RETIS Systems provides cybersecurity risk assessment, security testing, security-by-design software development, digital marketing and cybersecurity training for organisations across Kenya and East Africa.",
+  "telephone": ["+254704293812", "+254101211398"],
+  "email": "info@retistech.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "areaServed": ["Kenya", "East Africa"],
+  "slogan": "Securing Progress, Advancing Together"
+}
+</script>
+
+<style>
+  :root{
+    --retis-obsidian:#0A0D16;
+    --retis-navy:#142452;
+    --retis-navy-light:#22336E;
+    --retis-gold:#E3A83B;
+    --retis-purple:#5B2E8C;
+    --retis-cloud:#F6F7FA;
+    --retis-ink:#1A1F2E;
+    --retis-slate:#5C6B85;
+    --retis-border:#E3E7EF;
+    --risk-mod:#C98A2E;
+    --font-display:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+    --font-body:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+    --font-mono:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+    --radius-s:4px;
+    --radius-m:8px;
+    --max:1280px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--retis-ink);
+    background:var(--retis-cloud);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,h4{font-family:var(--font-display); margin:0; font-weight:600; letter-spacing:-0.01em;}
+  p{margin:0;}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  ul{margin:0; padding:0; list-style:none;}
+  button{font-family:inherit; cursor:pointer;}
+
+  .skip-link{
+    position:absolute; left:-999px; top:0; background:var(--retis-gold); color:var(--retis-obsidian);
+    padding:12px 20px; z-index:1000; font-weight:600; border-radius:0 0 var(--radius-s) 0;
+  }
+  .skip-link:focus{left:0;}
+
+  a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible{
+    outline:2px solid var(--retis-gold); outline-offset:2px; border-radius:2px;
+  }
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  @media (max-width:640px){ .wrap{padding:0 16px;} }
+
+  section{padding:96px 0;}
+  @media (max-width:640px){ section{padding:48px 0;} }
+
+  .eyebrow{
+    font-family:var(--font-mono); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--retis-gold); display:block; margin-bottom:12px;
+  }
+  .eyebrow.purple{color:var(--retis-purple);}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:14px 28px; border-radius:var(--radius-s); font-weight:600; font-size:0.95rem;
+    text-transform:uppercase; letter-spacing:0.04em; border:2px solid transparent;
+    transition:background 150ms ease-out, color 150ms ease-out, border-color 150ms ease-out;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--retis-gold); color:var(--retis-obsidian);}
+  .btn-primary:hover{background:#F0BA55;}
+  .btn-secondary{background:transparent; border-color:currentColor; color:var(--retis-navy);}
+  .btn-secondary:hover{background:rgba(20,36,82,0.06);}
+  .on-dark .btn-secondary{color:#fff;}
+  .on-dark .btn-secondary:hover{background:rgba(255,255,255,0.08);}
+  .btn-block{width:100%;}
+
+  /* ===== Header ===== */
+  header.site-header{
+    position:sticky; top:0; z-index:100; background:rgba(246,247,250,0.92);
+    backdrop-filter:blur(8px); border-bottom:1px solid var(--retis-border);
+  }
+  .header-row{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+  .logo-link{display:flex; align-items:center; gap:10px;}
+  .logo-link img{height:52px; width:auto;}
+  nav.primary-nav{display:none;}
+  @media (min-width:1024px){
+    nav.primary-nav{display:flex; align-items:center; gap:4px;}
+  }
+  .nav-item{position:relative;}
+  .nav-trigger{
+    background:none; border:none; padding:12px 14px; font-size:0.95rem; font-weight:500;
+    color:var(--retis-navy); display:flex; align-items:center; gap:6px; border-radius:var(--radius-s);
+  }
+  .nav-trigger:hover, .nav-trigger[aria-expanded="true"]{background:rgba(20,36,82,0.06);}
+  .caret{width:8px; height:8px; border-right:2px solid currentColor; border-bottom:2px solid currentColor; transform:rotate(45deg); margin-top:-4px;}
+
+  .mega{
+    position:absolute; top:calc(100% + 8px); left:0; min-width:600px; background:#fff;
+    border:1px solid var(--retis-border); border-radius:var(--radius-m); box-shadow:0 16px 40px rgba(10,13,22,0.14);
+    padding:28px; display:none; grid-template-columns:1.2fr 1fr; gap:32px;
+  }
+  .nav-item.open .mega{display:grid;}
+  .mega-links li{margin-bottom:4px;}
+  .mega-links a{display:block; padding:8px 10px; border-radius:var(--radius-s); color:var(--retis-ink); font-size:0.9rem;}
+  .mega-links a:hover{background:var(--retis-cloud); color:var(--retis-navy);}
+  .mega-featured{border-left:1px solid var(--retis-border); padding-left:28px;}
+  .featured-tile{display:block; padding:14px; border-radius:var(--radius-s); background:var(--retis-cloud); margin-bottom:12px;}
+  .featured-tile:last-child{margin-bottom:0;}
+  .featured-tile .tile-name{font-family:var(--font-mono); font-size:0.75rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:0.06em; display:block; margin-bottom:4px;}
+  .featured-tile .tile-desc{font-size:0.85rem; color:var(--retis-slate);}
+
+  .header-cta{display:none;}
+  @media (min-width:1024px){ .header-cta{display:flex; align-items:center; gap:12px;} }
+  .header-cta .btn{padding:11px 20px; font-size:0.82rem;}
+
+  .mobile-toggle{
+    display:flex; background:none; border:1px solid var(--retis-border); border-radius:var(--radius-s);
+    padding:10px 12px; align-items:center; justify-content:center;
+  }
+  @media (min-width:1024px){ .mobile-toggle{display:none;} }
+  .mobile-toggle span, .mobile-toggle span::before, .mobile-toggle span::after{
+    display:block; width:20px; height:2px; background:var(--retis-navy); position:relative; transition:transform 150ms;
+  }
+  .mobile-toggle span::before{content:""; position:absolute; top:-6px;}
+  .mobile-toggle span::after{content:""; position:absolute; top:6px;}
+
+  /* Mobile drawer */
+  .mobile-drawer{
+    position:fixed; inset:0; background:#fff; z-index:200; padding:20px; overflow-y:auto;
+    transform:translateX(100%); transition:transform 220ms ease-out;
+  }
+  .mobile-drawer.open{transform:translateX(0);}
+  .drawer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;}
+  .drawer-close{background:none; border:none; font-size:1.6rem; color:var(--retis-navy); padding:6px;}
+  .drawer-section{border-bottom:1px solid var(--retis-border); padding:14px 0;}
+  .drawer-trigger{width:100%; background:none; border:none; display:flex; justify-content:space-between; align-items:center; font-weight:600; font-size:1.05rem; color:var(--retis-navy); padding:6px 0;}
+  .drawer-panel{display:none; padding:10px 0 4px 12px;}
+  .drawer-section.open .drawer-panel{display:block;}
+  .drawer-panel a{display:block; padding:8px 0; color:var(--retis-ink); font-size:0.95rem;}
+  .drawer-cta{margin-top:20px;}
+
+  /* ===== Hero ===== */
+  .hero{
+    background:radial-gradient(ellipse at 70% 20%, var(--retis-navy) 0%, var(--retis-obsidian) 60%);
+    color:#fff; position:relative; overflow:hidden; padding:88px 0 100px;
+  }
+  .hero-grid{display:grid; grid-template-columns:1fr; gap:48px; align-items:center; position:relative; z-index:2;}
+  @media (min-width:1024px){ .hero-grid{grid-template-columns:1.15fr 0.85fr;} }
+  .hero h1{font-size:2.25rem; line-height:1.12; margin-bottom:20px;}
+  @media (min-width:1024px){ .hero h1{font-size:3.5rem;} }
+  .hero p.lede{font-size:1.05rem; color:#C7CEE0; max-width:52ch; margin-bottom:32px;}
+  .hero-ctas{display:flex; flex-wrap:wrap; gap:14px;}
+  .hero-visual{display:flex; justify-content:center; position:relative;}
+  .ring-wrap{position:relative; width:100%; max-width:360px;}
+  .ring-wrap svg{width:100%; height:auto;}
+  .ring-center{
+    position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; font-family:var(--font-mono);
+  }
+  .ring-center .score{font-size:2.6rem; font-weight:600; color:var(--retis-gold); line-height:1;}
+  .ring-center .band{font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color:#C7CEE0; margin-top:6px;}
+
+  /* Sector strip */
+  .sector-strip{background:#fff; border-top:1px solid var(--retis-border); border-bottom:1px solid var(--retis-border); padding:28px 0;}
+  .sector-list{display:flex; flex-wrap:wrap; justify-content:center; gap:0; align-items:center;}
+  .sector-list li{
+    padding:0 20px; font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.06em;
+    color:var(--retis-slate); text-transform:uppercase; border-right:1px solid var(--retis-border);
+  }
+  .sector-list li:last-child{border-right:none;}
+  @media (max-width:640px){ .sector-list li{padding:6px 12px; border-right:none;} }
+
+  /* Section heading pattern */
+  .section-head{max-width:640px; margin-bottom:48px;}
+  .section-head h2{font-size:1.9rem;}
+  @media (min-width:1024px){ .section-head h2{font-size:2.5rem;} }
+  .section-head p{color:var(--retis-slate); margin-top:14px; font-size:1.02rem;}
+
+  /* Methodology stepper */
+  .methodology{background:var(--retis-cloud);}
+  .stepper{display:grid; grid-template-columns:1fr; gap:2px; background:var(--retis-border); border:1px solid var(--retis-border); border-radius:var(--radius-m); overflow:hidden;}
+  @media (min-width:900px){ .stepper{grid-template-columns:repeat(8,1fr);} }
+  .step{background:#fff; padding:24px 18px; text-align:left;}
+  .step .num{font-family:var(--font-mono); color:var(--retis-gold); font-size:0.85rem; display:block; margin-bottom:8px;}
+  .step .label{font-weight:600; font-size:0.92rem; color:var(--retis-navy);}
+
+  /* Flagship cards */
+  .flagship-grid{display:grid; grid-template-columns:1fr; gap:24px;}
+  @media (min-width:640px){ .flagship-grid{grid-template-columns:1fr 1fr;} }
+  @media (min-width:1024px){ .flagship-grid{grid-template-columns:repeat(4,1fr);} }
+  .flag-card{
+    background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m);
+    padding:28px 24px; display:flex; flex-direction:column; gap:14px; transition:box-shadow 150ms, transform 150ms;
+  }
+  .flag-card:hover{box-shadow:0 12px 32px rgba(10,13,22,0.1); transform:translateY(-2px);}
+  .flag-card .mark{width:40px; height:40px; border-radius:50%; border:2px solid var(--retis-gold); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); color:var(--retis-navy); font-weight:600;}
+  .flag-card h3{font-size:1.1rem; color:var(--retis-navy);}
+  .flag-card p{color:var(--retis-slate); font-size:0.92rem; flex-grow:1;}
+  .flag-card .cta-link{font-family:var(--font-mono); font-size:0.8rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase; letter-spacing:0.04em;}
+  .flag-card .cta-link:hover{text-decoration:underline;}
+
+  /* Risk check banner */
+  .risk-banner{
+    background:var(--retis-obsidian); color:#fff; border-radius:var(--radius-m); padding:56px 40px;
+    display:grid; grid-template-columns:1fr; gap:32px; align-items:center;
+  }
+  @media (min-width:900px){ .risk-banner{grid-template-columns:1.3fr 0.7fr; padding:64px 56px;} }
+  .risk-banner h2{font-size:1.9rem; margin-bottom:14px;}
+  .risk-banner p{color:#C7CEE0; max-width:50ch; margin-bottom:22px;}
+  .example-score{
+    background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:var(--radius-m);
+    padding:24px; text-align:center;
+  }
+  .example-score .eyebrow{color:var(--retis-gold);}
+  .example-score .num{font-family:var(--font-mono); font-size:2.8rem; font-weight:600; color:#fff;}
+  .example-score .band-tag{
+    display:inline-block; margin-top:10px; font-family:var(--font-mono); font-size:0.75rem;
+    text-transform:uppercase; letter-spacing:0.06em; color:var(--risk-mod); border:1px solid var(--risk-mod);
+    padding:4px 10px; border-radius:20px;
+  }
+  .example-score .disclaimer{font-size:0.75rem; color:#8A93AC; margin-top:14px;}
+
+  /* Insights preview */
+  .insights-grid{display:grid; grid-template-columns:1fr; gap:24px;}
+  @media (min-width:768px){ .insights-grid{grid-template-columns:repeat(3,1fr);} }
+  .insight-card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:24px; display:flex; flex-direction:column; gap:12px;}
+  .insight-card .tag{font-family:var(--font-mono); font-size:0.72rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:0.06em;}
+  .insight-card h3{font-size:1.05rem; line-height:1.35; color:var(--retis-navy);}
+  .insight-card .meta{font-family:var(--font-mono); font-size:0.75rem; color:var(--retis-slate); margin-top:auto;}
+
+  /* Trust strip */
+  .trust-strip{background:#fff; border-top:1px solid var(--retis-border);}
+  .trust-inner{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px;}
+  .trust-inner p{max-width:60ch; color:var(--retis-slate); font-size:0.95rem;}
+
+  /* CTA banner pre-footer */
+  .cta-banner{background:var(--retis-navy); color:#fff; text-align:center;}
+  .cta-banner h2{font-size:1.8rem; margin-bottom:16px;}
+  .cta-banner p{color:#C7CEE0; max-width:56ch; margin:0 auto 28px;}
+  .cta-banner .hero-ctas{justify-content:center;}
+
+  /* Footer */
+  footer{background:var(--retis-obsidian); color:#C7CEE0; padding:72px 0 32px;}
+  .footer-top{display:grid; grid-template-columns:1fr; gap:40px; padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,0.1);}
+  @media (min-width:768px){ .footer-top{grid-template-columns:1.4fr repeat(4,1fr);} }
+  .footer-brand img{height:44px; margin-bottom:16px;}
+  .footer-brand p{font-size:0.85rem; color:#8A93AC; max-width:32ch;}
+  .footer-col h4{font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:#fff; margin-bottom:16px;}
+  .footer-col li{margin-bottom:10px;}
+  .footer-col a{font-size:0.88rem; color:#AEB6CB;}
+  .footer-col a:hover{color:var(--retis-gold);}
+  .footer-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; padding-top:28px; font-size:0.8rem; color:#7C86A0;}
+  .footer-bottom a{color:#7C86A0;}
+  .footer-bottom a:hover{color:var(--retis-gold);}
+  .footer-legal{display:flex; gap:18px; flex-wrap:wrap;}
+
+  /* Sticky mobile CTA bar */
+  .mobile-cta-bar{
+    position:fixed; bottom:0; left:0; right:0; z-index:150; background:#fff; border-top:1px solid var(--retis-border);
+    display:grid; grid-template-columns:1fr 1fr 1.4fr; box-shadow:0 -8px 24px rgba(10,13,22,0.08);
+    transition:transform 200ms ease-out;
+  }
+  @media (min-width:1024px){ .mobile-cta-bar{display:none;} }
+  .mobile-cta-bar.hide{transform:translateY(100%);}
+  .mobile-cta-bar a{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px;
+    padding:10px 4px; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.02em; color:var(--retis-navy);
+    border-right:1px solid var(--retis-border);
+  }
+  .mobile-cta-bar a:last-child{border-right:none; background:var(--retis-gold); color:var(--retis-obsidian);}
+  body{padding-bottom:64px;}
+  @media (min-width:1024px){ body{padding-bottom:0;} }
+
+  .visually-hidden{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RETIS Systems",
+  "alternateName": "RETIS SYSTEMS",
+  "url": "https://www.retistech.com/",
+  "logo": "https://www.retistech.com/assets/retis-logo.jpg",
+  "description": "RETIS Systems provides cybersecurity risk assessment, security testing, security-by-design software development, digital marketing and cybersecurity training for organisations across Kenya and East Africa.",
+  "telephone": ["+254704293812", "+254101211398"],
+  "email": "info@retistech.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "sameAs": [],
+  "founder": {
+    "@type": "Person",
+    "name": "Morris Mureti",
+    "jobTitle": "Founder & CEO",
+    "url": "https://www.retistech.com/about/leadership/"
+  }
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="/" class="logo-link" aria-label="RETIS Systems home">
+      <img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo">
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false" aria-controls="mega-cyber">Cybersecurity <span class="caret"></span></button>
+        <div class="mega" id="mega-cyber">
+          <ul class="mega-links">
+            <li><a href="/cybersecurity-risk-assessment-kenya/">Risk Assessment</a></li>
+            <li><a href="/security-gap-assessment/">Security Gap Assessment</a></li>
+            <li><a href="/vulnerability-assessment-kenya/">Vulnerability Assessment</a></li>
+            <li><a href="/penetration-testing-kenya/">Penetration Testing</a></li>
+            <li><a href="/cybersecurity-compliance-kenya/">GRC &amp; Compliance Readiness</a></li>
+          </ul>
+          <div class="mega-featured">
+            <a class="featured-tile" href="/finsec-360/">
+              <span class="tile-name">FINSEC 360™</span>
+              <span class="tile-desc">Financial cyber risk &amp; resilience assessment</span>
+            </a>
+            <a class="featured-tile" href="/cyberguard/">
+              <span class="tile-name">CyberGuard™</span>
+              <span class="tile-desc">Recurring cybersecurity risk advisory</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false" aria-controls="mega-secure">Security by Design <span class="caret"></span></button>
+        <div class="mega" id="mega-secure">
+          <ul class="mega-links">
+            <li><a href="/secure-software-development/">Secure Software Development</a></li>
+            <li><a href="/application-security/">Application Security</a></li>
+            <li><a href="/devsecops-consulting/">DevSecOps Consulting</a></li>
+            <li><a href="/cloud-security/">Cloud Security</a></li>
+          </ul>
+          <div class="mega-featured">
+            <a class="featured-tile" href="/securecode/">
+              <span class="tile-name">SecureCode™</span>
+              <span class="tile-desc">Security-by-design software delivery</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false" aria-controls="mega-training">Training <span class="caret"></span></button>
+        <div class="mega" id="mega-training">
+          <ul class="mega-links">
+            <li><a href="/cybersecurity-training-kenya/">Cybersecurity Training</a></li>
+            <li><a href="/cybersecurity-awareness-training/">Awareness Training</a></li>
+            <li><a href="/cyber-academy/">Digital Marketing Training</a></li>
+          </ul>
+          <div class="mega-featured">
+            <a class="featured-tile" href="/cyber-academy/">
+              <span class="tile-name">RETIS Cyber Academy</span>
+              <span class="tile-desc">Cybersecurity &amp; digital skills programmes</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false" aria-controls="mega-digital">Digital Growth <span class="caret"></span></button>
+        <div class="mega" id="mega-digital">
+          <ul class="mega-links">
+            <li><a href="/seo-services-kenya/">SEO Services</a></li>
+            <li><a href="/generative-engine-optimisation/">Generative Engine Optimisation</a></li>
+            <li><a href="/digital-marketing-kenya/">Digital Strategy</a></li>
+          </ul>
+          <div class="mega-featured">
+            <a class="featured-tile" href="/secure-hosting/">
+              <span class="tile-name">RETIS Secure Host™</span>
+              <span class="tile-desc">Secure hosting, business email &amp; managed infrastructure</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a class="nav-trigger" href="/pricing/" style="display:inline-block; text-decoration:none;">Pricing</a>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false" aria-controls="mega-industries">Industries <span class="caret"></span></button>
+        <div class="mega" id="mega-industries">
+          <ul class="mega-links">
+            <li><a href="/industries/banking/">Banking</a></li>
+            <li><a href="/industries/saccos/">SACCOs</a></li>
+            <li><a href="/industries/fintech/">Fintech</a></li>
+            <li><a href="/industries/psps/">PSPs</a></li>
+          </ul>
+          <div class="mega-featured">
+            <span class="tile-name" style="display:block; margin-bottom:8px;">More Industries</span>
+            <a class="featured-tile" href="/industries/insurance/"><span class="tile-desc">Insurance · Healthcare · Education · Enterprise · Public Sector</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a class="nav-trigger" href="/insights/" style="display:inline-block; text-decoration:none;">Insights</a>
+      </div>
+    </nav>
+
+    <div class="header-cta">
+      <a href="/contact/" class="nav-trigger" style="font-size:0.85rem;">Contact</a>
+      <a href="/contact/#assessment" class="btn btn-primary">Request Assessment</a>
+    </div>
+
+    <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open menu">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="drawer-top">
+    <span style="font-family:var(--font-mono); font-weight:600; color:var(--retis-navy);">Menu</span>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+  </div>
+
+  <div class="drawer-section">
+    <button class="drawer-trigger">Cybersecurity <span class="caret"></span></button>
+    <div class="drawer-panel">
+      <a href="/cybersecurity-risk-assessment-kenya/">Risk Assessment</a>
+      <a href="/security-gap-assessment/">Security Gap Assessment</a>
+      <a href="/penetration-testing-kenya/">Penetration Testing</a>
+      <a href="/finsec-360/">FINSEC 360™</a>
+      <a href="/cyberguard/">CyberGuard™</a>
+    </div>
+  </div>
+  <div class="drawer-section">
+    <button class="drawer-trigger">Security by Design <span class="caret"></span></button>
+    <div class="drawer-panel">
+      <a href="/secure-software-development/">Secure Software Development</a>
+      <a href="/securecode/">SecureCode™</a>
+      <a href="/devsecops-consulting/">DevSecOps Consulting</a>
+    </div>
+  </div>
+  <div class="drawer-section">
+    <button class="drawer-trigger">Training <span class="caret"></span></button>
+    <div class="drawer-panel">
+      <a href="/cybersecurity-training-kenya/">Cybersecurity Training</a>
+      <a href="/cyber-academy/">RETIS Cyber Academy</a>
+    </div>
+  </div>
+  <div class="drawer-section">
+    <button class="drawer-trigger">Digital Growth <span class="caret"></span></button>
+    <div class="drawer-panel">
+      <a href="/seo-services-kenya/">SEO Services</a>
+      <a href="/generative-engine-optimisation/">GEO</a>
+      <a href="/secure-hosting/">RETIS Secure Host™</a>
+    </div>
+  </div>
+  <div class="drawer-section">
+    <a href="/pricing/" style="display:block; padding:6px 0; font-weight:600; color:var(--retis-navy);">Pricing</a>
+  </div>
+  <div class="drawer-section">
+    <button class="drawer-trigger">Industries <span class="caret"></span></button>
+    <div class="drawer-panel">
+      <a href="/industries/banking/">Banking</a>
+      <a href="/industries/saccos/">SACCOs</a>
+      <a href="/industries/fintech/">Fintech</a>
+      <a href="/industries/psps/">PSPs</a>
+    </div>
+  </div>
+  <div class="drawer-section">
+    <a href="/insights/" style="display:block; padding:6px 0; font-weight:600; color:var(--retis-navy);">Insights</a>
+  </div>
+  <div class="drawer-section">
+    <a href="/about/" style="display:block; padding:6px 0; font-weight:600; color:var(--retis-navy);">About</a>
+  </div>
+
+  <div class="drawer-cta">
+    <a href="/contact/#assessment" class="btn btn-primary btn-block">Request a Cyber Risk Assessment</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Cyber Resilience · Digital Trust · Business Growth</span>
+        <h1>Secure your business before cyber risk becomes a business crisis.</h1>
+        <p class="lede">Cybersecurity risk assessment, security testing, compliance readiness, secure software development and cyber resilience advisory for organisations operating in Kenya and across Africa.</p>
+        <div class="hero-ctas on-dark">
+          <a href="/contact/#assessment" class="btn btn-primary">Request a Cyber Risk Assessment</a>
+          <a href="/contact/#talk-to-expert" class="btn btn-secondary">Talk to a Cybersecurity Expert</a>
+        </div>
+        <p style="font-family:var(--font-mono); font-size:.78rem; letter-spacing:.04em; text-transform:uppercase; color:#8A93AC; margin-top:28px;">
+          Built for Banking · SACCOs · Fintech · PSPs · SMEs · Enterprise · Public Sector
+        </p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="ring-wrap">
+          <svg viewBox="0 0 200 200" role="img" aria-labelledby="ringTitle">
+            <title id="ringTitle">Illustrative RETIS Cyber Risk Score gauge</title>
+            <circle cx="100" cy="100" r="86" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="10"/>
+            <circle cx="100" cy="100" r="86" fill="none" stroke="#E3A83B" stroke-width="10"
+              stroke-linecap="round" stroke-dasharray="540" stroke-dashoffset="205"
+              transform="rotate(-90 100 100)"/>
+          </svg>
+          <div class="ring-center">
+            <span class="score">62/100</span>
+            <span class="band">Moderate risk · illustrative</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTOR STRIP ===== -->
+  <div class="sector-strip">
+    <div class="wrap">
+      <ul class="sector-list">
+        <li>Banking</li>
+        <li>SACCOs</li>
+        <li>Fintech</li>
+        <li>PSPs</li>
+        <li>Enterprise</li>
+        <li>Public Sector</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== METHODOLOGY ===== -->
+  <section class="methodology">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How RETIS Works</span>
+        <h2>A structured methodology, not a checklist</h2>
+        <p>Every RETIS engagement — whichever service you start with — follows the same eight-stage process, from the first discovery conversation through to ongoing monitoring. Risk gets tracked, not reported once and forgotten.</p>
+      </div>
+      <div class="stepper">
+        <div class="step"><span class="num">01</span><span class="label">Discover</span></div>
+        <div class="step"><span class="num">02</span><span class="label">Assess</span></div>
+        <div class="step"><span class="num">03</span><span class="label">Score</span></div>
+        <div class="step"><span class="num">04</span><span class="label">Prioritise</span></div>
+        <div class="step"><span class="num">05</span><span class="label">Remediate</span></div>
+        <div class="step"><span class="num">06</span><span class="label">Test</span></div>
+        <div class="step"><span class="num">07</span><span class="label">Validate</span></div>
+        <div class="step"><span class="num">08</span><span class="label">Monitor</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLAGSHIP PRODUCTS ===== -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">Flagship Services</span>
+        <h2>Built around how you actually manage risk</h2>
+        <p>Four connected offerings that take an organisation from first assessment to a continuously managed security posture — each one a deliberate next step, not a separate sale.</p>
+      </div>
+      <div class="flagship-grid">
+        <div class="flag-card">
+          <span class="mark">F</span>
+          <h3>FINSEC 360™</h3>
+          <p>A ten-domain cyber risk and resilience assessment purpose-built for banks, SACCOs, fintechs and PSPs — scored, prioritised, and delivered in language your board can act on.</p>
+          <a class="cta-link" href="/finsec-360/">Request a briefing →</a>
+        </div>
+        <div class="flag-card">
+          <span class="mark">C</span>
+          <h3>CyberGuard™</h3>
+          <p>Cybersecurity that doesn't stop the day the report is delivered — a named advisor, monthly reviews, and quarterly executive reporting that keeps risk actively managed.</p>
+          <a class="cta-link" href="/cyberguard/">Discuss CyberGuard →</a>
+        </div>
+        <div class="flag-card">
+          <span class="mark">S</span>
+          <h3>SecureCode™</h3>
+          <p>Software built secure from the first architecture decision, not patched after launch — so protection is part of how the system works, not a bolt-on.</p>
+          <a class="cta-link" href="/securecode/">Explore SecureCode →</a>
+        </div>
+        <div class="flag-card">
+          <span class="mark">A</span>
+          <h3>Cyber Academy</h3>
+          <p>From board-level awareness to hands-on technical training — practical cybersecurity and digital skills, scoped to your team, not delivered as a generic slide deck.</p>
+          <a class="cta-link" href="/cyber-academy/">View programmes →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECURE YOUR DIGITAL INFRASTRUCTURE ===== -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="risk-banner" style="background:var(--retis-navy);">
+        <div>
+          <span class="eyebrow">RETIS Secure Host™</span>
+          <h2>Secure your digital infrastructure</h2>
+          <p>Your website is part of your attack surface. RETIS hosts, protects, monitors and maintains it as one service — web hosting, business email, SSL, backups and managed security, not sold as a commodity.</p>
+          <a href="/secure-hosting/" class="btn btn-primary">View Hosting Plans</a>
+        </div>
+        <div class="example-score" style="text-align:left;">
+          <span class="eyebrow">Included across every plan</span>
+          <p style="color:#fff; font-size:.92rem; line-height:1.8; margin-top:8px;">Web Hosting · Business Email · SSL · Backups · Website Security</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FREE CYBER RISK CHECK BANNER ===== -->
+  <section>
+    <div class="wrap">
+      <div class="risk-banner">
+        <div>
+          <span class="eyebrow">Free Cyber Risk Check</span>
+          <h2>Get a preliminary read on your cyber risk in under five minutes</h2>
+          <p>Answer a short set of questions about your organisation and receive an instant, preliminary RETIS Cyber Risk Score — a starting point for the conversation, not a substitute for a professional assessment.</p>
+          <a href="/cyber-risk-check/" class="btn btn-primary">Start the Free Cyber Risk Check</a>
+        </div>
+        <div class="example-score">
+          <span class="eyebrow">Retis cyber risk score</span>
+          <div class="num">62/100</div>
+          <span class="band-tag">Moderate Risk</span>
+          <p class="disclaimer">Illustrative example. This is a preliminary, automated indicator based on self-reported answers — not a professional security assessment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSIGHTS PREVIEW ===== -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">Insights</span>
+        <h2>Cybersecurity, explained for the Kenyan context</h2>
+        <p>Direct-answer guidance and original research from RETIS's knowledge hub — written to answer real questions, not pad a word count.</p>
+      </div>
+      <div class="insights-grid">
+        <article class="insight-card">
+          <span class="tag">Cybersecurity</span>
+          <h3><a href="/insights/cybersecurity/what-is-a-cybersecurity-risk-assessment/">What is a Cybersecurity Risk Assessment?</a></h3>
+          <p style="color:var(--retis-slate); font-size:.88rem;">What it covers, how RETIS's methodology works, and how often to run one.</p>
+          <span class="meta">Updated Aug 2026</span>
+        </article>
+        <article class="insight-card">
+          <span class="tag">Penetration Testing</span>
+          <h3><a href="/insights/penetration-testing/vulnerability-assessment-vs-penetration-testing/">Vulnerability Assessment vs Penetration Testing</a></h3>
+          <p style="color:var(--retis-slate); font-size:.88rem;">The two are often confused — what actually separates them, and when to use each.</p>
+          <span class="meta">Updated Aug 2026</span>
+        </article>
+        <article class="insight-card">
+          <span class="tag">Financial Cybersecurity</span>
+          <h3><a href="/insights/financial-cybersecurity/sacco-cyber-risks-kenya/">What Cybersecurity Risks Do Kenyan SACCOs Face?</a></h3>
+          <p style="color:var(--retis-slate); font-size:.88rem;">Governance, member data and third-party risk patterns specific to Kenyan SACCOs.</p>
+          <span class="meta">Updated Aug 2026</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST STRIP ===== -->
+  <section class="trust-strip">
+    <div class="wrap trust-inner">
+      <p><strong style="color:var(--retis-navy);">RETIS is precise about what it offers.</strong> Risk assessment, security testing and compliance readiness advisory — clearly distinguished from statutory audit or certification, every time we describe them. All security testing runs only under explicit client authorisation and defined rules of engagement.</p>
+      <a href="/about/trust-and-governance/" class="btn btn-secondary">Read our methodology &amp; governance</a>
+    </div>
+  </section>
+
+  <!-- ===== PRE-FOOTER CTA ===== -->
+  <section class="cta-banner">
+    <div class="wrap">
+      <h2>Ready to know where your cyber risk actually stands?</h2>
+      <p>Speak with RETIS about a risk assessment, security gap assessment, or FINSEC 360™ briefing — no obligation, no jargon.</p>
+      <div class="hero-ctas">
+        <a href="/contact/#assessment" class="btn btn-primary">Request a Cyber Risk Assessment</a>
+        <a href="/contact/#talk-to-expert" class="btn btn-secondary">Talk to a Cybersecurity Expert</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo" style="filter:brightness(0) invert(1); opacity:0.92;">
+        <p>Securing Progress, Advancing Together. Cybersecurity risk assessment, secure software development, digital growth and training for organisations across Kenya and East Africa.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Cybersecurity</h4>
+        <ul>
+          <li><a href="/cybersecurity-risk-assessment-kenya/">Risk Assessment</a></li>
+          <li><a href="/security-gap-assessment/">Security Gap Assessment</a></li>
+          <li><a href="/penetration-testing-kenya/">Penetration Testing</a></li>
+          <li><a href="/finsec-360/">FINSEC 360™</a></li>
+          <li><a href="/cyberguard/">CyberGuard™</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/security-by-design/">Security by Design</a></li>
+          <li><a href="/cybersecurity-training-kenya/">Training</a></li>
+          <li><a href="/digital-marketing-kenya/">Digital Growth</a></li>
+          <li><a href="/case-studies/">Case Studies</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Insights</h4>
+        <ul>
+          <li><a href="/insights/">Knowledge Hub</a></li>
+          <li><a href="/kenya-cyber-risk-intelligence/">Kenya Cyber Risk Intelligence</a></li>
+          <li><a href="/about/leadership/">Leadership</a></li>
+          <li><a href="/about/trust-and-governance/">Trust &amp; Governance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@retistech.com">info@retistech.com</a></li>
+          <li><a href="tel:+254704293812">0704 293 812</a></li>
+          <li><a href="tel:+254101211398">0101 211 398</a></li>
+          <li>5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road, Nairobi</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RETIS Systems. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-service/">Terms of Service</a>
+        <a href="/responsible-disclosure/">Responsible Disclosure</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== STICKY MOBILE CTA BAR ===== -->
+<div class="mobile-cta-bar" id="mobileCtaBar">
+  <a href="tel:+254704293812">📞<span class="visually-hidden">Call</span>Call</a>
+  <a href="https://wa.me/254704293812" target="_blank" rel="noopener">💬 WhatsApp</a>
+  <a href="/contact/#assessment">Request Assessment</a>
+</div>
+
+<script>
+(function(){
+  // Desktop mega-menu toggling
+  var navItems = document.querySelectorAll('.nav-item');
+  navItems.forEach(function(item){
+    var trigger = item.querySelector('.nav-trigger[aria-controls]');
+    if(!trigger) return;
+    trigger.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      navItems.forEach(function(i){ i.classList.remove('open'); var t = i.querySelector('.nav-trigger[aria-controls]'); if(t) t.setAttribute('aria-expanded','false'); });
+      if(!isOpen){ item.classList.add('open'); trigger.setAttribute('aria-expanded','true'); }
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.nav-item')){
+      navItems.forEach(function(i){ i.classList.remove('open'); var t = i.querySelector('.nav-trigger[aria-controls]'); if(t) t.setAttribute('aria-expanded','false'); });
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      navItems.forEach(function(i){ i.classList.remove('open'); var t = i.querySelector('.nav-trigger[aria-controls]'); if(t) t.setAttribute('aria-expanded','false'); });
+    }
+  });
+
+  // Mobile drawer
+  var mobileToggle = document.getElementById('mobileToggle');
+  var drawer = document.getElementById('mobileDrawer');
+  var drawerClose = document.getElementById('drawerClose');
+  function openDrawer(){ drawer.classList.add('open'); mobileToggle.setAttribute('aria-expanded','true'); drawerClose.focus(); document.body.style.overflow='hidden'; }
+  function closeDrawer(){ drawer.classList.remove('open'); mobileToggle.setAttribute('aria-expanded','false'); mobileToggle.focus(); document.body.style.overflow=''; }
+  mobileToggle.addEventListener('click', openDrawer);
+  drawerClose.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && drawer.classList.contains('open')) closeDrawer(); });
+
+  // Drawer accordion
+  document.querySelectorAll('.drawer-trigger').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var section = btn.closest('.drawer-section');
+      section.classList.toggle('open');
+    });
+  });
+
+  // Sticky mobile CTA bar hide-on-scroll-down
+  var lastY = window.scrollY;
+  var bar = document.getElementById('mobileCtaBar');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    if(y > lastY && y > 200){ bar.classList.add('hide'); } else { bar.classList.remove('hide'); }
+    lastY = y;
+  }, {passive:true});
+})();
+</script>
+
+<script>
+/* RETIS analytics scaffold — replace G-XXXXXXXXXX with the real GA4 Measurement ID before deploy.
+   Google Search Console: add the verification meta tag (see comment in <head>) once the property is created.
+   Named events below match the conversion architecture (Phase 2C, section 2.2 / 2.6). */
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+
+function retisTrack(eventName, params){
+  params = params || {};
+  gtag('event', eventName, params);
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+  // Primary/secondary CTA clicks
+  document.querySelectorAll('.btn-primary').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'primary', cta_label: el.textContent.trim()}); });
+  });
+  document.querySelectorAll('.btn-secondary').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'secondary', cta_label: el.textContent.trim()}); });
+  });
+  // Phone / WhatsApp clicks
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('phone_click', {}); });
+  });
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('whatsapp_click', {}); });
+  });
+  // Lead form submissions (short/standard/enterprise variants share .lead-form)
+  document.querySelectorAll('.lead-form, #leadForm').forEach(function(el){
+    el.addEventListener('submit', function(){ retisTrack('lead_form_submitted', {form_id: el.id || 'lead_form'}); });
+  });
+  var notify = document.querySelector('.notify-form');
+  if(notify){ notify.addEventListener('submit', function(){ retisTrack('research_notify_signup', {}); }); }
+});
+</script>
+</body>
+</html>

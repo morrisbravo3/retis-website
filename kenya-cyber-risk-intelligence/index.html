@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<!-- Google Search Console: replace with real verification meta tag once property is created, e.g. <meta name="google-site-verification" content="..."> -->
+
+<title>Kenya Cyber Risk Intelligence | Original Research | RETIS Systems</title>
+<meta name="description" content="RETIS Systems' original, ongoing research programme into cyber risk across Kenyan banking, fintech, SACCO, SME and public-sector organisations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.retistech.com/kenya-cyber-risk-intelligence/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RETIS Systems">
+<meta property="og:title" content="Kenya Cyber Risk Intelligence | Original Research | RETIS Systems">
+<meta property="og:description" content="RETIS Systems' original, ongoing research programme into cyber risk across Kenyan banking, fintech, SACCO, SME and public-sector organisations.">
+<meta property="og:url" content="https://www.retistech.com/kenya-cyber-risk-intelligence/">
+<meta property="og:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+<meta name="twitter:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"RETIS Kenya Cyber Risk Intelligence",
+ "description":"RETIS Systems' original, ongoing research programme into cyber risk across Kenyan banking, fintech, SACCO, SME and public-sector organisations.",
+ "url":"https://www.retistech.com/kenya-cyber-risk-intelligence/"}
+</script>
+
+<style>
+:root{
+  --retis-obsidian:#0A0D16; --retis-navy:#142452; --retis-navy-light:#22336E;
+  --retis-gold:#E3A83B; --retis-purple:#5B2E8C; --retis-cloud:#F6F7FA;
+  --retis-ink:#1A1F2E; --retis-slate:#5C6B85; --retis-border:#E3E7EF; --risk-mod:#C98A2E;
+  --font-display:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+  --font-body:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+  --font-mono:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+  --radius-s:4px; --radius-m:8px; --max:1280px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.001ms!important; transition-duration:.001ms!important;} }
+body{margin:0; font-family:var(--font-body); color:var(--retis-ink); background:var(--retis-cloud); line-height:1.6; -webkit-font-smoothing:antialiased; padding-bottom:64px;}
+@media (min-width:1024px){ body{padding-bottom:0;} }
+h1,h2,h3,h4{font-family:var(--font-display); margin:0; font-weight:600; letter-spacing:-0.01em;}
+p{margin:0;} a{color:inherit; text-decoration:none;} img{max-width:100%; display:block;}
+ul{margin:0; padding:0; list-style:none;} button{font-family:inherit; cursor:pointer;}
+label{font-size:.85rem; font-weight:600; color:var(--retis-navy); display:block; margin-bottom:6px;}
+input,select,textarea{width:100%; padding:12px 14px; border:1px solid var(--retis-border); border-radius:var(--radius-s); font-family:inherit; font-size:.95rem; background:#fff; color:var(--retis-ink);}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--retis-gold); outline-offset:1px; border-color:var(--retis-gold);}
+.skip-link{position:absolute; left:-999px; top:0; background:var(--retis-gold); color:var(--retis-obsidian); padding:12px 20px; z-index:1000; font-weight:600; border-radius:0 0 var(--radius-s) 0;}
+.skip-link:focus{left:0;}
+a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible{outline:2px solid var(--retis-gold); outline-offset:2px; border-radius:2px;}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+@media (max-width:640px){ .wrap{padding:0 16px;} }
+.wrap-narrow{max-width:760px; margin:0 auto; padding:0 24px;}
+@media (max-width:640px){ .wrap-narrow{padding:0 16px;} }
+section{padding:88px 0;} @media (max-width:640px){ section{padding:48px 0;} }
+.eyebrow{font-family:var(--font-mono); font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--retis-gold); display:block; margin-bottom:12px;}
+.eyebrow.purple{color:var(--retis-purple);}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:14px 28px; border-radius:var(--radius-s); font-weight:600; font-size:.95rem; text-transform:uppercase; letter-spacing:.04em; border:2px solid transparent; transition:background 150ms, color 150ms, border-color 150ms;}
+.btn-primary{background:var(--retis-gold); color:var(--retis-obsidian);} .btn-primary:hover{background:#F0BA55;}
+.btn-secondary{background:transparent; border-color:currentColor; color:var(--retis-navy);} .btn-secondary:hover{background:rgba(20,36,82,.06);}
+.on-dark .btn-secondary{color:#fff;} .on-dark .btn-secondary:hover{background:rgba(255,255,255,.08);}
+.btn-block{width:100%;}
+header.site-header{position:sticky; top:0; z-index:100; background:rgba(246,247,250,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--retis-border);}
+.header-row{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+.logo-link img{height:52px; width:auto;}
+nav.primary-nav{display:none;} @media (min-width:1024px){ nav.primary-nav{display:flex; align-items:center; gap:4px;} }
+.nav-trigger{background:none; border:none; padding:12px 14px; font-size:.95rem; font-weight:500; color:var(--retis-navy); border-radius:var(--radius-s);}
+.nav-trigger:hover{background:rgba(20,36,82,.06);}
+.header-cta{display:none;} @media (min-width:1024px){ .header-cta{display:flex; align-items:center; gap:12px;} }
+.header-cta .btn{padding:11px 20px; font-size:.82rem;}
+.mobile-toggle{display:flex; background:none; border:1px solid var(--retis-border); border-radius:var(--radius-s); padding:10px 12px;}
+@media (min-width:1024px){ .mobile-toggle{display:none;} }
+.mobile-toggle span, .mobile-toggle span::before, .mobile-toggle span::after{display:block; width:20px; height:2px; background:var(--retis-navy); position:relative;}
+.mobile-toggle span::before{content:""; position:absolute; top:-6px;} .mobile-toggle span::after{content:""; position:absolute; top:6px;}
+.mobile-drawer{position:fixed; inset:0; background:#fff; z-index:200; padding:20px; overflow-y:auto; transform:translateX(100%); transition:transform 220ms ease-out;}
+.breadcrumb{padding:16px 0; font-size:.85rem; color:var(--retis-slate); border-bottom:1px solid var(--retis-border); background:#fff;}
+.breadcrumb a{color:var(--retis-slate);} .breadcrumb a:hover{color:var(--retis-navy);}
+.breadcrumb .sep{color:var(--retis-gold); margin:0 8px;}
+.section-head{max-width:680px; margin-bottom:44px;}
+.section-head h2{font-size:1.8rem;} @media (min-width:1024px){ .section-head h2{font-size:2.3rem;} }
+.section-head p{color:var(--retis-slate); margin-top:14px; font-size:1.02rem;}
+.hero{background:radial-gradient(ellipse at 75% 15%, var(--retis-navy) 0%, var(--retis-obsidian) 60%); color:#fff; padding:72px 0 88px;}
+.hero-grid{display:grid; grid-template-columns:1fr; gap:40px; align-items:start;}
+@media (min-width:1024px){ .hero-grid{grid-template-columns:1.3fr .9fr;} }
+.hero h1{font-size:2.1rem; line-height:1.15; margin-bottom:18px;} @media (min-width:1024px){ .hero h1{font-size:3rem;} }
+.hero .lede{font-size:1.02rem; color:#C7CEE0; max-width:56ch; margin-bottom:28px;}
+.hero-ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px;}
+.segment-chips{display:flex; flex-wrap:wrap; gap:10px;}
+.segment-chip{font-family:var(--font-mono); font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; padding:6px 12px; border:1px solid rgba(255,255,255,.2); border-radius:20px; color:#C7CEE0;}
+.hero-card{background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14); border-radius:var(--radius-m); padding:28px;}
+.hero-card h3{font-size:1rem; color:#fff; margin-bottom:16px;}
+.hero-card ul li{display:flex; gap:10px; align-items:flex-start; font-size:.9rem; color:#C7CEE0; margin-bottom:10px;}
+.hero-card ul li::before{content:"✓"; color:var(--retis-gold); font-weight:700; flex-shrink:0;}
+.domain-grid{display:grid; grid-template-columns:1fr; gap:2px; background:var(--retis-border); border:1px solid var(--retis-border); border-radius:var(--radius-m); overflow:hidden;}
+@media (min-width:640px){ .domain-grid{grid-template-columns:1fr 1fr;} }
+@media (min-width:1024px){ .domain-grid{grid-template-columns:repeat(3,1fr);} }
+.domain{background:#fff; padding:24px 18px;}
+.domain .num{font-family:var(--font-mono); color:var(--retis-gold); font-size:.85rem; display:block; margin-bottom:10px;}
+.domain .label{font-weight:600; font-size:.92rem; color:var(--retis-navy); margin-bottom:6px;}
+.domain .desc{font-size:.82rem; color:var(--retis-slate); line-height:1.5;}
+.deliverables{background:#fff;}
+.deliv-grid{display:grid; grid-template-columns:1fr; gap:24px;} @media (min-width:768px){ .deliv-grid{grid-template-columns:repeat(3,1fr);} }
+.deliv-card{border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:26px;}
+.deliv-card .mark{width:36px; height:36px; border-radius:50%; border:2px solid var(--retis-gold); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); color:var(--retis-navy); font-weight:600; margin-bottom:14px;}
+.deliv-card h3{font-size:1.02rem; color:var(--retis-navy); margin-bottom:8px;}
+.deliv-card p{font-size:.9rem; color:var(--retis-slate);}
+.process{background:var(--retis-cloud);}
+.process-list{display:flex; flex-direction:column; gap:0;}
+.process-item{display:grid; grid-template-columns:56px 1fr; gap:20px; padding:24px 0; border-bottom:1px solid var(--retis-border);}
+.process-item:last-child{border-bottom:none;}
+.process-num{font-family:var(--font-mono); font-size:1.3rem; color:var(--retis-gold); font-weight:600;}
+.process-item h3{font-size:1.05rem; color:var(--retis-navy); margin-bottom:6px;}
+.process-item p{font-size:.92rem; color:var(--retis-slate); max-width:60ch;}
+.faq{background:#fff;}
+.faq-item{border-bottom:1px solid var(--retis-border);}
+.faq-q{width:100%; text-align:left; background:none; border:none; padding:20px 0; display:flex; justify-content:space-between; align-items:center; font-weight:600; font-size:1rem; color:var(--retis-navy);}
+.faq-q .plus{font-family:var(--font-mono); font-size:1.2rem; color:var(--retis-gold); transition:transform 150ms;}
+.faq-item.open .plus{transform:rotate(45deg);}
+.faq-a{max-height:0; overflow:hidden; transition:max-height 200ms ease-out;}
+.faq-item.open .faq-a{max-height:300px;}
+.faq-a p{padding:0 0 20px; color:var(--retis-slate); font-size:.94rem; max-width:70ch;}
+.trust{background:var(--retis-navy); color:#fff;}
+.trust-grid{display:grid; grid-template-columns:1fr; gap:28px;} @media (min-width:768px){ .trust-grid{grid-template-columns:repeat(3,1fr);} }
+.trust-item h3{font-size:1rem; margin-bottom:10px; color:var(--retis-gold);}
+.trust-item p{font-size:.9rem; color:#C7CEE0;}
+.lead-section{background:var(--retis-obsidian); color:#fff;}
+.lead-grid{display:grid; grid-template-columns:1fr; gap:40px;} @media (min-width:1024px){ .lead-grid{grid-template-columns:.9fr 1.1fr;} }
+.lead-copy h2{font-size:1.7rem; margin-bottom:16px;} @media (min-width:1024px){ .lead-copy h2{font-size:2.1rem;} }
+.lead-copy p{color:#C7CEE0; margin-bottom:22px; max-width:48ch;}
+.lead-copy .contact-alt{display:flex; flex-direction:column; gap:10px; font-size:.9rem; color:#AEB6CB;}
+.lead-copy .contact-alt a{color:var(--retis-gold);}
+.lead-form{background:#fff; border-radius:var(--radius-m); padding:32px; color:var(--retis-ink);}
+.form-grid{display:grid; grid-template-columns:1fr; gap:18px;} @media (min-width:640px){ .form-grid{grid-template-columns:1fr 1fr;} }
+.form-grid .full{grid-column:1 / -1;}
+.consent-row{display:flex; align-items:flex-start; gap:10px; font-size:.82rem; color:var(--retis-slate);}
+.consent-row input{width:auto; margin-top:3px;}
+.form-note{font-size:.78rem; color:var(--retis-slate); margin-top:16px;}
+footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
+.footer-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; font-size:.8rem; color:#7C86A0;}
+.footer-bottom a{color:#7C86A0;} .footer-bottom a:hover{color:var(--retis-gold);}
+.footer-legal{display:flex; gap:18px; flex-wrap:wrap;}
+.footer-min{display:flex; align-items:center; gap:14px; margin-bottom:32px;}
+.footer-min img{height:38px; filter:brightness(0) invert(1); opacity:.9;}
+.mobile-cta-bar{position:fixed; bottom:0; left:0; right:0; z-index:150; background:#fff; border-top:1px solid var(--retis-border); display:grid; grid-template-columns:1fr 1fr 1.4fr; box-shadow:0 -8px 24px rgba(10,13,22,.08); transition:transform 200ms ease-out;}
+@media (min-width:1024px){ .mobile-cta-bar{display:none;} }
+.mobile-cta-bar.hide{transform:translateY(100%);}
+.mobile-cta-bar a{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; padding:10px 4px; font-size:.68rem; font-weight:600; text-transform:uppercase; color:var(--retis-navy); border-right:1px solid var(--retis-border);}
+.mobile-cta-bar a:last-child{border-right:none; background:var(--retis-gold); color:var(--retis-obsidian);}
+.visually-hidden{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+
+/* Insights hub */
+.filter-row{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:40px;}
+.filter-pill{font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; padding:8px 16px; border:1px solid var(--retis-border); border-radius:20px; background:#fff; color:var(--retis-slate);}
+.filter-pill.active{background:var(--retis-navy); color:#fff; border-color:var(--retis-navy);}
+.insights-grid{display:grid; grid-template-columns:1fr; gap:24px;} @media (min-width:768px){ .insights-grid{grid-template-columns:repeat(3,1fr);} }
+.insight-card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:24px; display:flex; flex-direction:column; gap:12px;}
+.insight-card .tag{font-family:var(--font-mono); font-size:.72rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:.06em;}
+.insight-card h3{font-size:1.05rem; line-height:1.35; color:var(--retis-navy);}
+.insight-card p.snippet{font-size:.88rem; color:var(--retis-slate);}
+.insight-card .meta{font-family:var(--font-mono); font-size:.75rem; color:var(--retis-slate); margin-top:auto;}
+
+/* Article page */
+.article-head{max-width:760px; margin:0 auto 40px;}
+.article-head .tag{font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:.06em; display:block; margin-bottom:14px;}
+.article-head h1{font-size:2rem; margin-bottom:16px;} @media (min-width:768px){ .article-head h1{font-size:2.6rem;} }
+.article-byline{font-family:var(--font-mono); font-size:.8rem; color:var(--retis-slate); display:flex; flex-wrap:wrap; gap:16px;}
+.direct-answer{background:var(--retis-cloud); border-left:4px solid var(--retis-gold); border-radius:0 var(--radius-m) var(--radius-m) 0; padding:22px 26px; margin:0 auto 40px; max-width:760px; font-size:1.02rem; color:var(--retis-ink);}
+.article-body{max-width:760px; margin:0 auto;}
+.article-body h2{font-size:1.4rem; color:var(--retis-navy); margin:40px 0 16px;}
+.article-body p{color:var(--retis-ink); margin-bottom:16px; font-size:1rem;}
+.article-body ul{margin:0 0 20px; padding-left:0;}
+.article-body ul li{display:flex; gap:10px; align-items:flex-start; margin-bottom:10px; font-size:.98rem;}
+.article-body ul li::before{content:"—"; color:var(--retis-gold); flex-shrink:0;}
+.inline-cta{background:var(--retis-navy); color:#fff; border-radius:var(--radius-m); padding:28px 32px; margin:40px 0; text-align:center;}
+.inline-cta p{color:#C7CEE0; margin-bottom:16px;}
+.author-card{max-width:760px; margin:48px auto 0; background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:24px; display:flex; gap:16px; align-items:flex-start;}
+.author-card .avatar{width:52px; height:52px; border-radius:50%; background:var(--retis-navy); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:600; flex-shrink:0;}
+.author-card h4{font-size:.95rem; color:var(--retis-navy); margin-bottom:4px;}
+.author-card p{font-size:.85rem; color:var(--retis-slate);}
+.related-wrap{max-width:900px; margin:56px auto 0;}
+
+/* Research hub */
+.report-grid{display:grid; grid-template-columns:1fr; gap:24px;} @media (min-width:768px){ .report-grid{grid-template-columns:1fr 1fr;} }
+.report-card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:26px; display:flex; flex-direction:column; gap:12px;}
+.report-status{font-family:var(--font-mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; padding:4px 10px; border-radius:20px; background:var(--retis-cloud); color:var(--retis-slate); width:fit-content;}
+.report-card h3{font-size:1.05rem; color:var(--retis-navy);}
+.report-card p{font-size:.9rem; color:var(--retis-slate);}
+.index-card{background:var(--retis-obsidian); color:#fff; border-radius:var(--radius-m); padding:40px; margin-bottom:48px;}
+.index-card h2{font-size:1.6rem; margin-bottom:14px; color:#fff;}
+.index-card p{color:#C7CEE0; max-width:70ch;}
+.notify-form{display:flex; flex-wrap:wrap; gap:12px; max-width:520px; margin-top:20px;}
+.notify-form input{flex:1; min-width:200px;}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RETIS Systems",
+  "alternateName": "RETIS SYSTEMS",
+  "url": "https://www.retistech.com/",
+  "logo": "https://www.retistech.com/assets/retis-logo.jpg",
+  "description": "RETIS Systems provides cybersecurity risk assessment, security testing, security-by-design software development, digital marketing and cybersecurity training for organisations across Kenya and East Africa.",
+  "telephone": ["+254704293812", "+254101211398"],
+  "email": "info@retistech.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "sameAs": [],
+  "founder": {
+    "@type": "Person",
+    "name": "Morris Mureti",
+    "jobTitle": "Founder & CEO",
+    "url": "https://www.retistech.com/about/leadership/"
+  }
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="/" class="logo-link" aria-label="RETIS Systems home"><img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo"></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-trigger" href="/cybersecurity-solutions/">Cybersecurity</a>
+      <a class="nav-trigger" href="/secure-software-development/">Security by Design</a>
+      <a class="nav-trigger" href="/cybersecurity-training-kenya/">Training</a>
+      <a class="nav-trigger" href="/digital-marketing-kenya/">Digital Growth</a>
+      <a class="nav-trigger" href="/industries/">Industries</a>
+      <a class="nav-trigger" href="/insights/">Insights</a>
+      <a class="nav-trigger" href="/kenya-cyber-risk-intelligence/">Research</a>
+    </nav>
+    <div class="header-cta">
+      <a href="/contact/" class="nav-trigger" style="font-size:.85rem;">Contact</a>
+      <a href="/contact/#assessment" class="btn btn-primary">Request Assessment</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+    <span style="font-family:var(--font-mono); font-weight:600; color:var(--retis-navy);">Menu</span>
+    <button id="drawerClose" aria-label="Close menu" style="background:none; border:none; font-size:1.6rem; color:var(--retis-navy);">&times;</button>
+  </div>
+  <nav style="display:flex; flex-direction:column;">
+    <a href="/cybersecurity-solutions/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Cybersecurity</a>
+    <a href="/security-gap-assessment/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Security Gap Assessment</a>
+    <a href="/finsec-360/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">FINSEC 360™</a>
+    <a href="/cyberguard/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">CyberGuard™</a>
+    <a href="/insights/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Insights</a>
+    <a href="/kenya-cyber-risk-intelligence/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Research</a>
+  </nav>
+  <div style="margin-top:20px;"><a href="/contact/#assessment" class="btn btn-primary btn-block">Request Assessment</a></div>
+</div>
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="wrap"><a href="/">Home</a><span class="sep">/</span><span style="color:var(--retis-navy); font-weight:600;">Research</span></div></nav>
+<main id="main">
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <div class="section-head" style="max-width:760px;">
+        <span class="eyebrow purple">Original Research</span>
+        <h1 style="font-size:2rem; font-family:var(--font-display); font-weight:600; letter-spacing:-0.01em;">RETIS Kenya Cyber Risk Intelligence</h1>
+        <p>An ongoing research programme examining cyber risk across Kenyan banking, fintech, SACCOs, SMEs and the public sector — built from original RETIS research and properly sourced public information, not imported global statistics. Where something is RETIS's own analysis rather than a verified fact, we say so.</p>
+      </div>
+
+      <div class="index-card">
+        <span class="eyebrow" style="color:var(--retis-gold);">Coming: RETIS Kenya Cyber Risk Index™</span>
+        <h2>A proprietary index for tracking Kenyan cyber risk over time</h2>
+        <p>The Kenya Cyber Risk Index™ is a planned, ongoing measure of cyber risk posture across Kenyan sectors — a long-term reference point, not a one-off report. It is currently in development; no data or scores exist yet, and none will be published until the methodology is ready to stand behind.</p>
+      </div>
+
+      <div class="section-head" style="max-width:760px;">
+        <span class="eyebrow purple">Reports In Development</span>
+        <h2 style="font-size:1.6rem;">Sector-specific research, underway</h2>
+        <p>These reports are being developed now. None are published yet — we'd rather ship them properly researched than rush a report with thin data. Request early access below and we'll notify you as each one is released.</p>
+      </div>
+      <div class="report-grid">
+        
+        <div class="report-card">
+          <span class="report-status">In development</span>
+          <h3>Kenya Cyber Risk Report</h3>
+          <p>An annual, cross-sector view of how cyber risk is actually shifting across Kenyan organisations — where the pressure is building, and where it's easing.</p>
+        </div>
+        <div class="report-card">
+          <span class="report-status">In development</span>
+          <h3>Kenya Fintech Cyber Risk Report</h3>
+          <p>A focused look at how Kenya's fintech sector balances shipping speed against accumulating security debt, and what that means for partners and investors.</p>
+        </div>
+        <div class="report-card">
+          <span class="report-status">In development</span>
+          <h3>Kenya SACCO Cybersecurity Report</h3>
+          <p>Governance and cyber risk findings specific to Kenyan SACCOs — where board oversight is strongest, and where it's thinnest.</p>
+        </div>
+        <div class="report-card">
+          <span class="report-status">Planned</span>
+          <h3>Kenya SME Cybersecurity Report</h3>
+          <p>What cyber risk actually looks like for small and medium Kenyan enterprises, without the enterprise-scale assumptions most global research makes.</p>
+        </div>
+        <div class="report-card">
+          <span class="report-status">Planned</span>
+          <h3>Kenya Data Protection Readiness Report</h3>
+          <p>How prepared Kenyan organisations genuinely are for data protection obligations, versus how prepared they believe they are.</p>
+        </div>
+        <div class="report-card">
+          <span class="report-status">Planned</span>
+          <h3>Kenya Secure Software Report</h3>
+          <p>How security-by-design practices are — and aren't — being adopted across Kenyan software development teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lead-section">
+    <div class="wrap">
+      <div class="lead-copy" style="max-width:640px;">
+        <span class="eyebrow">Get Notified</span>
+        <h2>Be first to receive RETIS research as it publishes</h2>
+        <p>Leave your email and we'll notify you when a new Kenya Cyber Risk Intelligence report is released — no spam, just the research itself.</p>
+        <form class="notify-form" aria-label="Subscribe to research notifications">
+          <label for="notifyEmail" class="visually-hidden">Email address</label>
+          <input id="notifyEmail" type="email" placeholder="you@organisation.com" required>
+          <button type="submit" class="btn btn-primary">Notify Me</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-min">
+      <img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo">
+      <span style="font-size:.85rem; color:#8A93AC;">Securing Progress, Advancing Together.</span><div style="font-size:.8rem; color:#8A93AC; margin-top:6px;"><a href="tel:+254704293812" style="color:#8A93AC;">0704 293 812</a> · <a href="mailto:info@retistech.com" style="color:#8A93AC;">info@retistech.com</a> · Nairobi, Kenya</div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RETIS Systems. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-service/">Terms of Service</a>
+        <a href="/insights/">Insights</a>
+        <a href="/kenya-cyber-risk-intelligence/">Research</a>
+        <a href="/">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar" id="mobileCtaBar">
+  <a href="tel:+254704293812">📞 Call</a>
+  <a href="https://wa.me/254704293812" target="_blank" rel="noopener">💬 WhatsApp</a>
+  <a href="/contact/#assessment">Request Assessment</a>
+</div>
+
+<script>
+(function(){
+  var mobileToggle = document.getElementById('mobileToggle');
+  var drawer = document.getElementById('mobileDrawer');
+  var drawerClose = document.getElementById('drawerClose');
+  if(mobileToggle){
+    function openDrawer(){ drawer.style.transform='translateX(0)'; mobileToggle.setAttribute('aria-expanded','true'); drawerClose.focus(); document.body.style.overflow='hidden'; }
+    function closeDrawer(){ drawer.style.transform='translateX(100%)'; mobileToggle.setAttribute('aria-expanded','false'); mobileToggle.focus(); document.body.style.overflow=''; }
+    mobileToggle.addEventListener('click', openDrawer);
+    drawerClose.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeDrawer(); });
+  }
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+      if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+  var lastY = window.scrollY;
+  var bar = document.getElementById('mobileCtaBar');
+  if(bar){
+    window.addEventListener('scroll', function(){
+      var y = window.scrollY;
+      if(y > lastY && y > 200){ bar.classList.add('hide'); } else { bar.classList.remove('hide'); }
+      lastY = y;
+    }, {passive:true});
+  }
+  var lf = document.querySelector('.lead-form');
+  if(lf){
+    lf.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Demo form — no backend connected yet. In production this posts to the RETIS lead-capture endpoint.');
+    });
+  }
+  var nf = document.querySelector('.notify-form');
+  if(nf){
+    nf.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Demo form — no backend connected yet. In production this subscribes you to report notifications.');
+    });
+  }
+  var filterPills = document.querySelectorAll('.filter-pill');
+  if(filterPills.length){
+    filterPills.forEach(function(pill){
+      pill.addEventListener('click', function(){
+        filterPills.forEach(function(p){ p.classList.remove('active'); });
+        pill.classList.add('active');
+        var cat = pill.dataset.filter;
+        document.querySelectorAll('.insight-card').forEach(function(card){
+          card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none';
+        });
+      });
+    });
+  }
+})();
+</script>
+<script>
+/* RETIS analytics scaffold — replace G-XXXXXXXXXX with the real GA4 Measurement ID before deploy.
+   Google Search Console: add the verification meta tag (see comment in <head>) once the property is created.
+   Named events below match the conversion architecture (Phase 2C, section 2.2 / 2.6). */
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+
+function retisTrack(eventName, params){
+  params = params || {};
+  gtag('event', eventName, params);
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+  // Primary/secondary CTA clicks
+  document.querySelectorAll('.btn-primary').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'primary', cta_label: el.textContent.trim()}); });
+  });
+  document.querySelectorAll('.btn-secondary').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'secondary', cta_label: el.textContent.trim()}); });
+  });
+  // Phone / WhatsApp clicks
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('phone_click', {}); });
+  });
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(el){
+    el.addEventListener('click', function(){ retisTrack('whatsapp_click', {}); });
+  });
+  // Lead form submissions (short/standard/enterprise variants share .lead-form)
+  document.querySelectorAll('.lead-form, #leadForm').forEach(function(el){
+    el.addEventListener('submit', function(){ retisTrack('lead_form_submitted', {form_id: el.id || 'lead_form'}); });
+  });
+  var notify = document.querySelector('.notify-form');
+  if(notify){ notify.addEventListener('submit', function(){ retisTrack('research_notify_signup', {}); }); }
+});
+</script>
+</body></html>
