@@ -157,7 +157,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
 .footer-bottom a{color:#7C86A0;} .footer-bottom a:hover{color:var(--retis-gold);}
 .footer-legal{display:flex; gap:18px; flex-wrap:wrap;}
 .footer-min{display:flex; align-items:center; gap:14px; margin-bottom:32px;}
-.footer-min img{height:44px; width:auto;}
+.footer-min img{height:38px; filter:brightness(0) invert(1); opacity:.9;}
 .mobile-cta-bar{position:fixed; bottom:0; left:0; right:0; z-index:150; background:#fff; border-top:1px solid var(--retis-border); display:grid; grid-template-columns:1fr 1fr 1.4fr; box-shadow:0 -8px 24px rgba(10,13,22,.08); transition:transform 200ms ease-out;}
 @media (min-width:1024px){ .mobile-cta-bar{display:none;} }
 .mobile-cta-bar.hide{transform:translateY(100%);}
@@ -207,14 +207,6 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
 .index-card p{color:#C7CEE0; max-width:70ch;}
 .notify-form{display:flex; flex-wrap:wrap; gap:12px; max-width:520px; margin-top:20px;}
 .notify-form input{flex:1; min-width:200px;}
-
-.hero, footer { position:relative; overflow:hidden; }
-.hero::before, footer::before {
-  content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cg fill='none' stroke='%23E3A83B' stroke-width='1' opacity='0.07'%3E%3Cline x1='12' y1='12' x2='70' y2='45'/%3E%3Cline x1='70' y1='45' x2='128' y2='18'/%3E%3Cline x1='70' y1='45' x2='48' y2='115'/%3E%3Cline x1='48' y1='115' x2='115' y2='128'/%3E%3Cline x1='115' y1='128' x2='140' y2='100'/%3E%3C/g%3E%3Cg fill='%23E3A83B' opacity='0.16'%3E%3Ccircle cx='12' cy='12' r='1.8'/%3E%3Ccircle cx='70' cy='45' r='2.2'/%3E%3Ccircle cx='128' cy='18' r='1.8'/%3E%3Ccircle cx='48' cy='115' r='1.8'/%3E%3Ccircle cx='115' cy='128' r='1.8'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat;
-}
-.hero > .wrap, .hero > .hero-grid, footer > .wrap { position:relative; z-index:1; }
 </style>
 <script type="application/ld+json">
 {
@@ -285,7 +277,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
 <a href="#main" class="skip-link">Skip to main content</a>
 <header class="site-header">
   <div class="wrap header-row">
-    <a href="/" class="logo-link" aria-label="RETIS Systems home"><img src="/assets/retis-logo-white.png" width="220" height="200" alt="RETIS Systems logo"></a>
+    <a href="/" class="logo-link" aria-label="RETIS Systems home"><img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo"></a>
     <nav class="primary-nav" aria-label="Primary">
       <a class="nav-trigger" href="/cybersecurity-solutions/">Cybersecurity</a>
       <a class="nav-trigger" href="/secure-software-development/">Security by Design</a>
@@ -503,7 +495,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
 <footer>
   <div class="wrap">
     <div class="footer-min">
-      <img src="/assets/retis-logo-white.png" width="110" height="100" alt="RETIS Systems logo" style="height:44px; width:auto;">
+      <img src="/assets/retis-logo.jpg" width="220" height="200" alt="RETIS Systems logo">
       <span style="font-size:.85rem; color:#8A93AC;">Securing Progress, Advancing Together.</span>
     </div>
     <div class="footer-bottom">

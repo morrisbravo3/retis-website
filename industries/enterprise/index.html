@@ -6,25 +6,41 @@
 <meta name="robots" content="index, follow">
 <!-- Google Search Console: replace with real verification meta tag once property is created, e.g. <meta name="google-site-verification" content="..."> -->
 
-<title>Industries We Serve | RETIS Systems</title>
-<meta name="description" content="RETIS Systems serves banking, SACCOs, fintech, payment service providers, insurance, healthcare, education and enterprise organisations across Kenya.">
+<title>Cybersecurity for Enterprise in Kenya | RETIS Systems</title>
+<meta name="description" content="Cybersecurity risk assessment and advisory for Kenyan enterprise — sector-specific risk, relevant services, and a clear path to FINSEC 360™.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="canonical" href="https://www.retistech.com/industries/">
+<link rel="canonical" href="https://www.retistech.com/industries/enterprise/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RETIS Systems">
-<meta property="og:title" content="Industries We Serve | RETIS Systems">
-<meta property="og:description" content="RETIS Systems serves banking, SACCOs, fintech, payment service providers, insurance, healthcare, education and enterprise organisations across Kenya.">
-<meta property="og:url" content="https://www.retistech.com/industries/">
+<meta property="og:title" content="Cybersecurity for Enterprise in Kenya | RETIS Systems">
+<meta property="og:description" content="Cybersecurity risk assessment and advisory for Kenyan enterprise — sector-specific risk, relevant services, and a clear path to FINSEC 360™.">
+<meta property="og:url" content="https://www.retistech.com/industries/enterprise/">
 <meta property="og:image" content="https://www.retistech.com/assets/retis-logo.jpg">
 <meta name="twitter:image" content="https://www.retistech.com/assets/retis-logo.jpg">
 <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How does this differ from an assessment for a smaller organisation?","acceptedAnswer":{"@type":"Answer","text":"Scope, timeline and methodology adjust to organisational complexity — more departments, systems and vendors typically means a more extensive discovery phase, not a different underlying methodology."}},
+    {"@type":"Question","name":"Can this run across multiple business units or subsidiaries?","acceptedAnswer":{"@type":"Answer","text":"Yes — multi-entity and multi-business-unit scoping is a standard part of enterprise engagement planning."}},
+    {"@type":"Question","name":"Can this integrate with our existing internal security or IT team?","acceptedAnswer":{"@type":"Answer","text":"Yes — most enterprise engagements are designed to complement an existing internal team, not replace it."}},
+    {"@type":"Question","name":"How long does an enterprise-scale engagement typically take?","acceptedAnswer":{"@type":"Answer","text":"Timeline depends heavily on scope and organisational complexity, agreed during an initial discovery conversation rather than fixed in advance."}}
+]}
+</script><script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Home","item":"https://www.retistech.com/"},
-    {"@type":"ListItem","position":2,"name":"Industries","item":"https://www.retistech.com/industries/"}
+    {"@type":"ListItem","position":2,"name":"Industries","item":"https://www.retistech.com/industries/"},
+    {"@type":"ListItem","position":3,"name":"Enterprise","item":"https://www.retistech.com/industries/enterprise/"}
 ]}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"Cybersecurity for Enterprise",
+ "provider":{"@type":"ProfessionalService","name":"RETIS Systems","url":"https://www.retistech.com/"},
+ "audience":{"@type":"Audience","audienceType":"Enterprise"},
+ "areaServed":["Kenya","East Africa"],
+ "description":"Cybersecurity risk assessment and advisory services scoped specifically for enterprise operating in Kenya."}
+</script>
+
 <style>
 :root{
   --retis-obsidian:#0A0D16; --retis-navy:#142452; --retis-navy-light:#22336E;
@@ -244,13 +260,18 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
 </style>
 
 <style>
-.ind-grid{display:grid; grid-template-columns:1fr; gap:22px;} @media (min-width:640px){ .ind-grid{grid-template-columns:1fr 1fr;} } @media (min-width:1024px){ .ind-grid{grid-template-columns:repeat(4,1fr);} }
-.ind-card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:26px; display:flex; flex-direction:column; gap:10px;}
-.ind-card h3{font-size:1.05rem; color:var(--retis-navy);}
-.ind-card p{font-size:.88rem; color:var(--retis-slate); flex-grow:1;}
-.ind-status{font-family:var(--font-mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; padding:4px 10px; border-radius:20px; width:fit-content;}
-.ind-status.live{background:rgba(62,122,84,.1); color:var(--retis-slate);}
-.ind-status.soon{background:var(--retis-cloud); color:var(--retis-slate);}
+.risk-grid{display:grid; grid-template-columns:1fr; gap:20px;} @media (min-width:768px){ .risk-grid{grid-template-columns:1fr 1fr;} }
+.risk-card{border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:24px; background:#fff;}
+.risk-card .mark{width:34px; height:34px; border-radius:50%; border:2px solid var(--risk-mod); color:var(--risk-mod); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; margin-bottom:12px;}
+.risk-card h3{font-size:1rem; color:var(--retis-navy); margin-bottom:6px;}
+.risk-card p{font-size:.88rem; color:var(--retis-slate);}
+.outcome-list{display:grid; grid-template-columns:1fr; gap:14px;} @media (min-width:768px){ .outcome-list{grid-template-columns:1fr 1fr;} }
+.outcome-item{display:flex; gap:12px; align-items:flex-start; background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-s); padding:16px 18px;}
+.outcome-item::before{content:"✓"; color:var(--retis-gold); font-weight:700; flex-shrink:0;}
+.outcome-item p{font-size:.92rem; color:var(--retis-ink);}
+.case-honesty{background:var(--retis-obsidian); color:#fff; border-radius:var(--radius-m); padding:36px 40px;}
+.case-honesty h2{color:#fff; font-size:1.4rem; margin-bottom:12px;}
+.case-honesty p{color:#C7CEE0; max-width:70ch;}
 </style>
 
 <a href="#main" class="skip-link">Skip to main content</a>
@@ -268,7 +289,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
     </nav>
     <div class="header-cta">
       <a href="/contact/" class="nav-trigger" style="font-size:.85rem;">Contact</a>
-      <a href="/contact/#assessment" class="btn btn-primary">Request Assessment</a>
+      <a href="#request" class="btn btn-primary">Request a FINSEC 360™ Briefing</a>
     </div>
     <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open menu"><span></span></button>
   </div>
@@ -287,60 +308,194 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
     <a href="/insights/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Insights</a>
     <a href="/kenya-cyber-risk-intelligence/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Research</a>
   </nav>
-  <div style="margin-top:20px;"><a href="/contact/#assessment" class="btn btn-primary btn-block">Request Assessment</a></div>
+  <div style="margin-top:20px;"><a href="#request" class="btn btn-primary btn-block">Request a FINSEC 360™ Briefing</a></div>
 </div>
-<nav class="breadcrumb" aria-label="Breadcrumb"><div class="wrap"><a href="/">Home</a><span class="sep">/</span><span style="color:var(--retis-navy); font-weight:600;">Industries</span></div></nav>
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="wrap"><a href="/">Home</a><span class="sep">/</span><a href="/industries/">Industries</a><span class="sep">/</span><span style="color:var(--retis-navy); font-weight:600;">Enterprise</span></div></nav>
 <main id="main">
-  <section style="padding-bottom:0;">
+
+  <section class="hero">
     <div class="wrap">
-      <div class="section-head" style="max-width:760px;">
-        <span class="eyebrow purple">Industries</span>
-        <h1 style="font-size:2rem; font-family:var(--font-display); font-weight:600; letter-spacing:-0.01em;">Cybersecurity scoped to how your sector actually operates</h1>
-        <p>RETIS doesn't apply one generic assessment to every client. Each sector below has its own risk pattern, relevant services, and starting point.</p>
+      <div style="max-width:760px;">
+        <span class="eyebrow">For Medium &amp; Large Enterprises</span>
+        <h1>Cybersecurity for Kenyan Enterprises</h1>
+        <p class="lede">Larger organisations carry a different kind of complexity — more departments, more systems, more vendors, more history. RETIS assesses that complexity directly, rather than applying the same narrow checklist used for a much smaller organisation.</p>
+        <div class="hero-ctas on-dark">
+          <a href="#request" class="btn btn-primary">Request a FINSEC 360™ Briefing</a>
+          <a href="/cyber-risk-check/" class="btn btn-secondary">Take the Free Cyber Risk Check</a>
+        </div>
       </div>
-      <div class="ind-grid">
-        <a class="ind-card" href="/industries/banking/" style="text-decoration:none;">
-          <span class="ind-status live">Available</span>
-          <h3>Banking</h3><p>Cyber risk for licensed banks and banking groups — core systems, digital channels, third-party integrations.</p>
-          <span class="cta-link" style="font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase;">View sector page →</span>
-        </a>
-        <a class="ind-card" href="/industries/saccos/" style="text-decoration:none;">
-          <span class="ind-status live">Available</span>
-          <h3>SACCOs</h3><p>Right-sized assessment and advisory for SACCOs and savings cooperatives.</p>
-          <span class="cta-link" style="font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase;">View sector page →</span>
-        </a>
-        <a class="ind-card" href="/industries/fintech/" style="text-decoration:none;">
-          <span class="ind-status live">Available</span>
-          <h3>Fintech</h3><p>Security scoped to a fintech stage — from early growth to licensing readiness.</p>
-          <span class="cta-link" style="font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase;">View sector page →</span>
-        </a>
-        <a class="ind-card" href="/industries/psps/" style="text-decoration:none;">
-          <span class="ind-status live">Available</span>
-          <h3>Payment Service Providers</h3><p>Cyber risk across the transaction flow itself, not just supporting systems.</p>
-          <span class="cta-link" style="font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase;">View sector page →</span>
-        </a>
-        <a class="ind-card" href="/industries/insurance/" style="text-decoration:none;">
-          <span class="ind-status live">Available</span>
-          <h3>Insurance</h3><p>Risk assessment across policyholder data, claims systems and broker integrations.</p>
-          <span class="cta-link" style="font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase;">View sector page →</span>
-        </a>
-        <a class="ind-card" href="/industries/healthcare/" style="text-decoration:none;">
-          <span class="ind-status live">Available</span>
-          <h3>Healthcare</h3><p>Assessments scoped around patient confidentiality and clinical system continuity.</p>
-          <span class="cta-link" style="font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase;">View sector page →</span>
-        </a>
-        <a class="ind-card" href="/industries/education/" style="text-decoration:none;">
-          <span class="ind-status live">Available</span>
-          <h3>Education</h3><p>Right-sized security for schools and universities managing student and staff data.</p>
-          <span class="cta-link" style="font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase;">View sector page →</span>
-        </a>
-        <a class="ind-card" href="/industries/enterprise/" style="text-decoration:none;">
-          <span class="ind-status live">Available</span>
-          <h3>Enterprise</h3><p>Cyber risk assessment for larger, more complex organisations.</p>
-          <span class="cta-link" style="font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase;">View sector page →</span>
-        </a></div>
     </div>
   </section>
+
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">Sector Risk Landscape</span>
+        <h2>Where enterprise carry distinct cyber risk</h2>
+        <p>These patterns come from how enterprise actually operate day to day — not a generic enterprise risk list with the sector name swapped in.</p>
+      </div>
+      <div class="risk-grid">
+        <div class="risk-card"><span class="mark">01</span><h3>Cross-Department Access Sprawl</h3><p>Access accumulated over years across departments often goes unreviewed until an assessment forces the question.</p></div>
+        <div class="risk-card"><span class="mark">02</span><h3>Legacy System Integration</h3><p>Older core systems, often business-critical, frequently carry the least-documented risk.</p></div>
+        <div class="risk-card"><span class="mark">03</span><h3>Vendor &amp; Supply Chain Risk</h3><p>A larger vendor and supplier footprint means a correspondingly larger third-party attack surface.</p></div>
+        <div class="risk-card"><span class="mark">04</span><h3>Cloud Migration Exposure</h3><p>Ongoing cloud migration projects commonly introduce configuration risk during transition.</p></div>
+        <div class="risk-card"><span class="mark">05</span><h3>Insider Risk at Scale</h3><p>Larger headcounts and more complex org structures make insider risk harder to monitor by default.</p></div>
+        <div class="risk-card"><span class="mark">06</span><h3>Regulatory &amp; Compliance Complexity</h3><p>Enterprises often face a patchwork of overlapping regulatory and compliance expectations across business lines.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">Relevant RETIS Services</span>
+        <h2>Where to start</h2>
+        <p>Not every service applies equally — these are the ones enterprise most often need first.</p>
+      </div>
+      <div class="svc-grid">
+        <a class="svc-card" href="/cybersecurity-risk-assessment-kenya/" style="text-decoration:none;">
+          <span class="mark">R</span>
+          <h3>Cyber Risk Assessment</h3>
+          <p>A structured, prioritised view of enterprise-wide risk.</p>
+          <span class="cta-link">Learn more →</span>
+        </a>
+        <a class="svc-card" href="/security-gap-assessment/" style="text-decoration:none;">
+          <span class="mark">S</span>
+          <h3>Security Gap Assessment</h3>
+          <p>A control-by-control review across departments and systems.</p>
+          <span class="cta-link">Learn more →</span>
+        </a>
+        <a class="svc-card" href="/penetration-testing-kenya/" style="text-decoration:none;">
+          <span class="mark">P</span>
+          <h3>Penetration Testing</h3>
+          <p>Authorised, controlled testing of enterprise infrastructure.</p>
+          <span class="cta-link">Learn more →</span>
+        </a>
+        <a class="svc-card" href="/cybersecurity-compliance-kenya/" style="text-decoration:none;">
+          <span class="mark">C</span>
+          <h3>GRC &amp; Compliance Readiness</h3>
+          <p>Governance and compliance advisory across overlapping regulatory expectations.</p>
+          <span class="cta-link">Learn more →</span>
+        </a>
+        <a class="svc-card" href="/cyberguard/" style="text-decoration:none;">
+          <span class="mark">G</span>
+          <h3>CyberGuard™</h3>
+          <p>Continuous advisory suited to ongoing organisational complexity.</p>
+          <span class="cta-link">Learn more →</span>
+        </a></div>
+      <div class="featured-row" style="grid-template-columns:1fr;">
+        
+        <a class="featured-big" href="/finsec-360/" style="text-decoration:none;">
+          <span class="tname">Flagship · Financial Sector</span>
+          <h3>FINSEC 360™</h3>
+          <p>A ten-domain cyber risk and resilience assessment built specifically for financial institutions.</p>
+          <span class="cta-link" style="color:var(--retis-gold);">Explore →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="methodology" style="background:var(--retis-cloud);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Assessment Methodology</span>
+        <h2>The same disciplined process, scoped to enterprise</h2>
+        <p>Discover through Monitor — the sequence doesn't change by sector, but what gets weighted most heavily does.</p>
+      </div>
+      <div class="domain-grid" style="grid-template-columns:repeat(4,1fr);">
+        <div class="domain"><span class="num">01</span><div class="label">Discover</div></div>
+        <div class="domain"><span class="num">02</span><div class="label">Assess</div></div>
+        <div class="domain"><span class="num">03</span><div class="label">Score</div></div>
+        <div class="domain"><span class="num">04</span><div class="label">Prioritise</div></div>
+        <div class="domain"><span class="num">05</span><div class="label">Remediate</div></div>
+        <div class="domain"><span class="num">06</span><div class="label">Test</div></div>
+        <div class="domain"><span class="num">07</span><div class="label">Validate</div></div>
+        <div class="domain"><span class="num">08</span><div class="label">Monitor</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="deliverables">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">Expected Outcomes</span>
+        <h2>What a enterprise engagement is built to deliver</h2>
+        <p>Outcomes you can point to afterward, not just a report that gets filed.</p>
+      </div>
+      <div class="outcome-list"><div class="outcome-item"><p>A prioritised, enterprise-wide risk register rather than a department-by-department patchwork</p></div><div class="outcome-item"><p>Clearer visibility into vendor and supply-chain risk across a larger footprint</p></div><div class="outcome-item"><p>A practical roadmap that accounts for organisational and system complexity</p></div><div class="outcome-item"><p>Stronger governance around cross-department access and insider risk</p></div><div class="outcome-item"><p>Board- and executive-ready reporting suited to enterprise governance structures</p></div><div class="outcome-item"><p>A pathway into CyberGuard™ for continuous, organisation-wide management</p></div></div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="wrap">
+      <div class="case-honesty">
+        <span class="eyebrow" style="color:var(--retis-gold);">Case Studies</span>
+        <h2>Case studies for this sector are in progress</h2>
+        <p>RETIS publishes case studies only with client authorisation, and only once an engagement is complete. As sector-specific engagements conclude, anonymised or named case studies (where permitted) will be added here — we won't publish placeholder results in the meantime.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow purple">Frequently Asked</span>
+        <h2>Questions from enterprise</h2>
+      </div>
+      <div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How does this differ from an assessment for a smaller organisation?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Scope, timeline and methodology adjust to organisational complexity — more departments, systems and vendors typically means a more extensive discovery phase, not a different underlying methodology.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can this run across multiple business units or subsidiaries?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes — multi-entity and multi-business-unit scoping is a standard part of enterprise engagement planning.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can this integrate with our existing internal security or IT team?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes — most enterprise engagements are designed to complement an existing internal team, not replace it.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does an enterprise-scale engagement typically take?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Timeline depends heavily on scope and organisational complexity, agreed during an initial discovery conversation rather than fixed in advance.</p></div>
+        </div></div>
+    </div>
+  </section>
+
+
+
+  <section class="lead-section" id="request">
+    <div class="wrap lead-grid">
+      <div class="lead-copy">
+        <span class="eyebrow">Request a FINSEC 360™ Briefing</span>
+        <h2>Talk to RETIS about enterprise</h2>
+        <p>Tell us about your organisation and we'll follow up — no obligation.</p>
+        <div class="contact-alt">
+          <span>Prefer to talk first? <a href="tel:+254704293812">0704 293 812</a> or <a href="tel:+254101211398">0101 211 398</a></span>
+          <span><a href="mailto:info@retistech.com">info@retistech.com</a></span>
+          <span><a href="https://wa.me/254704293812" target="_blank" rel="noopener">Message us on WhatsApp</a></span>
+        </div>
+      </div>
+      <form class="lead-form">
+        <div class="form-grid">
+          <div><label for="entname">Full name</label><input id="entname" type="text" required autocomplete="name"></div>
+          <div><label for="entorg">Organisation</label><input id="entorg" type="text" required autocomplete="organization"></div>
+          
+          <div><label for="entemail">Business email</label><input id="entemail" type="email" required autocomplete="email"></div>
+          <div><label for="entphone">Phone</label><input id="entphone" type="tel" required autocomplete="tel"></div>
+          <div class="full"><label for="entconcern">What are you looking to achieve?</label><textarea id="entconcern" rows="3"></textarea></div>
+          <div class="full consent-row">
+            <input type="checkbox" id="entconsent" required>
+            <label for="entconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>
+          </div>
+          <div class="full"><button type="submit" class="btn btn-primary btn-block">Submit Request</button></div>
+        </div>
+        <p class="form-note">Submitting this form does not create an engagement. A member of the RETIS team will follow up.</p>
+      </form>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -365,7 +520,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
 <div class="mobile-cta-bar" id="mobileCtaBar">
   <a href="tel:+254704293812">📞 Call</a>
   <a href="https://wa.me/254704293812" target="_blank" rel="noopener">💬 WhatsApp</a>
-  <a href="/contact/#assessment">Request Assessment</a>
+  <a href="#request">Request Briefing</a>
 </div>
 
 <script>
