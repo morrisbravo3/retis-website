@@ -177,6 +177,14 @@
   .footer-bottom a{color:#7C86A0;} .footer-bottom a:hover{color:var(--retis-gold);}
   .footer-legal{display:flex; gap:18px; flex-wrap:wrap;}
   .visually-hidden{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+
+.hero, footer { position:relative; overflow:hidden; }
+.hero::before, footer::before {
+  content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cg fill='none' stroke='%23E3A83B' stroke-width='1' opacity='0.07'%3E%3Cline x1='12' y1='12' x2='70' y2='45'/%3E%3Cline x1='70' y1='45' x2='128' y2='18'/%3E%3Cline x1='70' y1='45' x2='48' y2='115'/%3E%3Cline x1='48' y1='115' x2='115' y2='128'/%3E%3Cline x1='115' y1='128' x2='140' y2='100'/%3E%3C/g%3E%3Cg fill='%23E3A83B' opacity='0.16'%3E%3Ccircle cx='12' cy='12' r='1.8'/%3E%3Ccircle cx='70' cy='45' r='2.2'/%3E%3Ccircle cx='128' cy='18' r='1.8'/%3E%3Ccircle cx='48' cy='115' r='1.8'/%3E%3Ccircle cx='115' cy='128' r='1.8'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+.hero > .wrap, .hero > .hero-grid, footer > .wrap { position:relative; z-index:1; }
 </style>
 <script type="application/ld+json">
 {

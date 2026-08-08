@@ -244,6 +244,7 @@
   }
   .flag-card:hover{box-shadow:0 12px 32px rgba(10,13,22,0.1); transform:translateY(-2px);}
   .flag-card .mark{width:40px; height:40px; border-radius:50%; border:2px solid var(--retis-gold); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); color:var(--retis-navy); font-weight:600;}
+  .flag-card .mark-icon svg{width:20px; height:20px; color:var(--retis-navy);}
   .flag-card h3{font-size:1.1rem; color:var(--retis-navy);}
   .flag-card p{color:var(--retis-slate); font-size:0.92rem; flex-grow:1;}
   .flag-card .cta-link{font-family:var(--font-mono); font-size:0.8rem; color:var(--retis-purple); font-weight:600; text-transform:uppercase; letter-spacing:0.04em;}
@@ -322,6 +323,46 @@
   @media (min-width:1024px){ body{padding-bottom:0;} }
 
   .visually-hidden{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+
+.hero, footer { position:relative; overflow:hidden; }
+.hero::before, footer::before {
+  content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cg fill='none' stroke='%23E3A83B' stroke-width='1' opacity='0.07'%3E%3Cline x1='12' y1='12' x2='70' y2='45'/%3E%3Cline x1='70' y1='45' x2='128' y2='18'/%3E%3Cline x1='70' y1='45' x2='48' y2='115'/%3E%3Cline x1='48' y1='115' x2='115' y2='128'/%3E%3Cline x1='115' y1='128' x2='140' y2='100'/%3E%3C/g%3E%3Cg fill='%23E3A83B' opacity='0.16'%3E%3Ccircle cx='12' cy='12' r='1.8'/%3E%3Ccircle cx='70' cy='45' r='2.2'/%3E%3Ccircle cx='128' cy='18' r='1.8'/%3E%3Ccircle cx='48' cy='115' r='1.8'/%3E%3Ccircle cx='115' cy='128' r='1.8'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+.hero > .wrap, .hero > .hero-grid, footer > .wrap { position:relative; z-index:1; }
+/* ===== Cyber Risk Command Centre (sample dashboard) ===== */
+.command-centre{background:var(--retis-obsidian); color:#fff; padding:72px 0;}
+.cc-head{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:16px; margin-bottom:8px;}
+.cc-head h2{color:#fff; font-size:1.7rem;}
+.cc-sample-tag{font-family:var(--font-mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.05em; color:var(--risk-mod); border:1px solid var(--risk-mod); padding:5px 12px; border-radius:20px; white-space:nowrap;}
+.cc-disclaimer{color:#8A93AC; font-size:.85rem; margin-bottom:36px; max-width:70ch;}
+.cc-grid{display:grid; grid-template-columns:1fr; gap:20px;} @media (min-width:800px){ .cc-grid{grid-template-columns:1.3fr 1fr;} }
+.cc-panel{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); border-radius:var(--radius-m); padding:26px;}
+.cc-panel-label{font-family:var(--font-mono); font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; color:var(--retis-gold); display:block; margin-bottom:18px;}
+.cc-status-list{display:flex; flex-direction:column; gap:12px;}
+.cc-status-row{display:flex; justify-content:space-between; align-items:center; font-size:.92rem; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,.06);}
+.cc-status-row:last-child{border-bottom:none; padding-bottom:0;}
+.cc-badge{font-family:var(--font-mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.04em; padding:4px 10px; border-radius:20px; font-weight:600;}
+.cc-secure{background:rgba(62,122,84,.18); color:#6FCB8F;}
+.cc-monitor{background:rgba(201,138,46,.18); color:#E3A83B;}
+.cc-attention{background:rgba(180,66,58,.18); color:#E08076;}
+.cc-review{background:rgba(91,46,140,.22); color:#B48CDE;}
+.cc-index-panel{text-align:center;}
+.cc-index-note{color:#8A93AC; font-size:.82rem; margin-top:14px;}
+
+/* ===== Circular methodology diagram ===== */
+.circular-method{position:relative; width:100%; max-width:480px; aspect-ratio:1; margin:0 auto; display:none;}
+@media (min-width:860px){ .circular-method{display:block;} }
+.circular-method-svg{position:absolute; inset:0; width:100%; height:100%;}
+.cm-node{
+  position:absolute; top:50%; left:50%; width:120px; margin-left:-60px; margin-top:-28px;
+  transform: rotate(var(--a)) translate(190px) rotate(calc(-1 * var(--a)));
+  text-align:center;
+}
+.cm-num{display:block; font-family:var(--font-mono); font-size:.78rem; color:var(--retis-gold); margin-bottom:4px;}
+.cm-label{display:block; font-weight:600; font-size:.88rem; color:var(--retis-navy); background:#fff; border:1px solid var(--retis-border); border-radius:20px; padding:6px 14px;}
+.stepper-fallback{display:grid;} @media (min-width:860px){ .stepper-fallback{display:none;} }
 </style>
 <script type="application/ld+json">
 {
@@ -587,7 +628,53 @@
     </div>
   </div>
 
-  <!-- ===== METHODOLOGY ===== -->
+  <!-- ===== CYBER RISK COMMAND CENTRE (SAMPLE) ===== -->
+  <section class="command-centre">
+    <div class="wrap">
+      <div class="cc-head">
+        <div>
+          <span class="eyebrow">RETIS Cyber Risk Intelligence</span>
+          <h2>What a managed risk posture actually looks like</h2>
+        </div>
+        <span class="cc-sample-tag">Sample dashboard — for illustration only</span>
+      </div>
+      <p class="cc-disclaimer">This is a demonstration screen showing what CyberGuard™ reporting looks like in practice. It does not represent any actual organisation's current security status.</p>
+
+      <div class="cc-grid">
+        <div class="cc-panel">
+          <span class="cc-panel-label">Cyber Risk Status</span>
+          <div class="cc-status-list">
+            <div class="cc-status-row"><span>Network Security</span><span class="cc-badge cc-secure">Secure</span></div>
+            <div class="cc-status-row"><span>Identity &amp; Access</span><span class="cc-badge cc-monitor">Monitor</span></div>
+            <div class="cc-status-row"><span>Application Security</span><span class="cc-badge cc-attention">Attention</span></div>
+            <div class="cc-status-row"><span>Data Protection</span><span class="cc-badge cc-secure">Secure</span></div>
+            <div class="cc-status-row"><span>Governance</span><span class="cc-badge cc-review">Review</span></div>
+            <div class="cc-status-row"><span>Incident Readiness</span><span class="cc-badge cc-monitor">Monitor</span></div>
+          </div>
+        </div>
+
+        <div class="cc-panel cc-index-panel">
+          <span class="cc-panel-label">Cyber Risk Index</span>
+          <div class="ring-wrap" style="max-width:200px; margin:16px auto 0;">
+            <svg viewBox="0 0 200 200" role="img" aria-labelledby="ccIndexTitle">
+              <title id="ccIndexTitle">Sample Cyber Risk Index score</title>
+              <circle cx="100" cy="100" r="86" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="10"/>
+              <circle cx="100" cy="100" r="86" fill="none" stroke="#C98A2E" stroke-width="10"
+                stroke-linecap="round" stroke-dasharray="540" stroke-dashoffset="205"
+                transform="rotate(-90 100 100)"/>
+            </svg>
+            <div class="ring-center">
+              <span class="score" style="color:#fff;">62/100</span>
+              <span class="band">Sample · Moderate</span>
+            </div>
+          </div>
+          <p class="cc-index-note">Compiled from the six categories above — this is how CyberGuard™ clients see posture change quarter to quarter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METHODOLOGY (CIRCULAR) ===== -->
   <section class="methodology">
     <div class="wrap">
       <div class="section-head">
@@ -595,7 +682,26 @@
         <h2>A structured methodology, not a checklist</h2>
         <p>Every RETIS engagement — whichever service you start with — follows the same eight-stage process, from the first discovery conversation through to ongoing monitoring. Risk gets tracked, not reported once and forgotten.</p>
       </div>
-      <div class="stepper">
+
+      <div class="circular-method">
+        <svg viewBox="0 0 480 480" class="circular-method-svg" role="img" aria-label="RETIS eight-stage methodology, arranged in a continuous cycle">
+          <circle cx="240" cy="240" r="190" fill="none" stroke="var(--retis-border)" stroke-width="1.5" stroke-dasharray="2 6"/>
+          <circle cx="240" cy="240" r="72" fill="var(--retis-navy)"/>
+          <text x="240" y="234" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans" font-weight="600" font-size="17">RETIS</text>
+          <text x="240" y="256" text-anchor="middle" fill="#C7CEE0" font-family="IBM Plex Mono" font-size="10" letter-spacing="1">CYBER RESILIENCE</text>
+        </svg>
+        <div class="cm-node" style="--a:0deg;"><span class="cm-num">01</span><span class="cm-label">Discover</span></div>
+        <div class="cm-node" style="--a:45deg;"><span class="cm-num">02</span><span class="cm-label">Assess</span></div>
+        <div class="cm-node" style="--a:90deg;"><span class="cm-num">03</span><span class="cm-label">Score</span></div>
+        <div class="cm-node" style="--a:135deg;"><span class="cm-num">04</span><span class="cm-label">Prioritise</span></div>
+        <div class="cm-node" style="--a:180deg;"><span class="cm-num">05</span><span class="cm-label">Remediate</span></div>
+        <div class="cm-node" style="--a:225deg;"><span class="cm-num">06</span><span class="cm-label">Test</span></div>
+        <div class="cm-node" style="--a:270deg;"><span class="cm-num">07</span><span class="cm-label">Validate</span></div>
+        <div class="cm-node" style="--a:315deg;"><span class="cm-num">08</span><span class="cm-label">Monitor</span></div>
+      </div>
+
+      <!-- Accessible / mobile fallback: same content as a simple list -->
+      <div class="stepper stepper-fallback">
         <div class="step"><span class="num">01</span><span class="label">Discover</span></div>
         <div class="step"><span class="num">02</span><span class="label">Assess</span></div>
         <div class="step"><span class="num">03</span><span class="label">Score</span></div>
@@ -618,25 +724,25 @@
       </div>
       <div class="flagship-grid">
         <div class="flag-card">
-          <span class="mark">F</span>
+          <span class="mark mark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
           <h3>FINSEC 360™</h3>
           <p>A ten-domain cyber risk and resilience assessment purpose-built for banks, SACCOs, fintechs and PSPs — scored, prioritised, and delivered in language your board can act on.</p>
           <a class="cta-link" href="/finsec-360/">Request a briefing →</a>
         </div>
         <div class="flag-card">
-          <span class="mark">C</span>
+          <span class="mark mark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12a8 8 0 0114-5.3M20 12a8 8 0 01-14 5.3"/><path d="M17 4v3h-3M7 20v-3h3"/></svg></span>
           <h3>CyberGuard™</h3>
           <p>Cybersecurity that doesn't stop the day the report is delivered — a named advisor, monthly reviews, and quarterly executive reporting that keeps risk actively managed.</p>
           <a class="cta-link" href="/cyberguard/">Discuss CyberGuard →</a>
         </div>
         <div class="flag-card">
-          <span class="mark">S</span>
+          <span class="mark mark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 8L4 12l5 4M15 8l5 4-5 4"/><path d="M13 6l-2 12"/></svg></span>
           <h3>SecureCode™</h3>
           <p>Software built secure from the first architecture decision, not patched after launch — so protection is part of how the system works, not a bolt-on.</p>
           <a class="cta-link" href="/securecode/">Explore SecureCode →</a>
         </div>
         <div class="flag-card">
-          <span class="mark">A</span>
+          <span class="mark mark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8l10-4 10 4-10 4-10-4z"/><path d="M6 10v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></span>
           <h3>Cyber Academy</h3>
           <p>From board-level awareness to hands-on technical training — practical cybersecurity and digital skills, scoped to your team, not delivered as a generic slide deck.</p>
           <a class="cta-link" href="/cyber-academy/">View programmes →</a>
