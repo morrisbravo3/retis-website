@@ -528,7 +528,16 @@
               <option>Site visit</option><option>Not sure yet</option>
             </select>
           </div>
-          <div class="full"><label for="fconcern">Primary cybersecurity concern</label><textarea id="fconcern" name="fconcern" rows="3" placeholder="e.g. preparing for investor due diligence, board asked for a risk review, recent incident, third-party risk..."></textarea></div>
+          <div>
+            <label for="fconcern">Primary concern</label>
+            <select id="fconcern" name="fconcern">
+              <option value="">Select...</option>
+              <option>Data breach or recent incident</option><option>Regulatory or compliance pressure</option>
+              <option>Third-party or vendor risk</option><option>Preparing for investor/partner due diligence</option>
+              <option>Don't know where to start</option><option>Other</option>
+            </select>
+          </div>
+          <div class="full"><label for="fmessage">Message</label><textarea id="fmessage" name="fmessage" rows="3" placeholder="Anything else that would help us scope this properly"></textarea></div>
           <div class="full consent-row">
             <input type="checkbox" id="fconsent" name="fconsent" required>
             <label for="fconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request and storing my information in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>

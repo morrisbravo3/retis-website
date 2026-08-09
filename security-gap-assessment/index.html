@@ -477,7 +477,16 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
               <option>Site visit</option><option>Not sure yet</option>
             </select>
           </div>
-          <div class="full"><label for="gconcern">Primary concern</label><textarea id="gconcern" rows="3" placeholder="e.g. preparing for a client security questionnaire, recent incident, unsure where to start..."></textarea></div>
+          <div>
+            <label for="gconcern">Primary concern</label>
+            <select id="gconcern">
+              <option value="">Select...</option>
+              <option>Data breach or recent incident</option><option>Regulatory or compliance pressure</option>
+              <option>Third-party or vendor risk</option><option>Preparing for investor/partner due diligence</option>
+              <option>Don't know where to start</option><option>Other</option>
+            </select>
+          </div>
+          <div class="full"><label for="gmessage">Message</label><textarea id="gmessage" rows="3" placeholder="Anything else that would help us scope this properly"></textarea></div>
           <div class="full consent-row">
             <input type="checkbox" id="gconsent" required>
             <label for="gconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>
