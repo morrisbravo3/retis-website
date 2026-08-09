@@ -537,6 +537,10 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
             </select>
           </div>
           <div class="full"><label for="hcmessage">Message</label><textarea id="hcmessage" rows="3" placeholder="Anything else that would help us scope this properly"></textarea></div>
+          <div style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+            <label for="hchp">Leave this field empty</label>
+            <input type="text" id="hchp" name="hp" tabindex="-1" autocomplete="off">
+          </div>
           <div class="full consent-row">
             <input type="checkbox" id="hcconsent" required>
             <label for="hcconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>
