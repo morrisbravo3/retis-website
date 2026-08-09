@@ -440,6 +440,13 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:56px 0 32px;}
 
   // ---- Service data, ported from the RETIS internal Rate Card (Aug 2026) ----
   var SERVICES = [
+    { id:"health-check", label:"Cybersecurity Health Check", unitQ:"How many employees does your organisation have?",
+      tiers:[
+        {label:"Under 20", base:90000, units:0, unitPct:0.12},
+        {label:"20–50", base:90000, units:2, unitPct:0.12},
+        {label:"50+", base:90000, units:4, unitPct:0.12}
+      ], locSurcharge:10000, rushPct:0.20, flexPct:-0.10, depthApplicable:false },
+
     { id:"risk-sme", label:"Cybersecurity Risk Assessment", unitQ:"How many employees does your organisation have?",
       tiers:[
         {label:"Under 50", base:200000, units:0, unitPct:0.10},
@@ -487,7 +494,77 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:56px 0 32px;}
         {label:"Under 50", base:85000, units:0, unitPct:0.08},
         {label:"50–250", base:85000, units:2, unitPct:0.08},
         {label:"250+", base:85000, units:4, unitPct:0.08}
-      ], locSurcharge:5000, rushPct:0, flexPct:0, depthApplicable:false, monthly:true }
+      ], locSurcharge:5000, rushPct:0, flexPct:0, depthApplicable:false, monthly:true },
+
+    { id:"business-website", label:"Business Website (SecureCode™)", unitQ:"Roughly how many pages does the site need?",
+      tiers:[
+        {label:"Up to 5 pages", base:40000, units:0, unitPct:0.10},
+        {label:"6–15 pages", base:40000, units:2, unitPct:0.10},
+        {label:"16+ pages", base:40000, units:4, unitPct:0.10}
+      ], locSurcharge:0, rushPct:0.20, flexPct:-0.10, depthApplicable:false },
+
+    { id:"custom-webapp", label:"Custom Web Application / Portal", unitQ:"How many core modules does the application need?",
+      tiers:[
+        {label:"1 module", base:280000, units:0, unitPct:0.15},
+        {label:"2–3 modules", base:280000, units:2, unitPct:0.15},
+        {label:"4+ modules", base:280000, units:4, unitPct:0.15}
+      ], locSurcharge:0, rushPct:0.20, flexPct:-0.10, depthApplicable:true, deepPct:0.20 },
+
+    { id:"mobile-app", label:"Mobile Application", unitQ:"Which platforms do you need?",
+      tiers:[
+        {label:"Single platform (iOS or Android)", base:90000, units:0, unitPct:0.60},
+        {label:"Both platforms", base:90000, units:1, unitPct:0.60},
+        {label:"Both platforms + backend/API", base:90000, units:2, unitPct:0.60}
+      ], locSurcharge:0, rushPct:0.20, flexPct:-0.10, depthApplicable:false },
+
+    { id:"app-security-review", label:"Application Security Review", unitQ:"How many applications are in scope?",
+      tiers:[
+        {label:"1 application", base:120000, units:0, unitPct:0.20},
+        {label:"2–3 applications", base:120000, units:2, unitPct:0.20},
+        {label:"4+ applications", base:120000, units:4, unitPct:0.20}
+      ], locSurcharge:0, rushPct:0.25, flexPct:-0.10, depthApplicable:true, deepPct:0.25 },
+
+    { id:"seo-foundation", label:"SEO — Foundation", unitQ:"How many business locations need local SEO coverage?",
+      tiers:[
+        {label:"1 location", base:20000, units:0, unitPct:0.15},
+        {label:"2–3 locations", base:20000, units:2, unitPct:0.15},
+        {label:"4+ locations", base:20000, units:4, unitPct:0.15}
+      ], locSurcharge:0, rushPct:0, flexPct:0, depthApplicable:false, monthly:true },
+
+    { id:"seo-growth", label:"SEO — Growth", unitQ:"How many business locations need coverage?",
+      tiers:[
+        {label:"1 location", base:45000, units:0, unitPct:0.12},
+        {label:"2–3 locations", base:45000, units:2, unitPct:0.12},
+        {label:"4+ locations", base:45000, units:4, unitPct:0.12}
+      ], locSurcharge:0, rushPct:0, flexPct:0, depthApplicable:false, monthly:true },
+
+    { id:"seo-authority", label:"SEO — Authority", unitQ:"How many markets or regions do you need to rank in?",
+      tiers:[
+        {label:"1 market", base:90000, units:0, unitPct:0.10},
+        {label:"2–3 markets", base:90000, units:2, unitPct:0.10},
+        {label:"4+ markets", base:90000, units:4, unitPct:0.10}
+      ], locSurcharge:0, rushPct:0, flexPct:0, depthApplicable:false, monthly:true },
+
+    { id:"awareness-training", label:"Cybersecurity Awareness Training", unitQ:"How many staff need training?",
+      tiers:[
+        {label:"Up to 30 (1 session)", base:25000, units:0, unitPct:0.20},
+        {label:"31–60 (2 sessions)", base:25000, units:1, unitPct:0.20},
+        {label:"61+ (multiple sessions)", base:25000, units:2, unitPct:0.20}
+      ], locSurcharge:0, rushPct:0.20, flexPct:0, depthApplicable:false },
+
+    { id:"technical-training", label:"Technical Cybersecurity Training", unitQ:"How many technical staff need training?",
+      tiers:[
+        {label:"Up to 15", base:45000, units:0, unitPct:0.20},
+        {label:"16–30", base:45000, units:1, unitPct:0.20},
+        {label:"31+", base:45000, units:2, unitPct:0.20}
+      ], locSurcharge:0, rushPct:0.20, flexPct:0, depthApplicable:true, deepPct:0.15 },
+
+    { id:"digital-marketing-training", label:"Digital Marketing Training", unitQ:"How many people need training?",
+      tiers:[
+        {label:"Under 10 (no group rate)", base:6000, units:1, unitPct:0.25},
+        {label:"10–25 (group rate)", base:6000, units:0, unitPct:0.25},
+        {label:"26+ (larger group rate)", base:6000, units:0, unitPct:0}
+      ], locSurcharge:0, rushPct:0, flexPct:0, depthApplicable:false }
   ];
 
   var LOCATION_OPTIONS = [
