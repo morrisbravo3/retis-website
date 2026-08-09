@@ -302,6 +302,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
           <a href="#request" class="btn btn-primary">Request a Security Gap Assessment</a>
           <a href="/cyber-risk-check/" class="btn btn-secondary">Take the Free Cyber Risk Check</a>
         </div>
+          <p style="margin-top:16px; font-size:.85rem; color:#C7CEE0;">Prefer to talk first? <a href="tel:+254704293812" style="color:var(--retis-gold); text-decoration:underline;">Talk to an Expert</a> — 0704 293 812</p>
       </div>
       <div class="hero-card">
         <h3>A gap assessment is not:</h3>
@@ -453,6 +454,23 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
           </div>
           <div><label for="gemail">Business email</label><input id="gemail" type="email" required autocomplete="email"></div>
           <div><label for="gphone">Phone</label><input id="gphone" type="tel" required autocomplete="tel"></div>
+          <div><label for="gwebsite">Website</label><input id="gwebsite" type="url" placeholder="https://" autocomplete="url"></div>
+          <div>
+            <label for="gservice">Service required</label>
+            <select id="gservice">
+              <option value="">Select...</option>
+              <option selected>Security Gap Assessment</option><option>Cyber Risk Assessment</option>
+              <option>Vulnerability Assessment</option><option>Penetration Testing</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="gengagement">Preferred engagement</label>
+            <select id="gengagement">
+              <option value="">Select...</option>
+              <option>Discovery call</option><option>Detailed written proposal</option>
+              <option>Site visit</option><option>Not sure yet</option>
+            </select>
+          </div>
           <div class="full"><label for="gconcern">Primary concern</label><textarea id="gconcern" rows="3" placeholder="e.g. preparing for a client security questionnaire, recent incident, unsure where to start..."></textarea></div>
           <div class="full consent-row">
             <input type="checkbox" id="gconsent" required>

@@ -306,6 +306,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
           <a href="#request" class="btn btn-primary">Request a Cyber Risk Assessment</a>
           <a href="/cyber-risk-check/" class="btn btn-secondary">Take the Free Cyber Risk Check</a>
         </div>
+          <p style="margin-top:16px; font-size:.85rem; color:#C7CEE0;">Prefer to talk first? <a href="tel:+254704293812" style="color:var(--retis-gold); text-decoration:underline;">Talk to an Expert</a> — 0704 293 812</p>
       </div>
     </div>
   </section>
@@ -511,6 +512,8 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
         <div class="form-grid">
           <div><label for="csname">Full name</label><input id="csname" type="text" required autocomplete="name"></div>
           <div><label for="csorg">Organisation</label><input id="csorg" type="text" required autocomplete="organization"></div>
+          <div><label for="csemail">Business email</label><input id="csemail" type="email" required autocomplete="email"></div>
+          <div><label for="csphone">Phone</label><input id="csphone" type="tel" required autocomplete="tel"></div>
           
           <div>
             <label for="csindustry">Industry</label>
@@ -521,9 +524,43 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
               <option>Public Sector</option><option>General Enterprise</option><option>SME</option>
             </select>
           </div>
-          <div><label for="csemail">Business email</label><input id="csemail" type="email" required autocomplete="email"></div>
-          <div><label for="csphone">Phone</label><input id="csphone" type="tel" required autocomplete="tel"></div>
-          <div class="full"><label for="csconcern">What are you looking to achieve?</label><textarea id="csconcern" rows="3"></textarea></div>
+          <div>
+            <label for="cssize">Organisation size</label>
+            <select id="cssize">
+              <option value="">Select...</option>
+              <option>Under 50 employees</option><option>50–250 employees</option>
+              <option>250–1000 employees</option><option>1000+ employees</option>
+            </select>
+          </div>
+          <div><label for="cswebsite">Website</label><input id="cswebsite" type="url" placeholder="https://" autocomplete="url"></div>
+          <div>
+            <label for="csconcern">Primary concern</label>
+            <select id="csconcern">
+              <option value="">Select...</option>
+              <option>Data breach or recent incident</option><option>Regulatory or compliance pressure</option>
+              <option>Third-party or vendor risk</option><option>Preparing for investor/partner due diligence</option>
+              <option>Don't know where to start</option><option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="csservice">Service required</label>
+            <select id="csservice">
+              <option value="">Select...</option>
+              <option>Cyber Risk Assessment</option><option>Security Gap Assessment</option>
+              <option>FINSEC 360™</option><option>CyberGuard™</option>
+              <option>Secure Software Development</option><option>Training</option>
+              <option>Digital Growth</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="csengagement">Preferred engagement</label>
+            <select id="csengagement">
+              <option value="">Select...</option>
+              <option>Discovery call</option><option>Detailed written proposal</option>
+              <option>Site visit</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="full"><label for="csmessage">Message</label><textarea id="csmessage" rows="3" placeholder="Anything else that would help us scope this properly"></textarea></div>
           <div class="full consent-row">
             <input type="checkbox" id="csconsent" required>
             <label for="csconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>

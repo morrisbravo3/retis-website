@@ -328,6 +328,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
           </div>
           <div><label for="cemail">Business email</label><input id="cemail" type="email" required autocomplete="email"></div>
           <div><label for="cphone">Phone</label><input id="cphone" type="tel" required autocomplete="tel"></div>
+          <div><label for="cwebsite">Website</label><input id="cwebsite" type="url" placeholder="https://" autocomplete="url"></div>
           <div>
             <label for="csize">Company size</label>
             <select id="csize">
@@ -347,6 +348,14 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
             </select>
           </div>
           <div>
+            <label for="cengagement">Preferred engagement</label>
+            <select id="cengagement">
+              <option value="">Select...</option>
+              <option>Discovery call</option><option>Detailed written proposal</option>
+              <option>Site visit</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div>
             <label for="cbudget">Budget range (optional)</label>
             <select id="cbudget">
               <option value="">Prefer not to say</option>
@@ -358,7 +367,16 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
             <label for="ccontact">Preferred contact method</label>
             <select id="ccontact"><option>Email</option><option>Phone call</option><option>WhatsApp</option></select>
           </div>
-          <div class="full"><label for="cconcern">What are you looking to achieve?</label><textarea id="cconcern" rows="3"></textarea></div>
+          <div>
+            <label for="cconcern">Primary concern</label>
+            <select id="cconcern">
+              <option value="">Select...</option>
+              <option>Data breach or recent incident</option><option>Regulatory or compliance pressure</option>
+              <option>Third-party or vendor risk</option><option>Preparing for investor/partner due diligence</option>
+              <option>Don't know where to start</option><option>Other</option>
+            </select>
+          </div>
+          <div class="full"><label for="cmessage">Message</label><textarea id="cmessage" rows="3" placeholder="Anything else that would help us scope this properly"></textarea></div>
           <div class="full consent-row">
             <input type="checkbox" id="cconsent" required>
             <label for="cconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>

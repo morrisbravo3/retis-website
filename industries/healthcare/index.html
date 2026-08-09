@@ -481,10 +481,46 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
         <div class="form-grid">
           <div><label for="hcname">Full name</label><input id="hcname" type="text" required autocomplete="name"></div>
           <div><label for="hcorg">Organisation</label><input id="hcorg" type="text" required autocomplete="organization"></div>
-          
           <div><label for="hcemail">Business email</label><input id="hcemail" type="email" required autocomplete="email"></div>
           <div><label for="hcphone">Phone</label><input id="hcphone" type="tel" required autocomplete="tel"></div>
-          <div class="full"><label for="hcconcern">What are you looking to achieve?</label><textarea id="hcconcern" rows="3"></textarea></div>
+          
+          <div>
+            <label for="hcsize">Organisation size</label>
+            <select id="hcsize">
+              <option value="">Select...</option>
+              <option>Under 50 employees</option><option>50–250 employees</option>
+              <option>250–1000 employees</option><option>1000+ employees</option>
+            </select>
+          </div>
+          <div><label for="hcwebsite">Website</label><input id="hcwebsite" type="url" placeholder="https://" autocomplete="url"></div>
+          <div>
+            <label for="hcconcern">Primary concern</label>
+            <select id="hcconcern">
+              <option value="">Select...</option>
+              <option>Data breach or recent incident</option><option>Regulatory or compliance pressure</option>
+              <option>Third-party or vendor risk</option><option>Preparing for investor/partner due diligence</option>
+              <option>Don't know where to start</option><option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="hcservice">Service required</label>
+            <select id="hcservice">
+              <option value="">Select...</option>
+              <option>Cyber Risk Assessment</option><option>Security Gap Assessment</option>
+              <option>FINSEC 360™</option><option>CyberGuard™</option>
+              <option>Secure Software Development</option><option>Training</option>
+              <option>Digital Growth</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="hcengagement">Preferred engagement</label>
+            <select id="hcengagement">
+              <option value="">Select...</option>
+              <option>Discovery call</option><option>Detailed written proposal</option>
+              <option>Site visit</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="full"><label for="hcmessage">Message</label><textarea id="hcmessage" rows="3" placeholder="Anything else that would help us scope this properly"></textarea></div>
           <div class="full consent-row">
             <input type="checkbox" id="hcconsent" required>
             <label for="hcconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>

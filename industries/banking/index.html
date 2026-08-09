@@ -487,10 +487,46 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
         <div class="form-grid">
           <div><label for="bkname">Full name</label><input id="bkname" type="text" required autocomplete="name"></div>
           <div><label for="bkorg">Organisation</label><input id="bkorg" type="text" required autocomplete="organization"></div>
-          
           <div><label for="bkemail">Business email</label><input id="bkemail" type="email" required autocomplete="email"></div>
           <div><label for="bkphone">Phone</label><input id="bkphone" type="tel" required autocomplete="tel"></div>
-          <div class="full"><label for="bkconcern">What are you looking to achieve?</label><textarea id="bkconcern" rows="3"></textarea></div>
+          
+          <div>
+            <label for="bksize">Organisation size</label>
+            <select id="bksize">
+              <option value="">Select...</option>
+              <option>Under 50 employees</option><option>50–250 employees</option>
+              <option>250–1000 employees</option><option>1000+ employees</option>
+            </select>
+          </div>
+          <div><label for="bkwebsite">Website</label><input id="bkwebsite" type="url" placeholder="https://" autocomplete="url"></div>
+          <div>
+            <label for="bkconcern">Primary concern</label>
+            <select id="bkconcern">
+              <option value="">Select...</option>
+              <option>Data breach or recent incident</option><option>Regulatory or compliance pressure</option>
+              <option>Third-party or vendor risk</option><option>Preparing for investor/partner due diligence</option>
+              <option>Don't know where to start</option><option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="bkservice">Service required</label>
+            <select id="bkservice">
+              <option value="">Select...</option>
+              <option>Cyber Risk Assessment</option><option>Security Gap Assessment</option>
+              <option>FINSEC 360™</option><option>CyberGuard™</option>
+              <option>Secure Software Development</option><option>Training</option>
+              <option>Digital Growth</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="bkengagement">Preferred engagement</label>
+            <select id="bkengagement">
+              <option value="">Select...</option>
+              <option>Discovery call</option><option>Detailed written proposal</option>
+              <option>Site visit</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="full"><label for="bkmessage">Message</label><textarea id="bkmessage" rows="3" placeholder="Anything else that would help us scope this properly"></textarea></div>
           <div class="full consent-row">
             <input type="checkbox" id="bkconsent" required>
             <label for="bkconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>
