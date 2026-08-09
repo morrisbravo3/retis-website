@@ -3,12 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="/assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/assets/icon.svg">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-<link rel="manifest" href="/assets/site.webmanifest">
 <meta name="robots" content="index, follow">
 <!-- Google Search Console: replace with real verification meta tag once property is created -->
 <title>Contact RETIS Systems | Nairobi, Kenya</title>
@@ -334,7 +328,6 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
           </div>
           <div><label for="cemail">Business email</label><input id="cemail" type="email" required autocomplete="email"></div>
           <div><label for="cphone">Phone</label><input id="cphone" type="tel" required autocomplete="tel"></div>
-          <div><label for="cwebsite">Website</label><input id="cwebsite" type="url" placeholder="https://" autocomplete="url"></div>
           <div>
             <label for="csize">Company size</label>
             <select id="csize">
@@ -354,14 +347,6 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
             </select>
           </div>
           <div>
-            <label for="cengagement">Preferred engagement</label>
-            <select id="cengagement">
-              <option value="">Select...</option>
-              <option>Discovery call</option><option>Detailed written proposal</option>
-              <option>Site visit</option><option>Not sure yet</option>
-            </select>
-          </div>
-          <div>
             <label for="cbudget">Budget range (optional)</label>
             <select id="cbudget">
               <option value="">Prefer not to say</option>
@@ -373,16 +358,7 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
             <label for="ccontact">Preferred contact method</label>
             <select id="ccontact"><option>Email</option><option>Phone call</option><option>WhatsApp</option></select>
           </div>
-          <div>
-            <label for="cconcern">Primary concern</label>
-            <select id="cconcern">
-              <option value="">Select...</option>
-              <option>Data breach or recent incident</option><option>Regulatory or compliance pressure</option>
-              <option>Third-party or vendor risk</option><option>Preparing for investor/partner due diligence</option>
-              <option>Don't know where to start</option><option>Other</option>
-            </select>
-          </div>
-          <div class="full"><label for="cmessage">Message</label><textarea id="cmessage" rows="3" placeholder="Anything else that would help us scope this properly"></textarea></div>
+          <div class="full"><label for="cconcern">What are you looking to achieve?</label><textarea id="cconcern" rows="3"></textarea></div>
           <div class="full consent-row">
             <input type="checkbox" id="cconsent" required>
             <label for="cconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>
@@ -492,5 +468,72 @@ document.addEventListener('DOMContentLoaded', function(){
   document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(el){ el.addEventListener('click', function(){ retisTrack('whatsapp_click', {}); }); });
   document.querySelectorAll('.lead-form, #leadForm').forEach(function(el){ el.addEventListener('submit', function(){ retisTrack('lead_form_submitted', {form_id: el.id || 'lead_form'}); }); });
 });
+</script>
+<script>
+(function(){
+  // RETIS_LEAD_ENDPOINT is a placeholder until the backend is deployed.
+  // Update this one constant here and re-sweep the site to push the
+  // real URL to every page at once — see the automation README.
+  var RETIS_LEAD_ENDPOINT = "";
+
+  document.querySelectorAll('.lead-form').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      if(!RETIS_LEAD_ENDPOINT){
+        alert('This form is not yet connected to a live backend. See the automation setup guide to finish deployment.');
+        return;
+      }
+
+      function fieldValue(suffix){
+        var el = form.querySelector('[id$="' + suffix + '"]');
+        return el ? el.value : '';
+      }
+
+      var payload = {
+        fullName: fieldValue('name'),
+        organizationName: fieldValue('org'),
+        email: fieldValue('email'),
+        phone: fieldValue('phone'),
+        industry: fieldValue('industry'),
+        organizationSize: fieldValue('size'),
+        website: fieldValue('website'),
+        primaryConcern: fieldValue('concern'),
+        serviceRequired: fieldValue('service'),
+        preferredEngagement: fieldValue('engagement'),
+        message: fieldValue('message'),
+        sourcePage: window.location.pathname
+      };
+
+      if(!payload.fullName || !payload.organizationName || !payload.email || !payload.phone){
+        alert('Please fill in your name, organisation, email and phone before submitting.');
+        return;
+      }
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalText = submitBtn ? submitBtn.textContent : '';
+      if(submitBtn){ submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; }
+
+      fetch(RETIS_LEAD_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function(res){ return res.json(); })
+      .then(function(data){
+        if(data.success){
+          form.innerHTML = '<p style="padding:24px; text-align:center; color:var(--retis-navy); font-weight:600;">Thank you — we\'ve received your request and will follow up within two business days.</p>';
+        } else {
+          if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = originalText; }
+          alert('Something went wrong submitting this form. Please try again or call 0704 293 812.');
+        }
+      })
+      .catch(function(){
+        if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        alert('Could not reach the server. Please check your connection and try again, or call 0704 293 812.');
+      });
+    });
+  });
+})();
 </script>
 </body></html>

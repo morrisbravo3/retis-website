@@ -481,4 +481,71 @@ document.addEventListener('DOMContentLoaded', function(){
   if(notify){ notify.addEventListener('submit', function(){ retisTrack('research_notify_signup', {}); }); }
 });
 </script>
+<script>
+(function(){
+  // RETIS_LEAD_ENDPOINT is a placeholder until the backend is deployed.
+  // Update this one constant here and re-sweep the site to push the
+  // real URL to every page at once — see the automation README.
+  var RETIS_LEAD_ENDPOINT = "";
+
+  document.querySelectorAll('.lead-form').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      if(!RETIS_LEAD_ENDPOINT){
+        alert('This form is not yet connected to a live backend. See the automation setup guide to finish deployment.');
+        return;
+      }
+
+      function fieldValue(suffix){
+        var el = form.querySelector('[id$="' + suffix + '"]');
+        return el ? el.value : '';
+      }
+
+      var payload = {
+        fullName: fieldValue('name'),
+        organizationName: fieldValue('org'),
+        email: fieldValue('email'),
+        phone: fieldValue('phone'),
+        industry: fieldValue('industry'),
+        organizationSize: fieldValue('size'),
+        website: fieldValue('website'),
+        primaryConcern: fieldValue('concern'),
+        serviceRequired: fieldValue('service'),
+        preferredEngagement: fieldValue('engagement'),
+        message: fieldValue('message'),
+        sourcePage: window.location.pathname
+      };
+
+      if(!payload.fullName || !payload.organizationName || !payload.email || !payload.phone){
+        alert('Please fill in your name, organisation, email and phone before submitting.');
+        return;
+      }
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalText = submitBtn ? submitBtn.textContent : '';
+      if(submitBtn){ submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; }
+
+      fetch(RETIS_LEAD_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function(res){ return res.json(); })
+      .then(function(data){
+        if(data.success){
+          form.innerHTML = '<p style="padding:24px; text-align:center; color:var(--retis-navy); font-weight:600;">Thank you — we\'ve received your request and will follow up within two business days.</p>';
+        } else {
+          if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = originalText; }
+          alert('Something went wrong submitting this form. Please try again or call 0704 293 812.');
+        }
+      })
+      .catch(function(){
+        if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        alert('Could not reach the server. Please check your connection and try again, or call 0704 293 812.');
+      });
+    });
+  });
+})();
+</script>
 </body></html>
