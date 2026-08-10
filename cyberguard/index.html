@@ -571,13 +571,6 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
       lastY = y;
     }, {passive:true});
   }
-  var lf = document.querySelector('.lead-form');
-  if(lf){
-    lf.addEventListener('submit', function(e){
-      e.preventDefault();
-      alert('Demo form — no backend connected yet. In production this posts to the RETIS lead-capture endpoint.');
-    });
-  }
   var nf = document.querySelector('.notify-form');
   if(nf){
     nf.addEventListener('submit', function(e){
