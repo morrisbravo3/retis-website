@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<!-- Google Search Console: replace with real verification meta tag once property is created -->
+<title>Cyber Risk Management for SMEs: You Don't Need an Enterprise Budget to Think Like One | RETIS Systems</title>
+<meta name="description" content="A practical cybersecurity framework for Kenyan SMEs — identify what to protect, understand your real threat landscape, apply CIS controls, train your people, and build an incident response plan, without enterprise-scale spending.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.retistech.com/insights/cyber-risk/cyber-risk-management-for-smes/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RETIS Systems">
+<meta property="og:title" content="Cyber Risk Management for SMEs: You Don't Need an Enterprise Budget to Think Like One | RETIS Systems">
+<meta property="og:description" content="A practical cybersecurity framework for Kenyan SMEs — identify what to protect, understand your real threat landscape, apply CIS controls, train your people, and build an incident response plan, without enterprise-scale spending.">
+<meta property="og:url" content="https://www.retistech.com/insights/cyber-risk/cyber-risk-management-for-smes/">
+<meta property="og:image" content="https://www.retistech.com/assets/retis-social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_KE">
+<meta name="twitter:title" content="Cyber Risk Management for SMEs: You Don't Need an Enterprise Budget to Think Like One | RETIS Systems">
+<meta name="twitter:description" content="A practical cybersecurity framework for Kenyan SMEs — identify what to protect, understand your real threat landscape, apply CIS controls, train your people, and build an incident response plan, without enterprise-scale spending.">
+<meta name="twitter:image" content="https://www.retistech.com/assets/retis-social-preview.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Cyber Risk Management for SMEs: You Don't Need an Enterprise Budget to Think Like One",
+  "description": "A practical cybersecurity framework for Kenyan SMEs — identify what to protect, understand your real threat landscape, apply CIS controls, train your people, and build an incident response plan, without enterprise-scale spending.",
+  "author": {"@type":"Person","name":"Morris Mureti","jobTitle":"Founder & CEO, RETIS Systems","url":"https://www.retistech.com/about/","image":"https://www.retistech.com/assets/morris-mureti-headshot.jpg","award":"Cybershujaa Award, in partnership with Serianu, USIU-Africa and the Kenya Bankers Association","alumniOf":{"@type":"EducationalOrganization","name":"University of Washington"}},
+  "publisher": {"@type":"Organization","name":"RETIS Systems","url":"https://www.retistech.com/"},
+  "datePublished": "2026-08-09",
+  "dateModified": "2026-08-09",
+  "url": "https://www.retistech.com/insights/cyber-risk/cyber-risk-management-for-smes/"
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How much should an SME actually budget for cybersecurity?","acceptedAnswer":{"@type":"Answer","text":"This varies significantly by business size and risk profile — the Cybersecurity Health Check is specifically designed as an affordable, right-sized entry point rather than assuming a large budget upfront."}},
+    {"@type":"Question","name":"Do I need a dedicated IT security person as an SME?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily — many SMEs work with an external advisor for periodic assessments and guidance rather than a full-time hire, at least initially."}},
+    {"@type":"Question","name":"What's the single highest-impact first step for an SME with limited resources?","acceptedAnswer":{"@type":"Answer","text":"Enabling multi-factor authentication on email and financial accounts, combined with a basic asset inventory — both are low-cost and address the most common attack paths."}}
+]}
+</script><script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.retistech.com/"},
+    {"@type":"ListItem","position":2,"name":"Insights","item":"https://www.retistech.com/insights/"},
+    {"@type":"ListItem","position":3,"name":"Cyber Risk","item":"https://www.retistech.com/insights/cyber-risk/"},
+    {"@type":"ListItem","position":4,"name":"Cyber Risk Management for SMEs: You Don't Need an Enterprise Budget to Think Like One","item":"https://www.retistech.com/insights/cyber-risk/cyber-risk-management-for-smes/"}
+]}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RETIS Systems",
+  "alternateName": "RETIS SYSTEMS",
+  "url": "https://www.retistech.com/",
+  "logo": "https://www.retistech.com/assets/retis-logo.jpg",
+  "description": "RETIS Systems provides cybersecurity risk assessment, security testing, security-by-design software development, digital marketing and cybersecurity training for organisations across Kenya and East Africa.",
+  "telephone": ["+254704293812", "+254101211398"],
+  "email": "info@retistech.com",
+  "address": {"@type":"PostalAddress","streetAddress":"5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road","addressLocality":"Nairobi","addressCountry":"KE"},
+  "sameAs": [],
+  "founder": {"@type":"Person","name":"Morris Mureti","jobTitle":"Founder & CEO","url":"https://www.retistech.com/about/leadership/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "RETIS Systems",
+  "url": "https://www.retistech.com/",
+  "inLanguage": "en-KE",
+  "publisher": {"@type":"Organization","name":"RETIS Systems","url":"https://www.retistech.com/"}
+}
+</script>
+
+<style>
+:root{
+  --retis-obsidian:#0A0D16; --retis-navy:#142452; --retis-navy-light:#22336E;
+  --retis-gold:#E3A83B; --retis-purple:#5B2E8C; --retis-cloud:#F6F7FA;
+  --retis-ink:#1A1F2E; --retis-slate:#5C6B85; --retis-border:#E3E7EF; --risk-mod:#C98A2E;
+  --font-display:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+  --font-body:'IBM Plex Sans',-apple-system,Segoe UI,sans-serif;
+  --font-mono:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+  --radius-s:4px; --radius-m:8px; --max:1280px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.001ms!important; transition-duration:.001ms!important;} }
+body{margin:0; font-family:var(--font-body); color:var(--retis-ink); background:var(--retis-cloud); line-height:1.6; -webkit-font-smoothing:antialiased; padding-bottom:64px;}
+@media (min-width:1024px){ body{padding-bottom:0;} }
+h1,h2,h3,h4{font-family:var(--font-display); margin:0; font-weight:600; letter-spacing:-0.01em;}
+p{margin:0;} a{color:inherit; text-decoration:none;} img{max-width:100%; display:block;}
+ul{margin:0; padding:0; list-style:none;} button{font-family:inherit; cursor:pointer;}
+label{font-size:.85rem; font-weight:600; color:var(--retis-navy); display:block; margin-bottom:6px;}
+input,select,textarea{width:100%; padding:12px 14px; border:1px solid var(--retis-border); border-radius:var(--radius-s); font-family:inherit; font-size:.95rem; background:#fff; color:var(--retis-ink);}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--retis-gold); outline-offset:1px; border-color:var(--retis-gold);}
+.skip-link{position:absolute; left:-999px; top:0; background:var(--retis-gold); color:var(--retis-obsidian); padding:12px 20px; z-index:1000; font-weight:600; border-radius:0 0 var(--radius-s) 0;}
+.skip-link:focus{left:0;}
+a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible{outline:2px solid var(--retis-gold); outline-offset:2px; border-radius:2px;}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+@media (max-width:640px){ .wrap{padding:0 16px;} }
+.wrap-narrow{max-width:760px; margin:0 auto; padding:0 24px;}
+@media (max-width:640px){ .wrap-narrow{padding:0 16px;} }
+section{padding:88px 0;} @media (max-width:640px){ section{padding:48px 0;} }
+.eyebrow{font-family:var(--font-mono); font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--retis-gold); display:block; margin-bottom:12px;}
+.eyebrow.purple{color:var(--retis-purple);}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:14px 28px; border-radius:var(--radius-s); font-weight:600; font-size:.95rem; text-transform:uppercase; letter-spacing:.04em; border:2px solid transparent; transition:background 150ms, color 150ms, border-color 150ms;}
+.btn-primary{background:var(--retis-gold); color:var(--retis-obsidian);} .btn-primary:hover{background:#F0BA55;}
+.btn-secondary{background:transparent; border-color:currentColor; color:var(--retis-navy);} .btn-secondary:hover{background:rgba(20,36,82,.06);}
+.on-dark .btn-secondary{color:#fff;} .on-dark .btn-secondary:hover{background:rgba(255,255,255,.08);}
+.btn-block{width:100%;}
+header.site-header{position:sticky; top:0; z-index:100; background:rgba(246,247,250,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--retis-border);}
+.header-row{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+.logo-link img{height:52px; width:auto;}
+nav.primary-nav{display:none;} @media (min-width:1024px){ nav.primary-nav{display:flex; align-items:center; gap:4px;} }
+.nav-trigger{background:none; border:none; padding:12px 14px; font-size:.95rem; font-weight:500; color:var(--retis-navy); border-radius:var(--radius-s);}
+.nav-trigger:hover{background:rgba(20,36,82,.06);}
+.header-cta{display:none;} @media (min-width:1024px){ .header-cta{display:flex; align-items:center; gap:12px;} }
+.header-cta .btn{padding:11px 20px; font-size:.82rem;}
+.mobile-toggle{display:flex; background:none; border:1px solid var(--retis-border); border-radius:var(--radius-s); padding:10px 12px;}
+@media (min-width:1024px){ .mobile-toggle{display:none;} }
+.mobile-toggle span, .mobile-toggle span::before, .mobile-toggle span::after{display:block; width:20px; height:2px; background:var(--retis-navy); position:relative;}
+.mobile-toggle span::before{content:""; position:absolute; top:-6px;} .mobile-toggle span::after{content:""; position:absolute; top:6px;}
+.mobile-drawer{position:fixed; inset:0; background:#fff; z-index:200; padding:20px; overflow-y:auto; transform:translateX(100%); transition:transform 220ms ease-out;}
+.breadcrumb{padding:16px 0; font-size:.85rem; color:var(--retis-slate); border-bottom:1px solid var(--retis-border); background:#fff;}
+.breadcrumb a{color:var(--retis-slate);} .breadcrumb a:hover{color:var(--retis-navy);}
+.breadcrumb .sep{color:var(--retis-gold); margin:0 8px;}
+.section-head{max-width:680px; margin-bottom:44px;}
+.section-head h2{font-size:1.8rem;} @media (min-width:1024px){ .section-head h2{font-size:2.3rem;} }
+.section-head p{color:var(--retis-slate); margin-top:14px; font-size:1.02rem;}
+.hero{background:radial-gradient(ellipse at 75% 15%, var(--retis-navy) 0%, var(--retis-obsidian) 60%); color:#fff; padding:72px 0 88px;}
+.hero-grid{display:grid; grid-template-columns:1fr; gap:40px; align-items:start;}
+@media (min-width:1024px){ .hero-grid{grid-template-columns:1.3fr .9fr;} }
+.hero h1{font-size:2.1rem; line-height:1.15; margin-bottom:18px;} @media (min-width:1024px){ .hero h1{font-size:3rem;} }
+.hero .lede{font-size:1.02rem; color:#C7CEE0; max-width:56ch; margin-bottom:28px;}
+.hero-ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px;}
+.segment-chips{display:flex; flex-wrap:wrap; gap:10px;}
+.segment-chip{font-family:var(--font-mono); font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; padding:6px 12px; border:1px solid rgba(255,255,255,.2); border-radius:20px; color:#C7CEE0;}
+.hero-card{background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14); border-radius:var(--radius-m); padding:28px;}
+.hero-card h3{font-size:1rem; color:#fff; margin-bottom:16px;}
+.hero-card ul li{display:flex; gap:10px; align-items:flex-start; font-size:.9rem; color:#C7CEE0; margin-bottom:10px;}
+.hero-card ul li::before{content:"✓"; color:var(--retis-gold); font-weight:700; flex-shrink:0;}
+.domain-grid{display:grid; grid-template-columns:1fr; gap:2px; background:var(--retis-border); border:1px solid var(--retis-border); border-radius:var(--radius-m); overflow:hidden;}
+@media (min-width:640px){ .domain-grid{grid-template-columns:1fr 1fr;} }
+@media (min-width:1024px){ .domain-grid{grid-template-columns:repeat(3,1fr);} }
+.domain{background:#fff; padding:24px 18px;}
+.domain .num{font-family:var(--font-mono); color:var(--retis-gold); font-size:.85rem; display:block; margin-bottom:10px;}
+.domain .label{font-weight:600; font-size:.92rem; color:var(--retis-navy); margin-bottom:6px;}
+.domain .desc{font-size:.82rem; color:var(--retis-slate); line-height:1.5;}
+.deliverables{background:#fff;}
+.deliv-grid{display:grid; grid-template-columns:1fr; gap:24px;} @media (min-width:768px){ .deliv-grid{grid-template-columns:repeat(3,1fr);} }
+.deliv-card{border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:26px;}
+.deliv-card .mark{width:36px; height:36px; border-radius:50%; border:2px solid var(--retis-gold); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); color:var(--retis-navy); font-weight:600; margin-bottom:14px;}
+.deliv-card h3{font-size:1.02rem; color:var(--retis-navy); margin-bottom:8px;}
+.deliv-card p{font-size:.9rem; color:var(--retis-slate);}
+.process{background:var(--retis-cloud);}
+.process-list{display:flex; flex-direction:column; gap:0;}
+.process-item{display:grid; grid-template-columns:56px 1fr; gap:20px; padding:24px 0; border-bottom:1px solid var(--retis-border);}
+.process-item:last-child{border-bottom:none;}
+.process-num{font-family:var(--font-mono); font-size:1.3rem; color:var(--retis-gold); font-weight:600;}
+.process-item h3{font-size:1.05rem; color:var(--retis-navy); margin-bottom:6px;}
+.process-item p{font-size:.92rem; color:var(--retis-slate); max-width:60ch;}
+.faq{background:#fff;}
+.faq-item{border-bottom:1px solid var(--retis-border);}
+.faq-q{width:100%; text-align:left; background:none; border:none; padding:20px 0; display:flex; justify-content:space-between; align-items:center; font-weight:600; font-size:1rem; color:var(--retis-navy);}
+.faq-q .plus{font-family:var(--font-mono); font-size:1.2rem; color:var(--retis-gold); transition:transform 150ms;}
+.faq-item.open .plus{transform:rotate(45deg);}
+.faq-a{max-height:0; overflow:hidden; transition:max-height 200ms ease-out;}
+.faq-item.open .faq-a{max-height:300px;}
+.faq-a p{padding:0 0 20px; color:var(--retis-slate); font-size:.94rem; max-width:70ch;}
+.trust{background:var(--retis-navy); color:#fff;}
+.trust-grid{display:grid; grid-template-columns:1fr; gap:28px;} @media (min-width:768px){ .trust-grid{grid-template-columns:repeat(3,1fr);} }
+.trust-item h3{font-size:1rem; margin-bottom:10px; color:var(--retis-gold);}
+.trust-item p{font-size:.9rem; color:#C7CEE0;}
+.lead-section{background:var(--retis-obsidian); color:#fff;}
+.lead-grid{display:grid; grid-template-columns:1fr; gap:40px;} @media (min-width:1024px){ .lead-grid{grid-template-columns:.9fr 1.1fr;} }
+.lead-copy h2{font-size:1.7rem; margin-bottom:16px;} @media (min-width:1024px){ .lead-copy h2{font-size:2.1rem;} }
+.lead-copy p{color:#C7CEE0; margin-bottom:22px; max-width:48ch;}
+.lead-copy .contact-alt{display:flex; flex-direction:column; gap:10px; font-size:.9rem; color:#AEB6CB;}
+.lead-copy .contact-alt a{color:var(--retis-gold);}
+.lead-form{background:#fff; border-radius:var(--radius-m); padding:32px; color:var(--retis-ink);}
+.form-grid{display:grid; grid-template-columns:1fr; gap:18px;} @media (min-width:640px){ .form-grid{grid-template-columns:1fr 1fr;} }
+.form-grid .full{grid-column:1 / -1;}
+.consent-row{display:flex; align-items:flex-start; gap:10px; font-size:.82rem; color:var(--retis-slate);}
+.consent-row input{width:auto; margin-top:3px;}
+.form-note{font-size:.78rem; color:var(--retis-slate); margin-top:16px;}
+footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
+.footer-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; font-size:.8rem; color:#7C86A0;}
+.footer-bottom a{color:#7C86A0;} .footer-bottom a:hover{color:var(--retis-gold);}
+.footer-legal{display:flex; gap:18px; flex-wrap:wrap;}
+.footer-min{display:flex; align-items:center; gap:14px; margin-bottom:32px;}
+.footer-min img{height:44px; width:auto;}
+.mobile-cta-bar{position:fixed; bottom:0; left:0; right:0; z-index:150; background:#fff; border-top:1px solid var(--retis-border); display:grid; grid-template-columns:1fr 1fr 1.4fr; box-shadow:0 -8px 24px rgba(10,13,22,.08); transition:transform 200ms ease-out;}
+@media (min-width:1024px){ .mobile-cta-bar{display:none;} }
+.mobile-cta-bar.hide{transform:translateY(100%);}
+.mobile-cta-bar a{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; padding:10px 4px; font-size:.68rem; font-weight:600; text-transform:uppercase; color:var(--retis-navy); border-right:1px solid var(--retis-border);}
+.mobile-cta-bar a:last-child{border-right:none; background:var(--retis-gold); color:var(--retis-obsidian);}
+.visually-hidden{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+
+/* Insights hub */
+.filter-row{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:40px;}
+.filter-pill{font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; padding:8px 16px; border:1px solid var(--retis-border); border-radius:20px; background:#fff; color:var(--retis-slate);}
+.filter-pill.active{background:var(--retis-navy); color:#fff; border-color:var(--retis-navy);}
+.insights-grid{display:grid; grid-template-columns:1fr; gap:24px;} @media (min-width:768px){ .insights-grid{grid-template-columns:repeat(3,1fr);} }
+.insight-card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:24px; display:flex; flex-direction:column; gap:12px;}
+.insight-card .tag{font-family:var(--font-mono); font-size:.72rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:.06em;}
+.insight-card h3{font-size:1.05rem; line-height:1.35; color:var(--retis-navy);}
+.insight-card p.snippet{font-size:.88rem; color:var(--retis-slate);}
+.insight-card .meta{font-family:var(--font-mono); font-size:.75rem; color:var(--retis-slate); margin-top:auto;}
+
+/* Article page */
+.article-head{max-width:760px; margin:0 auto 40px;}
+.article-head .tag{font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:.06em; display:block; margin-bottom:14px;}
+.article-head h1{font-size:2rem; margin-bottom:16px;} @media (min-width:768px){ .article-head h1{font-size:2.6rem;} }
+.article-byline{font-family:var(--font-mono); font-size:.8rem; color:var(--retis-slate); display:flex; flex-wrap:wrap; gap:16px;}
+.direct-answer{background:var(--retis-cloud); border-left:4px solid var(--retis-gold); border-radius:0 var(--radius-m) var(--radius-m) 0; padding:22px 26px; margin:0 auto 40px; max-width:760px; font-size:1.02rem; color:var(--retis-ink);}
+.article-body{max-width:760px; margin:0 auto;}
+.article-body h2{font-size:1.4rem; color:var(--retis-navy); margin:40px 0 16px;}
+.article-body p{color:var(--retis-ink); margin-bottom:16px; font-size:1rem;}
+.article-body ul{margin:0 0 20px; padding-left:0;}
+.article-body ul li{display:flex; gap:10px; align-items:flex-start; margin-bottom:10px; font-size:.98rem;}
+.article-body ul li::before{content:"—"; color:var(--retis-gold); flex-shrink:0;}
+.inline-cta{background:var(--retis-navy); color:#fff; border-radius:var(--radius-m); padding:28px 32px; margin:40px 0; text-align:center;}
+.inline-cta p{color:#C7CEE0; margin-bottom:16px;}
+.author-card{max-width:760px; margin:48px auto 0; background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:24px; display:flex; gap:16px; align-items:flex-start;}
+.author-card .avatar{width:52px; height:52px; border-radius:50%; background:var(--retis-navy); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:600; flex-shrink:0;}
+.author-card h4{font-size:.95rem; color:var(--retis-navy); margin-bottom:4px;}
+.author-card p{font-size:.85rem; color:var(--retis-slate);}
+.related-wrap{max-width:900px; margin:56px auto 0;}
+
+/* Research hub */
+.report-grid{display:grid; grid-template-columns:1fr; gap:24px;} @media (min-width:768px){ .report-grid{grid-template-columns:1fr 1fr;} }
+.report-card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:26px; display:flex; flex-direction:column; gap:12px;}
+.report-status{font-family:var(--font-mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; padding:4px 10px; border-radius:20px; background:var(--retis-cloud); color:var(--retis-slate); width:fit-content;}
+.report-card h3{font-size:1.05rem; color:var(--retis-navy);}
+.report-card p{font-size:.9rem; color:var(--retis-slate);}
+.index-card{background:var(--retis-obsidian); color:#fff; border-radius:var(--radius-m); padding:40px; margin-bottom:48px;}
+.index-card h2{font-size:1.6rem; margin-bottom:14px; color:#fff;}
+.index-card p{color:#C7CEE0; max-width:70ch;}
+.notify-form{display:flex; flex-wrap:wrap; gap:12px; max-width:520px; margin-top:20px;}
+.notify-form input{flex:1; min-width:200px;}
+</style>
+</head>
+<body>
+<style>
+.article-head{max-width:760px; margin:0 auto 40px;}
+.article-head .tag{font-family:var(--font-mono); font-size:.78rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:.06em; display:block; margin-bottom:14px;}
+.article-head h1{font-size:2rem; margin-bottom:16px;} @media (min-width:768px){ .article-head h1{font-size:2.4rem;} }
+.article-byline{font-family:var(--font-mono); font-size:.8rem; color:var(--retis-slate); display:flex; flex-wrap:wrap; gap:16px;}
+.direct-answer{background:var(--retis-cloud); border-left:4px solid var(--retis-gold); border-radius:0 var(--radius-m) var(--radius-m) 0; padding:22px 26px; margin:0 auto 40px; max-width:760px; font-size:1.02rem; color:var(--retis-ink);}
+.article-body{max-width:760px; margin:0 auto;}
+.article-body h2{font-size:1.35rem; color:var(--retis-navy); margin:36px 0 14px;}
+.article-body p{color:var(--retis-ink); margin-bottom:16px; font-size:1rem;}
+.article-body ul{margin:0 0 20px; padding-left:0;}
+.article-body ul li{display:flex; gap:10px; align-items:flex-start; margin-bottom:10px; font-size:.98rem;}
+.article-body ul li::before{content:"—"; color:var(--retis-gold); flex-shrink:0;}
+.inline-cta{background:var(--retis-navy); color:#fff; border-radius:var(--radius-m); padding:26px 30px; margin:36px 0; text-align:center;}
+.inline-cta p{color:#C7CEE0; margin-bottom:14px;}
+.author-card{max-width:760px; margin:44px auto 0; background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:22px; display:flex; gap:16px; align-items:flex-start;}
+.author-card h4{font-size:.95rem; color:var(--retis-navy); margin-bottom:4px;}
+.author-card p{font-size:.85rem; color:var(--retis-slate);}
+.related-wrap{max-width:900px; margin:52px auto 0;}
+.insights-grid{display:grid; grid-template-columns:1fr; gap:20px;} @media (min-width:768px){ .insights-grid{grid-template-columns:repeat(3,1fr);} }
+.insight-card{background:#fff; border:1px solid var(--retis-border); border-radius:var(--radius-m); padding:22px; display:flex; flex-direction:column; gap:10px;}
+.insight-card .tag{font-family:var(--font-mono); font-size:.72rem; color:var(--retis-purple); text-transform:uppercase; letter-spacing:.06em;}
+.insight-card h3{font-size:1rem; line-height:1.35; color:var(--retis-navy);}
+.insight-card p.snippet{font-size:.85rem; color:var(--retis-slate);}
+</style>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="/" class="logo-link" aria-label="RETIS Systems home"><img src="/assets/retis-logo-white.png" width="220" height="200" alt="RETIS Systems logo"></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-trigger" href="/cybersecurity-solutions/">Cybersecurity</a>
+      <a class="nav-trigger" href="/secure-software-development/">Security by Design</a>
+      <a class="nav-trigger" href="/cybersecurity-training-kenya/">Training</a>
+      <a class="nav-trigger" href="/digital-marketing-kenya/">Digital Growth</a>
+      <a class="nav-trigger" href="/industries/">Industries</a>
+      <a class="nav-trigger" href="/insights/">Insights</a>
+      <a class="nav-trigger" href="/kenya-cyber-risk-intelligence/">Research</a>
+    </nav>
+    <div class="header-cta">
+      <a href="/contact/" class="nav-trigger" style="font-size:.85rem;">Contact</a>
+      <a href="/contact/#assessment" class="btn btn-primary">Request Assessment</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+    <span style="font-family:var(--font-mono); font-weight:600; color:var(--retis-navy);">Menu</span>
+    <button id="drawerClose" aria-label="Close menu" style="background:none; border:none; font-size:1.6rem; color:var(--retis-navy);">&times;</button>
+  </div>
+  <nav style="display:flex; flex-direction:column;">
+    <a href="/cybersecurity-solutions/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Cybersecurity</a>
+    <a href="/security-gap-assessment/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Security Gap Assessment</a>
+    <a href="/finsec-360/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">FINSEC 360™</a>
+    <a href="/cyberguard/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">CyberGuard™</a>
+    <a href="/insights/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Insights</a>
+    <a href="/kenya-cyber-risk-intelligence/" style="padding:14px 0; border-bottom:1px solid var(--retis-border); font-weight:600; color:var(--retis-navy);">Research</a>
+  </nav>
+  <div style="margin-top:20px;"><a href="/contact/#assessment" class="btn btn-primary btn-block">Request Assessment</a></div>
+</div>
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="wrap"><a href="/">Home</a><span class="sep">/</span><a href="/insights/">Insights</a><span class="sep">/</span><a href="/insights/#cyber-risk">Cyber Risk</a><span class="sep">/</span><span style="color:var(--retis-navy); font-weight:600;">Cyber Risk Management for SMEs: You Don't Need an Enterprise Budget to Think Like One</span></div></nav>
+<main id="main">
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <div style="background:#FBF0DC; border-left:4px solid var(--retis-gold); padding:14px 20px; margin-bottom:24px; border-radius:8px; font-size:.85rem; color:var(--retis-ink);"><strong>Draft — pending author review.</strong> This piece is attributed to a named RETIS team member and awaits their review and approval before being treated as their published view.</div>
+      <div class="article-head">
+        <span class="tag">Cyber Risk</span>
+        <h1>Cyber Risk Management for SMEs: You Don't Need an Enterprise Budget to Think Like One</h1>
+        <div class="article-byline">
+          <span>By Morris Mureti, Founder & CEO</span>
+          <span>Published Aug 9, 2026</span>
+          <span>Updated Aug 9, 2026</span>
+        </div>
+      </div>
+      <div class="direct-answer"><strong>SMEs don't need an enterprise security budget — they need an enterprise security mindset applied at SME scale.</strong> That means identifying what actually needs protecting, understanding the threats that specifically target smaller businesses, applying a small, prioritised set of controls consistently, training staff on the handful of behaviours that matter most, and having a basic plan for when something goes wrong. None of this requires six-figure spending — it requires discipline about priorities.</div>
+      <div class="article-body">
+        
+        <h2>The myth of "we're too small to be targeted"</h2>
+        <p>This is the single most dangerous belief in SME security. The reality is close to the opposite: small and midsize businesses are disproportionately targeted precisely because attackers know they typically have weaker controls, fewer dedicated resources, and slower detection.</p>
+        <p>According to global small-business cybersecurity data, a large share of breaches hit organisations with fewer than 1,000 employees. An SME doesn't need an enterprise budget to defend itself — but it does need a framework, applied consistently.</p>
+
+        <h2>Step 1: Identify what you actually need to protect</h2>
+        <p>Start with a simple inventory. Not everything an SME owns is equally worth protecting, and treating every asset as equally critical is how limited security budgets get spread too thin to matter anywhere. Ask:</p>
+        <ul>
+          <li>What data do we hold that has real value — customer records, financial records, intellectual property?</li>
+          <li>What systems are business-critical — email, point-of-sale, payment processing?</li>
+          <li>What people have access to sensitive systems or data — and what happens if that access is compromised?</li>
+        </ul>
+        <p>You cannot protect what you haven't identified. This single step alone drives a significant share of what follows.</p>
+
+        <h2>Step 2: Understand your real threat landscape</h2>
+        <p>Not all SMEs face equal risk. For most SMEs in East Africa, the highest-frequency threats tend to cluster around a few well-understood categories:</p>
+        <ul>
+          <li><strong>Business Email Compromise (BEC)</strong> — fraudulent emails impersonating suppliers or executives, often requesting payment redirects</li>
+          <li><strong>Phishing</strong> — credential-stealing messages disguised as legitimate correspondence</li>
+          <li><strong>Ransomware</strong> — malware that encrypts business data and demands payment for its release</li>
+          <li><strong>Insider threats</strong> — employees accidentally or deliberately mishandling sensitive information</li>
+        </ul>
+        <p>Understanding which threats are most likely to actually reach your business lets you prioritise controls, instead of buying tools aimed at threats you're unlikely to face.</p>
+
+        <h2>Step 3: Apply a simplified controls framework</h2>
+        <p>The Center for Internet Security (CIS) Controls are a globally recognised cybersecurity framework. For most SMEs, implementing just the first few controls represents a dramatic improvement in security posture:</p>
+        <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:.92rem;">
+          <tr style="background:var(--retis-cloud);"><th style="text-align:left; padding:10px; border:1px solid var(--retis-border);">Control</th><th style="text-align:left; padding:10px; border:1px solid var(--retis-border);">What to do</th></tr>
+          <tr><td style="padding:10px; border:1px solid var(--retis-border);">Inventory</td><td style="padding:10px; border:1px solid var(--retis-border);">Know every device and account that touches your network</td></tr>
+          <tr><td style="padding:10px; border:1px solid var(--retis-border);">Software</td><td style="padding:10px; border:1px solid var(--retis-border);">Know every application installed</td></tr>
+          <tr><td style="padding:10px; border:1px solid var(--retis-border);">Data protection</td><td style="padding:10px; border:1px solid var(--retis-border);">Classify and protect sensitive data</td></tr>
+          <tr><td style="padding:10px; border:1px solid var(--retis-border);">Admin privileges</td><td style="padding:10px; border:1px solid var(--retis-border);">Limit who has administrative access</td></tr>
+          <tr><td style="padding:10px; border:1px solid var(--retis-border);">Secure configuration</td><td style="padding:10px; border:1px solid var(--retis-border);">Harden default settings on systems</td></tr>
+          <tr><td style="padding:10px; border:1px solid var(--retis-border);">Audit logs</td><td style="padding:10px; border:1px solid var(--retis-border);">Log and monitor activity</td></tr>
+        </table>
+
+        <h2>Step 4: Train your people</h2>
+        <p>Technology controls alone are insufficient — people are consistently the most exploited control in smaller organisations. A basic security-awareness programme at SME scale should cover: recognising phishing attempts, practising good password hygiene, understanding what to report and to whom, and safe handling of sensitive information. This doesn't need to be elaborate — a short, focused training session, run consistently, outperforms an occasional long one that's quickly forgotten.</p>
+
+        <h2>Step 5: Have a plan before you need one</h2>
+        <p>Incident response planning at SME scale isn't about a large document — it's about clarity on a small number of questions before something goes wrong: who can call it an incident, who is authorised to make decisions during one, how do you communicate with staff and customers, and where are your backups tested and verified to work.</p>
+
+        <h2>The RETIS approach to SME cyber risk</h2>
+        <p>RETIS Systems works with SMEs across sectors on practical cybersecurity — real conversations, no jargon, and no unnecessary spend. The Cybersecurity Health Check exists specifically for this audience — a real, scoped Essential-tier engagement, not a full enterprise assessment forced onto a business that doesn't need one yet.</p>
+    
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq" style="padding:0; max-width:760px; margin:0 auto;">
+        
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How much should an SME actually budget for cybersecurity?<span class="plus">+</span></button>
+          <div class="faq-a"><p>This varies significantly by business size and risk profile — the Cybersecurity Health Check is specifically designed as an affordable, right-sized entry point rather than assuming a large budget upfront.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do I need a dedicated IT security person as an SME?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Not necessarily — many SMEs work with an external advisor for periodic assessments and guidance rather than a full-time hire, at least initially.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What's the single highest-impact first step for an SME with limited resources?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Enabling multi-factor authentication on email and financial accounts, combined with a basic asset inventory — both are low-cost and address the most common attack paths.</p></div>
+        </div>
+      </div>
+      
+      <div class="author-card">
+        <img src="/assets/morris-mureti-headshot.jpg" alt="Morris Mureti" width="52" height="52" style="width:52px; height:52px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+        <div>
+          <h4>Morris Mureti</h4>
+          <p>Founder & CEO, RETIS Systems. An award-winning cybersecurity and business entrepreneurship professional, writing on cybersecurity risk, financial-sector security and secure software for Kenyan organisations.</p>
+        </div>
+      </div>
+
+      
+      <div class="related-wrap">
+        <div class="section-head" style="max-width:100%;">
+          <span class="eyebrow purple">Related Reading</span>
+          <h2 style="font-size:1.3rem;">Continue exploring</h2>
+        </div>
+        <div class="insights-grid">
+          <article class="insight-card">
+            <span class="tag">Cybersecurity</span>
+            <h3><a href="/cybersecurity-for-smes/">Cybersecurity for SMEs</a></h3>
+            <p class="snippet">Practical, right-sized cybersecurity for Kenyan small and medium businesses.</p>
+          </article>
+          <article class="insight-card">
+            <span class="tag">Cybersecurity</span>
+            <h3><a href="/cybersecurity-health-check/">Cybersecurity Health Check</a></h3>
+            <p class="snippet">The real, affordable Essential-tier entry point for smaller organisations.</p>
+          </article>
+          <article class="insight-card">
+            <span class="tag">Cyber Risk</span>
+            <h3><a href="/cyber-risk-check/">Free Cyber Risk Check</a></h3>
+            <p class="snippet">A preliminary, five-minute read on where your organisation stands.</p>
+          </article></div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-min">
+      <img src="/assets/retis-logo-white.png" width="220" height="200" alt="RETIS Systems logo">
+      <span style="font-size:.85rem; color:#8A93AC;">Securing Progress, Advancing Together.</span>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RETIS Systems. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-of-service/">Terms of Service</a>
+        <a href="/insights/">Insights</a>
+        <a href="/kenya-cyber-risk-intelligence/">Research</a>
+        <a href="/">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar" id="mobileCtaBar">
+  <a href="tel:+254704293812">📞 Call</a>
+  <a href="https://wa.me/254704293812" target="_blank" rel="noopener">💬 WhatsApp</a>
+  <a href="/contact/#assessment">Request Assessment</a>
+</div>
+
+<script>
+(function(){
+  var mobileToggle = document.getElementById('mobileToggle');
+  var drawer = document.getElementById('mobileDrawer');
+  var drawerClose = document.getElementById('drawerClose');
+  if(mobileToggle){
+    function openDrawer(){ drawer.style.transform='translateX(0)'; mobileToggle.setAttribute('aria-expanded','true'); drawerClose.focus(); document.body.style.overflow='hidden'; }
+    function closeDrawer(){ drawer.style.transform='translateX(100%)'; mobileToggle.setAttribute('aria-expanded','false'); mobileToggle.focus(); document.body.style.overflow=''; }
+    mobileToggle.addEventListener('click', openDrawer);
+    drawerClose.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeDrawer(); });
+  }
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+      if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+  var lastY = window.scrollY;
+  var bar = document.getElementById('mobileCtaBar');
+  if(bar){
+    window.addEventListener('scroll', function(){
+      var y = window.scrollY;
+      if(y > lastY && y > 200){ bar.classList.add('hide'); } else { bar.classList.remove('hide'); }
+      lastY = y;
+    }, {passive:true});
+  }
+  var nf = document.querySelector('.notify-form');
+  if(nf){
+    nf.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Demo form — no backend connected yet. In production this subscribes you to report notifications.');
+    });
+  }
+  var filterPills = document.querySelectorAll('.filter-pill');
+  if(filterPills.length){
+    filterPills.forEach(function(pill){
+      pill.addEventListener('click', function(){
+        filterPills.forEach(function(p){ p.classList.remove('active'); });
+        pill.classList.add('active');
+        var cat = pill.dataset.filter;
+        document.querySelectorAll('.insight-card').forEach(function(card){
+          card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none';
+        });
+      });
+    });
+  }
+  // ==========================================================
+  // Lead form submission — connects every .lead-form on the site
+  // to the real backend (api/submit-lead.js). See LEAD_FORM_SCRIPT
+  // below, added separately to each page for safer sitewide rollout.
+  // ==========================================================
+})();
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+function retisTrack(eventName, params){ gtag('event', eventName, params || {}); }
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.btn-primary').forEach(function(el){ el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'primary', cta_label: el.textContent.trim()}); }); });
+  document.querySelectorAll('.btn-secondary').forEach(function(el){ el.addEventListener('click', function(){ retisTrack('cta_click', {cta_tier:'secondary', cta_label: el.textContent.trim()}); }); });
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(el){ el.addEventListener('click', function(){ retisTrack('phone_click', {}); }); });
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(el){ el.addEventListener('click', function(){ retisTrack('whatsapp_click', {}); }); });
+  document.querySelectorAll('.lead-form, #leadForm').forEach(function(el){ el.addEventListener('submit', function(){ retisTrack('lead_form_submitted', {form_id: el.id || 'lead_form'}); }); });
+});
+</script>
+</body></html>
