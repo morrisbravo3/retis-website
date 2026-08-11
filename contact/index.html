@@ -16,8 +16,13 @@
 <meta property="og:title" content="Contact RETIS Systems | Nairobi, Kenya">
 <meta property="og:description" content="Talk to RETIS Systems about a cyber risk assessment, FINSEC 360™ briefing, security gap assessment, or training proposal. Nairobi, Kenya.">
 <meta property="og:url" content="https://www.retistech.com/contact/">
-<meta property="og:image" content="https://www.retistech.com/assets/retis-logo.jpg">
-<meta name="twitter:image" content="https://www.retistech.com/assets/retis-logo.jpg">
+<meta property="og:image" content="https://www.retistech.com/assets/retis-social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_KE">
+<meta name="twitter:title" content="Contact RETIS Systems | Nairobi, Kenya">
+<meta name="twitter:description" content="Talk to RETIS Systems about a cyber risk assessment, FINSEC 360™ briefing, security gap assessment, or training proposal. Nairobi, Kenya.">
+<meta name="twitter:image" content="https://www.retistech.com/assets/retis-social-preview.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Home","item":"https://www.retistech.com/"},
@@ -37,6 +42,16 @@
   "address": {"@type":"PostalAddress","streetAddress":"5th Avenue Office Suites, 4th Floor, Suite 4-15, off Ngong Road","addressLocality":"Nairobi","addressCountry":"KE"},
   "sameAs": [],
   "founder": {"@type":"Person","name":"Morris Mureti","jobTitle":"Founder & CEO","url":"https://www.retistech.com/about/leadership/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "RETIS Systems",
+  "url": "https://www.retistech.com/",
+  "inLanguage": "en-KE",
+  "publisher": {"@type":"Organization","name":"RETIS Systems","url":"https://www.retistech.com/"}
 }
 </script>
 
@@ -359,10 +374,6 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
             <select id="ccontact"><option>Email</option><option>Phone call</option><option>WhatsApp</option></select>
           </div>
           <div class="full"><label for="cconcern">What are you looking to achieve?</label><textarea id="cconcern" rows="3"></textarea></div>
-          <div style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
-            <label for="chp">Leave this field empty</label>
-            <input type="text" id="chp" name="hp" tabindex="-1" autocomplete="off">
-          </div>
           <div class="full consent-row">
             <input type="checkbox" id="cconsent" required>
             <label for="cconsent" style="font-weight:400; margin:0;">I consent to RETIS Systems contacting me about this request, in line with the <a href="/privacy-policy/" style="color:var(--retis-purple); text-decoration:underline;">Privacy Policy</a>.</label>
@@ -450,6 +461,11 @@ footer{background:var(--retis-obsidian); color:#C7CEE0; padding:64px 0 32px;}
       });
     });
   }
+  // ==========================================================
+  // Lead form submission — connects every .lead-form on the site
+  // to the real backend (api/submit-lead.js). See LEAD_FORM_SCRIPT
+  // below, added separately to each page for safer sitewide rollout.
+  // ==========================================================
 })();
 </script>
 <script>
@@ -465,72 +481,5 @@ document.addEventListener('DOMContentLoaded', function(){
   document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(el){ el.addEventListener('click', function(){ retisTrack('whatsapp_click', {}); }); });
   document.querySelectorAll('.lead-form, #leadForm').forEach(function(el){ el.addEventListener('submit', function(){ retisTrack('lead_form_submitted', {form_id: el.id || 'lead_form'}); }); });
 });
-</script>
-<script>
-(function(){
-  // RETIS_LEAD_ENDPOINT is a placeholder until the backend is deployed.
-  // Update this one constant here and re-sweep the site to push the
-  // real URL to every page at once — see the automation README.
-  var RETIS_LEAD_ENDPOINT = "https://retis-portal.vercel.app/api/submit-lead";
-
-  document.querySelectorAll('.lead-form').forEach(function(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-
-      if(!RETIS_LEAD_ENDPOINT){
-        alert('This form is not yet connected to a live backend. See the automation setup guide to finish deployment.');
-        return;
-      }
-
-      function fieldValue(suffix){
-        var el = form.querySelector('[id$="' + suffix + '"]');
-        return el ? el.value : '';
-      }
-
-      var payload = {
-        fullName: fieldValue('name'),
-        organizationName: fieldValue('org'),
-        email: fieldValue('email'),
-        phone: fieldValue('phone'),
-        industry: fieldValue('industry'),
-        organizationSize: fieldValue('size'),
-        website: fieldValue('website'),
-        primaryConcern: fieldValue('concern'),
-        serviceRequired: fieldValue('service'),
-        preferredEngagement: fieldValue('engagement'),
-        message: fieldValue('message'),
-        sourcePage: window.location.pathname
-      };
-
-      if(!payload.fullName || !payload.organizationName || !payload.email || !payload.phone){
-        alert('Please fill in your name, organisation, email and phone before submitting.');
-        return;
-      }
-
-      var submitBtn = form.querySelector('button[type="submit"]');
-      var originalText = submitBtn ? submitBtn.textContent : '';
-      if(submitBtn){ submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; }
-
-      fetch(RETIS_LEAD_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      })
-      .then(function(res){ return res.json(); })
-      .then(function(data){
-        if(data.success){
-          form.innerHTML = '<p style="padding:24px; text-align:center; color:var(--retis-navy); font-weight:600;">Thank you — we\'ve received your request and will follow up within two business days.</p>';
-        } else {
-          if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = originalText; }
-          alert('Something went wrong submitting this form. Please try again or call 0704 293 812.');
-        }
-      })
-      .catch(function(){
-        if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = originalText; }
-        alert('Could not reach the server. Please check your connection and try again, or call 0704 293 812.');
-      });
-    });
-  });
-})();
 </script>
 </body></html>
